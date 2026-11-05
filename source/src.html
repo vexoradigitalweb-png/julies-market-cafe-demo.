@@ -100,7 +100,7 @@ nav.main a[aria-current="page"]{background:var(--facade-2)}
 /* HOME hero */
 .hero{padding-block:clamp(28px,5vw,64px) 0}
 .hero .inner{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,56px);align-items:center}
-.hero h1{font-size:clamp(44px,6vw,92px)}
+.hero h1{font-size:clamp(40px,5.2vw,80px)}
 .hero h1 em{font-style:normal;color:var(--sign)}
 :root[data-theme="dark"] .hero h1 em{color:var(--chair)}
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .hero h1 em{color:var(--chair)} }
@@ -239,6 +239,7 @@ a[href^="tel:"]{user-select:auto;-webkit-user-select:auto}
 .st-cheese{background:var(--card);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line),0 30px 60px -36px var(--shadow)}
 .st-media{aspect-ratio:4/4.2;border-radius:16px;overflow:hidden;background:rgba(0,0,0,.08);max-width:100%}
 .st-media img{width:100%;height:100%;object-fit:cover;display:block}
+.st-blank{background:var(--facade-2)}
 .st-trio{display:grid;grid-template-columns:1.2fr 1fr;grid-template-rows:1fr 1fr;gap:8px;background:transparent}
 .st-trio img{border-radius:12px;min-height:0}
 .st-trio img:first-child{grid-row:1/3}
@@ -414,10 +415,7 @@ footer.site a{display:block;text-decoration:none;padding:3px 0}
 footer.site .fine{grid-column:1/-1;border-top:1px solid color-mix(in srgb,var(--on-sign) 18%,transparent);padding-top:18px;font:500 12px/1.4 var(--f-mono);color:color-mix(in srgb,var(--on-sign) 60%,transparent)}
 @media (max-width:760px){ footer.site .inner{grid-template-columns:1fr 1fr} }
 
-/* custom cursor over photos */
-.cur{position:fixed;left:0;top:0;z-index:100;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:var(--bloom);color:var(--bloom-ink);display:grid;place-items:center;font:700 12px/1 var(--f-mono);letter-spacing:.1em;pointer-events:none;transform:scale(.4);opacity:0;transition:opacity 200ms ease,transform 260ms var(--ease-out)}
-.cur.on{opacity:1;transform:scale(1)}
-@media not ((hover:hover) and (pointer:fine)){ .cur{display:none} }
+
 
 /* Shutter: the storefront's roll-up shutter, used for the hero reveal and page transitions */
 .shutter{position:absolute;inset:0;z-index:2;pointer-events:none;transform:translateY(-101%);background:repeating-linear-gradient(to bottom,var(--sign) 0 15px,var(--sign-deep) 15px 17px)}
@@ -440,6 +438,23 @@ html.lenis,html.lenis body{height:auto}
 .btn{transition:transform 160ms var(--ease-out),background-color 200ms ease,box-shadow 200ms ease,translate 380ms var(--ease-out)}
 .lenis.lenis-smooth{scroll-behavior:auto!important}
 .lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
+/* Photo zoom */
+.lb{position:fixed;inset:0;z-index:140;display:grid;place-items:center;padding:calc(64px + env(safe-area-inset-top,0px)) max(64px, env(safe-area-inset-right,0px)) calc(72px + env(safe-area-inset-bottom,0px)) max(64px, env(safe-area-inset-left,0px));background:rgba(8,13,10,0);transition:background-color 320ms ease}
+.lb.on{background:rgba(8,13,10,.94);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.lb-img{max-width:min(1100px,100%);max-height:calc(100vh - 160px);max-height:calc(100dvh - 160px);object-fit:contain;border-radius:12px;box-shadow:0 30px 80px -30px rgba(0,0,0,.6);transform-origin:0 0;will-change:transform}
+.lb-cap{position:absolute;left:0;right:0;bottom:calc(24px + env(safe-area-inset-bottom,0px));text-align:center;color:#F3EFE3;font:400 20px/1.2 var(--f-display);padding-inline:72px;opacity:0;transition:opacity 260ms ease}
+.lb.on .lb-cap,.lb.on .lb-btn,.lb.on .lb-count{opacity:1}
+.lb-btn{position:absolute;width:48px;height:48px;border-radius:50%;border:0;display:grid;place-items:center;background:rgba(243,239,227,.14);color:#F3EFE3;opacity:0;transition:opacity 260ms ease,background-color 200ms ease,transform 160ms var(--ease-out)}
+.lb-btn svg{width:22px;height:22px}
+.lb-btn:active{transform:scale(.94)}
+@media (hover:hover) and (pointer:fine){ .lb-btn:hover{background:rgba(243,239,227,.26)} }
+.lb-x{top:calc(14px + env(safe-area-inset-top,0px));right:max(14px, env(safe-area-inset-right,0px))}
+.lb-prev{left:max(12px, env(safe-area-inset-left,0px));top:50%;margin-top:-24px}
+.lb-next{right:max(12px, env(safe-area-inset-right,0px));top:50%;margin-top:-24px}
+.lb-count{position:absolute;top:calc(28px + env(safe-area-inset-top,0px));left:max(20px, env(safe-area-inset-left,0px));color:rgba(243,239,227,.8);font-size:13px;opacity:0;transition:opacity 260ms ease}
+.lb-btn[hidden],.lb-count:empty{display:none}
+@media (max-width:600px){ .lb{padding-inline:12px} .lb-prev,.lb-next{top:auto;bottom:calc(16px + env(safe-area-inset-bottom,0px));margin-top:0} .lb-cap{bottom:calc(78px + env(safe-area-inset-bottom,0px));padding-inline:16px;font-size:18px} }
+.item .ph img,.mcard .ph img,.fav .fph img,.st-media img,.dish .ph img,.store-frame img{cursor:zoom-in}
 .toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:120;translate:-50% 0;background:var(--ink);color:var(--facade);padding:12px 18px;border-radius:999px;font-weight:600;font-size:14px;opacity:0;transform:translateY(12px);transition:opacity 250ms ease,transform 300ms var(--ease-out);pointer-events:none}
 .toast.on{opacity:1;transform:translateY(0)}
 
@@ -479,7 +494,7 @@ html.lenis,html.lenis body{height:auto}
   <div class="hero wrap">
     <div class="inner">
       <div>
-        <h1 class="split">A kosher <em>market &amp; café</em>, and a kitchen for every simcha.</h1>
+        <h1 class="split">A kosher <em>market &amp; café</em> located on Kings Highway, and a catering service for all.</h1>
         <p class="lede">Salads, bowls, coffee and fresh baking at 514 Kings Highway, Brooklyn. Platters, boards and full catering menus for Shabbat, holidays and every celebration in between.</p>
         <div class="ctas">
           <a class="btn btn-sign" href="#market">Visit the market <span class="arr">→</span></a>
@@ -616,7 +631,7 @@ html.lenis,html.lenis body{height:auto}
         </div>
       <span class="st-dim" aria-hidden="true"></span></article>
       <article class="station st-cheese" aria-labelledby="st3">
-        <div class="st-media" data-photo><img src="img/185-1.webp" alt="One of Julie's cheese boards" loading="lazy"></div>
+        <div class="st-media st-blank" aria-hidden="true"></div>
         <div class="st-body">
           <h3 id="st3">The Cheese Counter</h3>
           <p class="st-lede">Every cheese here is halav yisrael. Ask at the counter for today's selection.</p>
@@ -768,8 +783,15 @@ html.lenis,html.lenis body{height:auto}
   <div class="drawer-head"><h2>Your quote</h2><button class="x" id="drawerX">Close</button></div>
   <div class="drawer-body" id="drawerBody" data-lenis-prevent></div>
 </aside>
-<div class="cur" id="cur" aria-hidden="true">VIEW</div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo" hidden>
+  <img class="lb-img" id="lbImg" alt="">
+  <p class="lb-cap" id="lbCap"></p>
+  <button class="lb-btn lb-x" id="lbX" aria-label="Close photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+  <span class="lb-count mono" id="lbCount"></span>
+</div>
 
 
 <script id="menuData" type="application/json">__MENU__</script>
@@ -1056,19 +1078,55 @@ function selectNear(b) { const v = b.parentElement.querySelector('.val,.big'); i
 const embedded = (() => { try { return window.self !== window.top; } catch { return true; } })();
 document.addEventListener('click', e => { const a = e.target.closest('a[href^="tel:"]'); if (a && embedded) { a.target = '_blank'; a.rel = 'noopener'; } }, true);
 
+/* ---------- Photo zoom ---------- */
+const ZOOM_SEL = '.item .ph img, .mcard .ph img, .fav .fph img, .st-media img, .dish .ph img, .store-frame img';
+const lb = $('#lb'), lbImg = $('#lbImg');
+let lbList = [], lbIdx = 0, lbFrom = null;
+function lbShow(i, animateFrom) {
+  lbIdx = (i + lbList.length) % lbList.length;
+  const it = lbList[lbIdx];
+  lbImg.src = it.src; lbImg.alt = it.alt; $('#lbCap').textContent = it.alt;
+  $('#lbCount').textContent = lbList.length > 1 ? `${lbIdx + 1} / ${lbList.length}` : '';
+  $('#lbPrev').hidden = $('#lbNext').hidden = lbList.length < 2;
+  if (!animateFrom || reduce) { lbImg.animate([{opacity: 0, transform: 'scale(.97)'}, {opacity: 1, transform: 'none'}], {duration: 220, easing: 'cubic-bezier(.23,1,.32,1)'}); return; }
+  const go = () => { const a = animateFrom.getBoundingClientRect(), b = lbImg.getBoundingClientRect(); if (!b.width) return;
+    lbImg.animate([{transform: `translate(${a.left - b.left}px,${a.top - b.top}px) scale(${a.width / b.width},${a.height / b.height})`, borderRadius: '14px'}, {transform: 'none', borderRadius: '12px'}], {duration: 480, easing: 'cubic-bezier(.16,1,.3,1)'}); };
+  if (lbImg.complete && lbImg.naturalWidth) go(); else lbImg.onload = () => { lbImg.onload = null; go(); };
+}
+function lbOpen(img) {
+  const card = img.closest('.item');
+  if (card && BY[card.dataset.id] && BY[card.dataset.id].img.length) { const m = BY[card.dataset.id]; lbList = m.img.map(src => ({src, alt: m.name})); lbIdx = 0; }
+  else { lbList = [{src: img.currentSrc || img.src, alt: img.alt || ''}]; lbIdx = 0; }
+  lbFrom = img; lenis?.stop(); lb.hidden = false; requestAnimationFrame(() => lb.classList.add('on'));
+  lbShow(0, img); $('#lbX').focus();
+}
+function lbClose() {
+  if (lb.hidden) return;
+  lb.classList.remove('on'); lenis?.start();
+  const back = lbFrom && lbIdx === 0 && lbFrom.isConnected ? lbFrom.getBoundingClientRect() : null, b = lbImg.getBoundingClientRect();
+  const done = () => { lb.hidden = true; lbImg.removeAttribute('src'); };
+  if (reduce || !back || !back.width || back.bottom < 0 || back.top > innerHeight) { lbImg.animate([{opacity: 1}, {opacity: 0}], {duration: 180}).onfinish = done; return; }
+  lbImg.animate([{transform: 'none'}, {transform: `translate(${back.left - b.left}px,${back.top - b.top}px) scale(${back.width / b.width},${back.height / b.height})`}], {duration: 320, easing: 'cubic-bezier(.32,.72,0,1)'}).onfinish = done;
+}
+document.addEventListener('click', e => {
+  const img = e.target.closest && e.target.closest(ZOOM_SEL);
+  if (!img || !img.matches('img')) return;
+  e.preventDefault(); e.stopPropagation(); lbOpen(img);
+}, true);
+$('#lbX').addEventListener('click', lbClose);
+$('#lbPrev').addEventListener('click', e => { e.stopPropagation(); lbShow(lbIdx - 1); });
+$('#lbNext').addEventListener('click', e => { e.stopPropagation(); lbShow(lbIdx + 1); });
+lb.addEventListener('click', e => { if (e.target === lb || e.target === lbImg) lbClose(); });
+addEventListener('keydown', e => { if (lb.hidden) return; if (e.key === 'Escape') lbClose(); if (e.key === 'ArrowRight' && lbList.length > 1) lbShow(lbIdx + 1); if (e.key === 'ArrowLeft' && lbList.length > 1) lbShow(lbIdx - 1); });
+let tx0 = null; lb.addEventListener('touchstart', e => { tx0 = e.touches[0].clientX; }, {passive: true});
+lb.addEventListener('touchend', e => { if (tx0 === null || lbList.length < 2) return; const dx = e.changedTouches[0].clientX - tx0; if (Math.abs(dx) > 50) lbShow(lbIdx + (dx < 0 ? 1 : -1)); tx0 = null; });
+
 /* ---------- Mobile sheet ---------- */
 const sheet = $('#sheet');
 function closeSheet() { lenis?.start(); sheet.classList.remove('on'); $('#menuBtn').setAttribute('aria-expanded', 'false'); }
 $('#menuBtn').addEventListener('click', () => { lenis?.stop(); sheet.classList.add('on'); $('#menuBtn').setAttribute('aria-expanded', 'true'); });
 $('#sheetX').addEventListener('click', closeSheet); $$('a', sheet).forEach(a => a.addEventListener('click', closeSheet));
 
-/* ---------- Cursor ---------- */
-const cur = $('#cur');
-if (matchMedia('(hover:hover) and (pointer:fine)').matches && !reduce) {
-  let x = 0, y = 0, cx = 0, cy = 0, raf;
-  addEventListener('pointermove', e => { x = e.clientX; y = e.clientY; const on = !!e.target.closest('[data-photo]'); cur.classList.toggle('on', on); if (!raf) raf = requestAnimationFrame(tick); }, {passive: true});
-  const tick = () => { cx += (x - cx) * .22; cy += (y - cy) * .22; cur.style.translate = `${cx}px ${cy}px`; raf = Math.abs(x - cx) + Math.abs(y - cy) > .3 ? requestAnimationFrame(tick) : null; };
-}
 
 
 /* ---------- Motion (GSAP + ScrollTrigger + Lenis). Content is visible by default; only blocks below the fold start hidden. ---------- */
