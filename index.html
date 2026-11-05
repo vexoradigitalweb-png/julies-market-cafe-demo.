@@ -216,7 +216,8 @@ a[href^="tel:"]{user-select:auto;-webkit-user-select:auto}
 
 /* MARKET page */
 .page-hero{padding-block:clamp(36px,6vw,88px) clamp(24px,4vw,48px)}
-.page-hero h1{font-size:clamp(48px,7.4vw,112px)}
+[data-view]:not([data-view="home"]):not([data-view="quotes"]){border-top:1px solid var(--line);scroll-margin-top:68px}
+.page-hero h1,.page-hero .page-title{font-size:clamp(48px,7.4vw,112px)}
 .page-hero .lede{max-width:52ch;margin-top:20px;font-size:clamp(17px,1.6vw,20px);color:var(--muted)}
 .dairy-band{background:var(--dairy);color:#F5F7FB;border-radius:18px;padding:clamp(24px,4vw,40px);display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:center}
 .dairy-band .seal{width:96px;height:96px;border-radius:50%;border:2px dashed rgba(245,247,251,.7);display:grid;place-items:center;text-align:center;font:600 11px/1.3 var(--f-mono);letter-spacing:.1em}
@@ -505,7 +506,7 @@ html.lenis,html.lenis body{height:auto}
 
 <main>
 <!-- ============ HOME ============ -->
-<section data-view="home">
+<section data-view="home" id="home-sec">
   <div class="hero wrap">
     <div class="inner">
       <div>
@@ -573,23 +574,6 @@ html.lenis,html.lenis body{height:auto}
     </div>
   </section>
 
-  <section class="visit sec wrap" aria-labelledby="visith">
-    <div class="inner">
-      <div class="rv">
-        <h2 id="visith" class="visit-h">Visit the market</h2>
-        <a class="addr maplink" style="margin-top:14px" href="https://www.google.com/maps/search/?api=1&query=Julie%27s+Market+Cafe+514+Kings+Hwy+Brooklyn+NY+11223" target="_blank" rel="noopener">514 Kings Hwy<br>Brooklyn, NY 11223<span class="maptag">Open in Google Maps ↗</span></a>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px">
-          <a class="btn btn-sign" href="https://www.google.com/maps/dir/?api=1&destination=Julie%27s+Market+Cafe+514+Kings+Hwy+Brooklyn+NY+11223" target="_blank" rel="noopener">Get directions <span class="arr">→</span></a>
-          <a class="btn btn-ghost" href="https://www.ubereats.com/store/julies-market-cafe/qobyJZ7BVXCvS2kCOyTnuw" target="_blank" rel="noopener">Order on Uber Eats</a>
-        </div>
-        <div class="contact-list">
-          <div class="cline"><div><div class="lbl">Store</div><a class="val tab tel" href="tel:+17185739453">(718) 573-9453</a></div></div>
-        </div>
-      </div>
-      <div class="rv"><table class="hours tab" id="hoursTable" aria-label="Store hours"></table>
-        <p style="margin-top:14px;color:var(--muted);font-size:14px">Friday closes early for Shabbat. Closed Saturday.</p></div>
-    </div>
-  </section>
 
   <section class="sec wrap" style="padding-top:0" aria-labelledby="igh">
     <div class="inner">
@@ -600,9 +584,9 @@ html.lenis,html.lenis body{height:auto}
 </section>
 
 <!-- ============ MARKET ============ -->
-<section data-view="market" hidden>
+<section data-view="market" id="market-sec">
   <div class="page-hero wrap"><div class="inner">
-    <h1 class="split">Come in hungry.</h1>
+    <h2 class="split page-title">Come in hungry.</h2>
     <p class="lede">A kosher dairy market and café on Kings Highway. Grab a salad or a bowl, an iced coffee or a matcha, something sweet, and a few things from the pantry for home.</p>
   </div></div>
   <div class="wrap"><div class="inner">
@@ -691,18 +675,12 @@ html.lenis,html.lenis body{height:auto}
     <div class="cta-card uber rv"><h3>Order the café for pickup or delivery</h3><a class="btn btn-bloom" href="https://www.ubereats.com/store/julies-market-cafe/qobyJZ7BVXCvS2kCOyTnuw" target="_blank" rel="noopener">Open Uber Eats <span class="arr">→</span></a></div>
     <div class="cta-card rev rv"><h3>Been in? Tell people what you ordered</h3><a class="btn btn-sign" href="https://search.google.com/local/writereview?placeid=ChIJF51RSLVFwokR3KhAxMfZJSc" target="_blank" rel="noopener">Leave a Google review <span class="arr">→</span></a></div>
   </div></section>
-  <section class="visit sec wrap" style="padding-top:0"><div class="inner">
-    <div><p class="eyebrow">Hours</p><table class="hours tab" style="margin-top:14px" data-hours aria-label="Store hours"></table></div>
-    <div><p class="eyebrow">Find us</p><a class="addr maplink" style="margin-top:14px" href="https://www.google.com/maps/search/?api=1&query=Julie%27s+Market+Cafe+514+Kings+Hwy+Brooklyn+NY+11223" target="_blank" rel="noopener">514 Kings Hwy<br>Brooklyn, NY 11223<span class="maptag">Open in Google Maps ↗</span></a>
-      <div class="contact-list"><div class="cline"><div><div class="lbl">Store</div><a class="val tab tel" href="tel:+17185739453">(718) 573-9453</a></div></div></div>
-      <a class="btn btn-sign" style="margin-top:16px" href="https://www.google.com/maps/dir/?api=1&destination=Julie%27s+Market+Cafe+514+Kings+Hwy+Brooklyn+NY+11223" target="_blank" rel="noopener">Get directions <span class="arr">→</span></a></div>
-  </div></section>
 </section>
 
 <!-- ============ CATERING ============ -->
-<section data-view="catering" hidden>
+<section data-view="catering" id="catering-sec">
   <div class="page-hero wrap"><div class="inner">
-    <h1 class="split">Build your order.</h1>
+    <h2 class="split page-title">Build your order.</h2>
     <p class="lede">Pick the dishes and sizes, see the estimate as you go, and send it to Julie. She'll confirm the final quote with you.</p>
     <div class="kitchen" role="group" aria-label="Choose your order type">
       <button class="kbtn" data-k="M" aria-pressed="false"><span class="k M"><i></i>Meat</span><b>Meat order</b><span>Glatt meat and parve dishes, including fish.</span></button>
@@ -722,9 +700,9 @@ html.lenis,html.lenis body{height:auto}
 </section>
 
 <!-- ============ ABOUT ============ -->
-<section data-view="about" hidden>
+<section data-view="about" id="about-sec">
   <div class="page-hero wrap"><div class="inner">
-    <h1 class="split">The person behind the food.</h1>
+    <h2 class="split page-title">The person behind the food.</h2>
   </div></div>
   <section class="about sec wrap" style="padding-top:0"><div class="inner">
     <div class="portrait rv"><div><b>Julie</b><span class="mono" style="font-size:12px">Portrait coming for the demo</span></div></div>
@@ -747,9 +725,9 @@ html.lenis,html.lenis body{height:auto}
 </section>
 
 <!-- ============ CONTACT ============ -->
-<section data-view="contact" hidden>
+<section data-view="contact" id="contact-sec">
   <div class="page-hero wrap"><div class="inner">
-    <h1 class="split">Call, text or stop by.</h1>
+    <h2 class="split page-title">Call, text or stop by.</h2>
     <p class="lede">Questions about the store go to the store line. For catering, build a quote or call Julie directly.</p>
   </div></div>
   <section class="sec wrap" style="padding-top:0"><div class="inner contact-grid">
@@ -1147,26 +1125,30 @@ $('#sheetX').addEventListener('click', closeSheet); $$('a', sheet).forEach(a => 
 /* ---------- Motion (GSAP + ScrollTrigger + Lenis). Content is visible by default; only blocks below the fold start hidden. ---------- */
 let vctx = null, vmm = null, rT;
 function refreshSoon() { clearTimeout(rT); rT = setTimeout(() => ST.refresh(), 120); }
-function setupView(name, view) {
+function setupAll() {
   if (vctx) vctx.revert(); if (vmm) vmm.revert();
   ST.getAll().forEach(t => t.kill());
-  const E = 'expo.out';
+  const E = 'expo.out', page = $('main'), home = secEl('home'), market = secEl('market');
   const below = els => els.filter(el => el.getBoundingClientRect().top > innerHeight * .95);
-  const batchIn = (sel, from, to) => { const els = below($$(sel, view)); if (!els.length) return; G.set(els, from); ST.batch(els, {start: 'top 90%', once: true, onEnter: b => G.to(b, {...to, stagger: .06, overwrite: true})}); };
+  const batchIn = (sel, from, to) => { const els = below($$(sel, page)); if (!els.length) return; G.set(els, from); ST.batch(els, {start: 'top 90%', once: true, onEnter: b => G.to(b, {...to, stagger: .06, overwrite: true})}); };
   vctx = G.context(() => {
-    $$('.split', view).forEach(h => { splitWords(h); G.from($$('.w>span', h), {yPercent: 112, duration: 1.1, ease: E, stagger: .045, delay: name === 'home' ? .35 : .15}); });
-    $$('.page-hero .lede, .page-hero .kitchen .kbtn, .page-hero .rule-note', view).forEach((el, i) => G.from(el, {y: 22, opacity: 0, duration: .9, ease: E, delay: .35 + i * .07}));
-    $$('.sec-head h2, .visit-h', view).forEach(h => { splitWords(h); if (h.getBoundingClientRect().top > innerHeight * .9) G.from($$('.w>span', h), {yPercent: 112, duration: .95, ease: E, stagger: .045, scrollTrigger: {trigger: h, start: 'top 88%', once: true}}); });
+    $$('.split', page).forEach(h => { splitWords(h); const words = $$('.w>span', h);
+      if (h.getBoundingClientRect().top < innerHeight * .9) G.from(words, {yPercent: 112, duration: 1.1, ease: E, stagger: .045, delay: .35});
+      else G.from(words, {yPercent: 112, duration: 1.05, ease: E, stagger: .045, scrollTrigger: {trigger: h, start: 'top 85%', once: true}}); });
+    $$('.sec-head h2, .visit-h', page).forEach(h => { splitWords(h); if (h.getBoundingClientRect().top > innerHeight * .9) G.from($$('.w>span', h), {yPercent: 112, duration: .95, ease: E, stagger: .045, scrollTrigger: {trigger: h, start: 'top 88%', once: true}}); });
+    batchIn('.page-hero .lede, .page-hero .kitchen .kbtn, .page-hero .rule-note', {y: 22, opacity: 0}, {y: 0, opacity: 1, duration: .9, ease: E});
     batchIn('.ig a, .mcard .ph, .fav .fph, .item .ph', {clipPath: 'inset(0% 0% 100% 0%)'}, {clipPath: 'inset(0% 0% 0% 0%)', duration: 1, ease: 'power4.inOut'});
     batchIn('.st-list li, .st-steps li', {y: 16, opacity: 0}, {y: 0, opacity: 1, duration: .7, ease: E});
     batchIn('.dept, .cta-card, .ccard, .quotes blockquote, .item .body, .fav h3, .fav p, .mcard h3, .mcard .sec-l, .dairy-band, .photo-slot, .hours, .offers > div', {y: 26, opacity: 0}, {y: 0, opacity: 1, duration: .85, ease: E});
-    if (name === 'home') homeMotion(view);
+    homeMotion(home);
     const fb = $('.footbig span');
     if (fb) G.fromTo(fb, {xPercent: 14}, {xPercent: -8, ease: 'none', scrollTrigger: {trigger: 'footer.site', start: 'top bottom', end: 'bottom bottom', scrub: true}});
-  }, view);
+    // The menu follows you down the page
+    SECTIONS.forEach(n => ST.create({trigger: secEl(n), start: 'top 45%', end: 'bottom 45%', onToggle: t => { if (t.isActive) setActive(n); }}));
+  }, page);
   vmm = G.matchMedia();
-  if (name === 'home') vmm.add('(min-width: 761px)', () => reelMotion(view));
-  if (name === 'market') vmm.add('(min-width: 901px) and (min-height: 640px)', () => marketMotion(view));
+  vmm.add('(min-width: 761px)', () => reelMotion(home));
+  vmm.add('(min-width: 901px) and (min-height: 640px)', () => marketMotion(market));
   ST.refresh();
 }
 function homeMotion(view) {
@@ -1234,42 +1216,69 @@ if (MOTION && matchMedia('(hover:hover) and (pointer:fine)').matches) {
   }, {passive: true});
 }
 
-/* ---------- Logo: replays the shutter opening and returns home ---------- */
-$('.logo').addEventListener('click', e => {
-  e.preventDefault(); closeSheet(); closeDrawer();
-  if (current !== 'home') { if (location.hash === '#home') { current = null; show('home', true); } else location.hash = 'home'; return; }
-  if (reduce) { toTop(); return; }
-  shade(() => { toTop(); if (MOTION) setupView('home', $('[data-view="home"]')); else riseIn($('[data-view="home"]')); });
-});
-
-/* ---------- Router + page wipe ---------- */
-const VIEWS = ['home', 'market', 'catering', 'about', 'contact', 'quotes'];
-let current = null;
-function show(name, animate) {
-  if (!VIEWS.includes(name)) name = 'home';
-  if (name === current) return;
-  const swap = () => {
-    $$('[data-view]').forEach(v => v.hidden = v.dataset.view !== name);
-    $$('[data-nav]').forEach(a => { if (a.dataset.nav === name) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
-    toTop(); current = name;
-    const view = $(`[data-view="${name}"]`);
-    if (name === 'catering') renderGrid();
-    if (name === 'home') { sizeReel(); moveReel(); }
-    if (name === 'quotes') openDash();
-    renderTray(); if (MOTION) requestAnimationFrame(() => setupView(name, view)); else { riseIn(view); requestAnimationFrame(() => armReveal(view)); }
-    document.title = {home: "Julie's Market Cafe", market: "The Market & Café · Julie's", catering: "Catering · Julie's", about: "About Julie · Julie's", contact: "Contact · Julie's", quotes: "Quote requests · Julie's"}[name];
-  };
-  if (!animate || reduce) { swap(); return; }
-  shade(swap);
+/* ---------- One page: the menu scrolls to each section ---------- */
+const SECTIONS = ['home', 'market', 'catering', 'about', 'contact'];
+const secEl = n => $(`[data-view="${n}"]`);
+let inboxOpen = false;
+function setActive(n) { $$('[data-nav]').forEach(a => { if (a.dataset.nav === n) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); }); }
+function jumpTo(n) {
+  if (n === 'home') { toTop(); return; }
+  const el = secEl(n); if (!el) return;
+  const y = el.getBoundingClientRect().top + scrollY - ($('header.top')?.offsetHeight || 68) + 1;
+  if (lenis) lenis.scrollTo(y, {immediate: true, force: true}); else scrollTo(0, y);
 }
-/* The green shade drops over the page, the change happens behind it, then it rolls back up */
+/* The green shade drops over the page, the jump happens behind it, then it rolls back up */
 function shade(mid) {
   const w = $('.wipe');
   w.animate([{clipPath: 'inset(0 0 100% 0)'}, {clipPath: 'inset(0 0 0 0)'}], {duration: 420, easing: 'cubic-bezier(.77,0,.175,1)', fill: 'forwards'}).onfinish = () => { mid(); w.animate([{clipPath: 'inset(0 0 0 0)'}, {clipPath: 'inset(0 0 100% 0)'}], {duration: 520, delay: 80, easing: 'cubic-bezier(.77,0,.175,1)', fill: 'forwards'}); };
 }
-addEventListener('hashchange', () => show(location.hash.slice(1), true));
-document.addEventListener('click', e => { const g = e.target.closest('[data-goto]'); if (!g) return; e.preventDefault(); state.cat = 'All'; state.q = ''; $('#search').value = ''; $$('.chip').forEach(c => c.setAttribute('aria-pressed', c.dataset.cat === 'All')); const id = g.dataset.goto; if (location.hash === '#catering') { renderGrid(); } else location.hash = 'catering'; setTimeout(() => { const el = $('#dish-' + id); if (el) { if (lenis) lenis.scrollTo(el, {offset: -innerHeight / 3}); else el.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'center'}); el.animate([{boxShadow: 'inset 0 0 0 3px var(--bloom)'}, {boxShadow: 'inset 0 0 0 1px var(--line)'}], {duration: 1800, easing: 'ease-out'}); } }, 950); });
-show(location.hash.slice(1) || 'home', false);
+function setInbox(on) {
+  if (on === inboxOpen) return;
+  inboxOpen = on;
+  $$('[data-view]').forEach(v => v.hidden = on ? v.dataset.view !== 'quotes' : v.dataset.view === 'quotes');
+  $('footer.site').hidden = on; renderTray();
+  if (on) { if (MOTION) { if (vctx) vctx.revert(); if (vmm) vmm.revert(); ST.getAll().forEach(t => t.kill()); } toTop(); openDash(); }
+  else if (MOTION) setupAll();
+}
+function route(animate) {
+  const h = location.hash.slice(1);
+  const go = h === 'quotes' ? () => setInbox(true) : () => { setInbox(false); const n = SECTIONS.includes(h) ? h : 'home'; jumpTo(n); setActive(n); };
+  if (animate && !reduce) shade(go); else go();
+}
+addEventListener('hashchange', () => route(true));
+// A menu link to the section you're already on still jumps (the hash doesn't change, so no hashchange fires)
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[href^="#"]'); if (!a) return;
+  const n = a.getAttribute('href').slice(1);
+  if (!SECTIONS.includes(n) && n !== 'quotes') return;
+  if (location.hash === '#' + n) { e.preventDefault(); route(true); }
+  closeDrawer();
+});
+
+/* ---------- Logo: replays the shutter opening at the top ---------- */
+$('.logo').addEventListener('click', e => {
+  e.preventDefault(); closeSheet(); closeDrawer();
+  if (reduce) { location.hash = 'home'; toTop(); return; }
+  shade(() => { if (location.hash && location.hash !== '#home') { try { history.replaceState(null, '', '#home'); } catch (x) {} } setInbox(false); toTop(); setActive('home'); if (MOTION) setupAll(); else riseIn(secEl('home')); });
+});
+
+/* ---------- A dish in the reel jumps to it in the catering menu ---------- */
+document.addEventListener('click', e => {
+  const g = e.target.closest('[data-goto]'); if (!g) return;
+  e.preventDefault();
+  state.cat = 'All'; state.q = ''; $('#search').value = ''; $$('.chip').forEach(c => c.setAttribute('aria-pressed', c.dataset.cat === 'All')); renderGrid();
+  const el = $('#dish-' + g.dataset.goto); if (!el) return;
+  if (lenis) lenis.scrollTo(el, {offset: -innerHeight / 3, duration: 1.4}); else el.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'center'});
+  el.animate([{boxShadow: 'inset 0 0 0 3px var(--bloom)'}, {boxShadow: 'inset 0 0 0 1px var(--line)'}], {duration: 2200, delay: 600, easing: 'ease-out'});
+});
+
+/* ---------- Start ---------- */
+$('[data-view="quotes"]').hidden = true;
+renderGrid(); sizeReel();
+if (MOTION) setupAll(); else { riseIn($('main')); requestAnimationFrame(() => armReveal($('main')));
+  const spy = () => { const y = innerHeight * .45; let cur = 'home'; SECTIONS.forEach(n => { if (secEl(n).getBoundingClientRect().top <= y) cur = n; }); setActive(cur); };
+  addEventListener('scroll', spy, {passive: true}); spy(); }
+if (location.hash) requestAnimationFrame(() => route(false)); else setActive('home');
 renderTray();
 })();
 </script>
