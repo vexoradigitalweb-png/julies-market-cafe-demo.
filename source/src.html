@@ -268,6 +268,8 @@ a[href^="tel:"],a[data-email]{user-select:auto;-webkit-user-select:auto}
 .mcard{display:flex;flex-direction:column;gap:10px}
 .mcard .ph{position:relative;aspect-ratio:5/4;border-radius:14px;overflow:hidden;background:var(--facade-2)}
 .mcard img{width:100%;height:100%;object-fit:cover;transition:transform 700ms var(--ease-out)}
+.mcard .ph.fit::before{content:"";position:absolute;inset:-24px;background:var(--bg) center/cover;filter:blur(22px) saturate(1.15);opacity:.9}
+.mcard .ph.fit img{position:relative;object-fit:contain}
 @media (hover:hover) and (pointer:fine){ .mcard:hover img{transform:scale(1.05)} }
 .mcard h3{font-size:21px;line-height:1.12}
 @media (max-width:560px){ .mgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px} .mcard h3{font-size:17px} .mcard .ph{border-radius:10px} }
@@ -867,11 +869,11 @@ function renderMarket() {
   const shown = MARKET.filter(m => mSec === 'All' || m[1] === mSec).map((m, i) => [m, i]).sort(([a, i], [b, j]) => (SO.indexOf(a[1]) - SO.indexOf(b[1])) || (subs.indexOf(a[4]) - subs.indexOf(b[4])) || (!!b[2] - !!a[2]) || i - j).map(([m]) => m);
   const lbl = sub => mSec === 'All' ? `<span class="sec-l">${esc(sub)}</span>` : '';
   let last = '';
-  g.innerHTML = shown.map(([n, s, h, price, sub]) => {
+  g.innerHTML = shown.map(([n, s, h, price, sub, fit]) => {
     const head = (mSec === 'All' ? s : sub) !== last ? `<h3 class="msub">${esc(last = (mSec === 'All' ? s : sub))}</h3>` : '';
     const pr = price ? `<p class="mprice">${esc(price)}</p>` : `<p class="mprice ask">Price in store</p>`;
     return head + (h
-      ? `<article class="mcard" data-h="${h}" data-photo><div class="ph"><img src="img/t/m-${h}.webp" data-full="img/m-${h}.webp" alt="${esc(n)}" loading="lazy" decoding="async"></div>${lbl(sub)}<h3>${esc(n)}</h3>${pr}</article>`
+      ? `<article class="mcard" data-h="${h}" data-photo><div class="ph${fit ? ' fit' : ''}"${fit ? ` style="--bg:url(img/t/m-${h}.webp)"` : ''}><img src="img/t/m-${h}.webp" data-full="img/m-${h}.webp" alt="${esc(n)}" loading="lazy" decoding="async"></div>${lbl(sub)}<h3>${esc(n)}</h3>${pr}</article>`
       : `<article class="mcard" data-h="${esc(n)}"><div class="ph"><div class="tag-ph"><span>Photo coming</span></div></div>${lbl(sub)}<h3>${esc(n)}</h3>${pr}</article>`);
   }).join('');
   if (!reduce) $$('.mcard', g).forEach((el, i) => { const p = prev.get(el.dataset.h), r = el.getBoundingClientRect(); if (p) { const dx = p.left - r.left, dy = p.top - r.top; if (dx || dy) el.animate([{transform: `translate(${dx}px,${dy}px)`}, {transform: 'none'}], {duration: 520, easing: 'cubic-bezier(.77,0,.175,1)'}); } else if (prev.size) el.animate([{opacity: 0, transform: 'translateY(14px) scale(.98)'}, {opacity: 1, transform: 'none'}], {duration: 420, delay: Math.min(i, 12) * 22, easing: 'cubic-bezier(.23,1,.32,1)'}); });
