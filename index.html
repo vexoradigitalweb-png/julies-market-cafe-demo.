@@ -428,7 +428,7 @@ footer.site .fine{grid-column:1/-1;border-top:1px solid color-mix(in srgb,var(--
 .rset{display:flex;align-items:center;gap:28px;padding-right:28px;font:400 clamp(26px,3.2vw,44px)/1 var(--f-display);white-space:nowrap}
 .rset i{width:10px;height:10px;border-radius:50%;background:var(--bloom);flex:none}
 .footbig{grid-column:1/-1;min-width:0;overflow:hidden;line-height:1;margin-block:10px 0}
-.footbig span{display:block;font:400 clamp(104px,26vw,380px)/1.15 var(--f-script);padding:.04em .12em .3em;color:var(--chair);white-space:nowrap;will-change:transform}
+.footbig span{display:block;font:400 clamp(104px,26vw,380px)/1.05 var(--f-script);padding:.06em .12em .16em .22em;color:var(--chair);white-space:nowrap;will-change:transform}
 .visit-h{font-size:clamp(40px,5vw,72px)}
 .visually-hidden{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 ::selection{background:var(--bloom);color:var(--bloom-ink)}
@@ -1121,7 +1121,7 @@ function setupView(name, view) {
     batchIn('.dept, .cta-card, .ccard, .quotes blockquote, .item .body, .fav h3, .fav p, .mcard h3, .mcard .sec-l, .dairy-band, .photo-slot, .hours, .offers > div', {y: 26, opacity: 0}, {y: 0, opacity: 1, duration: .85, ease: E});
     if (name === 'home') homeMotion(view);
     const fb = $('.footbig span');
-    if (fb) G.fromTo(fb, {xPercent: 14}, {xPercent: -8, ease: 'none', scrollTrigger: {trigger: 'footer.site', start: 'top bottom', end: 'bottom bottom', scrub: true}});
+    if (fb) G.fromTo(fb, {xPercent: 12}, {xPercent: 0, ease: 'none', scrollTrigger: {trigger: 'footer.site', start: 'top bottom', end: 'bottom bottom', scrub: true}});
   }, view);
   vmm = G.matchMedia();
   if (name === 'home') vmm.add('(min-width: 761px)', () => reelMotion(view));
