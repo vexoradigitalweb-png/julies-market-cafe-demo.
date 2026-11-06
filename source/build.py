@@ -1,7 +1,7 @@
 import json, os
 B = '/home/claude/julies'
 items = json.load(open(f'{B}/data/menu.json'))
-for i in items: i.pop('src', None)
+for i in items: i.pop('src', None); i.pop('cats_old', None)
 market = json.load(open(f'{B}/data/market_items.json'))
 # Only show café items whose photo was downloaded
 market = [m for m in market if not m[2] or os.path.exists(f'{B}/site/img/m-{m[2]}.webp')]
