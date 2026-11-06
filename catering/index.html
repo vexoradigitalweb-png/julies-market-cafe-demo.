@@ -1,0 +1,1325 @@
+<!doctype html>
+<html lang="en" data-base="/julies-market-cafe-demo./">
+<head>
+<meta charset="utf-8">
+<base href="/julies-market-cafe-demo./">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;font:14px system-ui,-apple-system,sans-serif}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<title>Kosher Catering Menu &amp; Online Quote | Julie's Market &amp; Café</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="theme-color" content="#2E4C3B">
+<meta name="description" content="193 kosher catering dishes in glatt meat or Chalav Yisrael dairy, never mixed: appetizers, platters, salads, mains, Shabbat and more. Build your order and get a quote.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Julie's Market &amp; Café">
+<meta property="og:title" content="Julie's Market &amp; Café · Kings Highway, Brooklyn">
+<meta property="og:description" content="Kosher market, café and catering at 514 Kings Highway, Brooklyn. Order on Uber Eats or build a catering quote.">
+<meta property="og:image" content="https://vexoradigitalweb-png.github.io/julies-market-cafe-demo./img/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:url" content="https://vexoradigitalweb-png.github.io/julies-market-cafe-demo./catering/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://vexoradigitalweb-png.github.io/julies-market-cafe-demo./catering/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CafeOrCoffeeShop", "@id": "https://vexoradigitalweb-png.github.io/julies-market-cafe-demo./#business", "name": "Julie's Market & Café", "alternateName": "Julie's Kitchen", "description": "Kosher dairy market and café under the Vaad Hakashrus of Flatbush, with glatt meat and Chalav Yisrael dairy catering.", "url": "https://vexoradigitalweb-png.github.io/julies-market-cafe-demo./", "image": "https://vexoradigitalweb-png.github.io/julies-market-cafe-demo./img/og.jpg", "logo": "https://vexoradigitalweb-png.github.io/julies-market-cafe-demo./img/icon-512.png", "telephone": "+1-718-573-9453", "email": "julie@jebani.com", "address": {"@type": "PostalAddress", "streetAddress": "514 Kings Hwy", "addressLocality": "Brooklyn", "addressRegion": "NY", "postalCode": "11223", "addressCountry": "US"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "08:00", "closes": "17:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:00", "closes": "14:00"}], "servesCuisine": ["Kosher", "Café", "Salads"], "hasMenu": "https://vexoradigitalweb-png.github.io/julies-market-cafe-demo./market/", "sameAs": ["https://www.instagram.com/julieebani/", "https://www.ubereats.com/store/julies-market-cafe/qobyJZ7BVXCvS2kCOyTnuw"], "makesOffer": {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Kosher catering", "url": "https://vexoradigitalweb-png.github.io/julies-market-cafe-demo./catering/", "description": "Glatt meat and Chalav Yisrael dairy catering menus, never mixed: appetizers, platters, salads, mains, brunch and Shabbat."}}}</script>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Allura&display=swap">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<style>
+/* Layout: a shop-window front page that splits into two doors (Market / Catering); catering reads like a deli counter of price tags. Colors are taken from the storefront: cream facade, green script sign, mint bistro chairs, yellow window-box flowers. */
+:root{
+  --facade:#E6F0E2; --facade-2:#D7E6D2; --ink:#1D2B23; --muted:#4F5F55; --line:#C6D8C0;
+  --sign:#2E4C3B; --sign-deep:#20382B; --on-sign:#F3EFE3; --chair:#A8D2B0; --bloom:#E9C437; --bloom-ink:#2A2410;
+  --meat:#A23B2E; --dairy:#2D5C9A; --parve:#3D7A48; --card:#FFFFFF; --shadow:rgba(32,56,43,.14); color-scheme:light;
+  --f-display:"Gloock", "Iowan Old Style", Georgia, serif;
+  --f-body:"Hanken Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --f-script:"Allura", "Snell Roundhand", "Apple Chancery", cursive;
+  --ease-out:cubic-bezier(.23,1,.32,1); --ease-io:cubic-bezier(.77,0,.175,1); --ease-drawer:cubic-bezier(.32,.72,0,1);
+  --gut:max(16px, env(safe-area-inset-left, 0px)); --gut-r:max(16px, env(safe-area-inset-right, 0px));
+}
+
+*{box-sizing:border-box}
+body{background:var(--facade);color:var(--ink);font:400 16px/1.55 var(--f-body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--facade)}
+a{color:inherit}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.02;letter-spacing:-.01em;text-wrap:balance;margin:0}
+p{margin:0}
+.wrap{padding-left:var(--gut);padding-right:var(--gut)}
+.inner{max-width:1240px;margin:0 auto}
+.eyebrow{font:600 12px/1.2 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.mono{font-family:var(--f-mono)}
+.tab{font-variant-numeric:tabular-nums}
+:focus-visible{outline:2px solid var(--bloom);outline-offset:3px;border-radius:6px}
+button{font:inherit;color:inherit;cursor:pointer}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;border:0;border-radius:999px;padding:14px 22px;font:600 15px/1 var(--f-body);text-decoration:none;transition:transform 160ms var(--ease-out),background-color 200ms ease,box-shadow 200ms ease;white-space:nowrap}
+.btn:active{transform:scale(.97)}
+.btn-bloom{background:var(--bloom);color:var(--bloom-ink)}
+.btn-sign{background:var(--sign);color:var(--on-sign)}
+.btn-ghost{background:transparent;color:inherit;box-shadow:inset 0 0 0 1.5px currentColor}
+@media (hover:hover) and (pointer:fine){ .btn-bloom:hover{box-shadow:0 8px 24px -8px var(--bloom)} .btn-sign:hover{background:var(--sign-deep)} }
+.btn .arr{transition:transform 200ms var(--ease-out)}
+@media (hover:hover) and (pointer:fine){ .btn:hover .arr{transform:translateX(3px)} }
+
+/* Header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--facade) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .inner{display:flex;align-items:center;gap:20px;min-height:68px}
+.logo{display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;line-height:.8;color:var(--sign)}
+.logo{display:block;transition:transform 160ms var(--ease-out)}
+.logo:active{transform:scale(.95)}
+.logo-art{display:block;width:118px;aspect-ratio:2246/953;background:var(--sign);-webkit-mask:url(img/logo-mark.png) center/contain no-repeat;mask:url(img/logo-mark.png) center/contain no-repeat}
+.logo-art.foot{width:180px;background:var(--chair)!important}
+nav.main{display:flex;gap:4px;margin-left:auto}
+nav.main a{text-decoration:none;font-weight:500;font-size:15px;padding:8px 12px;border-radius:999px;position:relative;transition:background-color 200ms ease}
+nav.main a[aria-current="page"]{background:var(--facade-2)}
+@media (hover:hover) and (pointer:fine){ nav.main a:hover{background:var(--facade-2)} }
+.open-pill{display:inline-flex;align-items:center;gap:8px;font:600 12px/1 var(--f-mono);letter-spacing:.04em;padding:8px 12px;border-radius:999px;background:var(--facade-2);white-space:nowrap}
+.open-pill i{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.open-pill.is-open i{background:var(--parve);box-shadow:0 0 0 0 var(--parve);animation:pulse 2.4s var(--ease-out) infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--parve) 60%,transparent)}70%{box-shadow:0 0 0 8px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.menu-btn{display:none;margin-left:auto;border:0;background:var(--facade-2);border-radius:999px;padding:10px 14px;font-weight:600}
+@media (max-width:900px){ nav.main,.top .open-pill,.top .btn-bloom{display:none} .menu-btn{display:inline-flex} }
+.sheet{position:fixed;inset:0;z-index:70;background:var(--sign);color:var(--on-sign);padding:calc(24px + env(safe-area-inset-top,0px)) var(--gut-r) 24px var(--gut);display:flex;flex-direction:column;gap:8px;clip-path:inset(0 0 100% 0);transition:clip-path 420ms var(--ease-drawer);visibility:hidden}
+.sheet.on{clip-path:inset(0 0 0 0);visibility:visible}
+.sheet a{font:400 44px/1.1 var(--f-display);text-decoration:none}
+.sheet .x{align-self:flex-end;border:0;background:transparent;color:inherit;font-weight:600}
+
+/* Page transition panel */
+.wipe{position:fixed;inset:0;z-index:80;background:var(--sign);pointer-events:none;clip-path:inset(0 0 100% 0);display:grid;place-items:center}
+.wipe .wipe-logo{width:min(300px,62vw);background:var(--chair)!important}
+
+/* Reveal: visible by default; only below-the-fold blocks are lifted by script, then dropped in on scroll */
+.rv.pre{opacity:0;transform:translateY(24px)}
+.rv{transition:opacity 700ms var(--ease-out),transform 700ms var(--ease-out)}
+.split .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.split .w>span{display:inline-block}
+
+/* HOME hero */
+.hero{padding-block:clamp(28px,5vw,64px) 0}
+.hero .inner{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,56px);align-items:center}
+.hero h1{font-size:clamp(40px,5.2vw,80px)}
+.hero h1 em{font-style:normal;color:var(--sign)}
+.hero .lede{font-size:clamp(17px,1.6vw,20px);max-width:36ch;margin-top:22px;color:var(--muted)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.store-frame{position:relative;border-radius:200px 200px 18px 18px;overflow:hidden;aspect-ratio:4/4.6;max-height:72vh;margin-left:auto;max-width:100%;background:var(--facade-2);box-shadow:0 30px 60px -30px var(--shadow)}
+.store-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;transform:scale(1.12);animation:push 14s var(--ease-out) forwards}
+@keyframes push{to{transform:scale(1)}}
+.stamp{position:absolute;left:-14px;bottom:28px;width:124px;height:124px;border-radius:50%;background:var(--bloom);color:var(--bloom-ink);display:grid;place-items:center;text-align:center;font:600 11px/1.25 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;rotate:-8deg;box-shadow:0 10px 30px -10px var(--shadow)}
+.stamp b{display:block;font:400 30px/1 var(--f-display);letter-spacing:0;text-transform:none}
+.hero-vaad{display:flex;align-items:center;gap:12px;margin-top:22px;color:var(--muted);font-size:14px}
+.hero-vaad img{width:58px;height:auto;opacity:.8}
+.stamp.vaad{width:168px;height:auto;aspect-ratio:740/456;background:none;border-radius:50%;bottom:24px;left:-22px;rotate:-7deg;box-shadow:0 14px 34px -12px rgba(0,0,0,.45)}
+.stamp.vaad img{display:block;width:100%;height:100%}
+@media (max-width:860px){ .stamp.vaad{width:132px;height:auto;left:auto;right:10px;bottom:10px} }
+.hero-wrap{position:relative}
+.today{margin-top:clamp(28px,4vw,48px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 28px;padding-block:14px;font:500 14px/1.3 var(--f-mono)}
+.today span{color:var(--muted)}
+.hero .inner.today{display:flex}
+@media (max-width:860px){ .hero .inner{grid-template-columns:1fr} .store-frame{aspect-ratio:4/3;border-radius:160px 160px 16px 16px} .stamp{left:auto;right:12px;bottom:12px;width:104px;height:104px} }
+
+/* Two doors */
+.doors{padding-block:clamp(56px,8vw,112px)}
+.doors .row{display:flex;gap:16px;min-height:460px}
+.door{flex:1;position:relative;border-radius:18px;overflow:hidden;text-decoration:none;color:var(--on-sign);display:flex;flex-direction:column;justify-content:flex-end;padding:28px;background:var(--sign-deep);transition:flex-grow 600ms var(--ease-io);isolation:isolate}
+.door img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 900ms var(--ease-out)}
+.door::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(16,28,21,.88) 0%,rgba(16,28,21,.35) 55%,rgba(16,28,21,.05) 100%)}
+.door h2{font-size:clamp(36px,4.4vw,60px);color:#F7F3E8}
+.door p{max-width:34ch;margin-top:10px;color:#E6E1D2}
+.door .tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.door .go{margin-top:18px;display:inline-flex;gap:8px;font-weight:600;color:#F7F3E8}
+@media (hover:hover) and (pointer:fine){ .door:hover{flex-grow:1.5} .door:hover img{transform:scale(1.06)} }
+@media (max-width:760px){ .doors .row{flex-direction:column;min-height:0} .door{min-height:380px} }
+
+/* kosher tags */
+.k{display:inline-flex;align-items:center;gap:6px;font:600 11px/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;padding:6px 9px;border-radius:999px;background:var(--card);color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}
+.k i{width:7px;height:7px;border-radius:50%}
+.k.M i{background:var(--meat)} .k.D i{background:var(--dairy)} .k.P i{background:var(--parve)}
+.k.M{color:var(--meat)} .k.D{color:var(--dairy)} .k.P{color:var(--parve)}
+.door .k{background:rgba(247,243,232,.94);box-shadow:none}
+.door .k.M{color:#A23B2E} .door .k.D{color:#2D5C9A} .door .k.P{color:#3D7A48}
+
+/* Section heads */
+.sec{padding-block:clamp(56px,8vw,112px)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,auto);gap:24px;align-items:end;margin-bottom:clamp(28px,4vw,48px)}
+.sec-head h2{font-size:clamp(40px,5.6vw,80px)}
+.sec-head p{max-width:42ch;color:var(--muted)}
+@media (max-width:760px){ .sec-head{grid-template-columns:1fr} }
+
+/* Dish reel: vertical scroll drives a horizontal track */
+.reel{position:relative}
+.reel .stick{position:sticky;top:calc(68px + env(safe-area-inset-top,0px));overflow:hidden;padding-block:24px}
+.reel .track{display:flex;gap:18px;will-change:transform;padding-left:var(--gut)}
+.dish{flex:0 0 clamp(240px,26vw,340px);text-decoration:none}
+.dish .ph{aspect-ratio:4/5;border-radius:14px;overflow:hidden;background:var(--facade-2)}
+.dish img{width:100%;height:100%;object-fit:cover;transition:transform 700ms var(--ease-out)}
+@media (hover:hover) and (pointer:fine){ .dish:hover img{transform:scale(1.05)} }
+.dish .meta{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-top:12px}
+.dish h3{font-size:22px;line-height:1.1}
+.dish .from{font:500 13px/1 var(--f-mono);color:var(--muted);white-space:nowrap}
+@media (max-width:760px){ .reel{height:auto!important} .reel .stick{position:static} .reel .track{overflow-x:auto;scroll-snap-type:x mandatory;padding-right:var(--gut-r);transform:none!important} .dish{scroll-snap-align:start;flex-basis:72vw} }
+
+/* Reviews */
+.reviews{background:var(--sign);color:var(--on-sign)}
+.reviews .inner{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,2fr);gap:clamp(28px,5vw,72px)}
+.rating{font:400 clamp(96px,14vw,180px)/.85 var(--f-display);color:var(--bloom)}
+.stars{display:flex;gap:4px;margin-top:14px}
+.stars svg{width:22px;height:22px}
+.quotes{display:grid;gap:28px}
+.quotes blockquote{margin:0;border-top:1px solid color-mix(in srgb,var(--on-sign) 22%,transparent);padding-top:20px}
+.quotes q{font:400 clamp(24px,2.6vw,34px)/1.18 var(--f-display);quotes:"\201C" "\201D"}
+.quotes cite{display:block;margin-top:10px;font:500 13px/1 var(--f-mono);font-style:normal;color:color-mix(in srgb,var(--on-sign) 70%,transparent)}
+.reviews .btn-bloom{margin-top:24px}
+@media (max-width:760px){ .reviews .inner{grid-template-columns:1fr} }
+
+/* Visit */
+.visit .inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,72px)}
+.hours{width:100%;border-collapse:collapse;font:500 15px/1 var(--f-mono)}
+.hours td{padding:14px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right}
+.hours tr.now td{color:var(--sign);font-weight:600}
+.hours tr.now td:first-child::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--bloom);margin-right:10px;vertical-align:middle}
+.addr{font:400 clamp(34px,4vw,52px)/1.05 var(--f-display)}
+a.maplink{display:block;text-decoration:none}
+a.maplink .maptag{display:block;margin-top:10px;font:600 12px/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);transition:color 200ms ease}
+@media (hover:hover) and (pointer:fine){ a.maplink:hover .maptag{color:var(--ink)} a.tel:hover{text-decoration:underline} }
+a.tel{text-decoration:none;display:inline-block}
+a[href^="tel:"],a[data-email]{user-select:auto;-webkit-user-select:auto}
+.cline a.val{text-decoration:none}
+.contact-list{display:grid;gap:10px;margin-top:22px}
+.cline{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 16px;border-radius:12px;background:var(--card);box-shadow:inset 0 0 0 1px var(--line)}
+.cline .lbl{font:600 11px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.cline .val{font:600 17px/1.2 var(--f-body);user-select:all}
+.copy{border:0;background:var(--facade-2);border-radius:999px;padding:8px 12px;font:600 12px/1 var(--f-mono);transition:transform 160ms var(--ease-out)}
+.copy:active{transform:scale(.96)}
+@media (max-width:760px){ .visit .inner{grid-template-columns:1fr} }
+
+/* Instagram band */
+.ig{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
+.ig a{aspect-ratio:1;overflow:hidden;border-radius:8px;display:block}
+.ig img{width:100%;height:100%;object-fit:cover;transition:transform 600ms var(--ease-out)}
+@media (hover:hover) and (pointer:fine){ .ig a:hover img{transform:scale(1.07)} }
+@media (max-width:700px){ .ig{grid-template-columns:repeat(3,minmax(0,1fr))} }
+
+/* MARKET page */
+.page-hero{padding-block:clamp(36px,6vw,88px) clamp(24px,4vw,48px)}
+.page-hero h1{font-size:clamp(48px,7.4vw,112px)}
+.page-hero .lede{max-width:52ch;margin-top:20px;font-size:clamp(17px,1.6vw,20px);color:var(--muted)}
+.dairy-band{background:var(--dairy);color:#F5F7FB;border-radius:18px;padding:clamp(24px,4vw,40px);display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:center}
+.dairy-band .vaad-seal{width:72px;height:auto;opacity:.9}
+.dairy-band .seal{width:96px;height:96px;border-radius:50%;border:2px dashed rgba(245,247,251,.7);display:grid;place-items:center;text-align:center;font:600 11px/1.3 var(--f-mono);letter-spacing:.1em}
+.dairy-band h3{font-size:clamp(26px,3vw,38px);color:#fff}
+.dairy-band p{margin-top:8px;color:#E3EAF6;max-width:60ch}
+@media (max-width:600px){ .dairy-band{grid-template-columns:1fr} }
+.depts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
+.dept{padding:26px 20px 26px 0;border:0;border-bottom:1px solid var(--line);background:none;color:inherit;font:inherit;text-align:left;cursor:pointer;display:flex;flex-direction:column;align-items:flex-start;transition:background-color 200ms var(--ease-out)}
+.dept .dept-n{margin-top:auto;padding-top:14px;font:600 12px/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--sign)}
+.dept[aria-pressed="true"] h3{color:var(--sign)}
+.dept[aria-pressed="true"] .dept-n::before{content:"● "}
+@media (hover:hover) and (pointer:fine){ .dept:hover .dept-n{text-decoration:underline} }
+.dept h3{font-size:clamp(26px,2.6vw,34px)}
+.dept p{color:var(--muted);margin-top:6px;font-size:15px}
+@media (max-width:860px){ .depts{grid-template-columns:repeat(2,minmax(0,1fr))} }
+.favs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.fav{background:var(--card);border-radius:16px;padding:22px;box-shadow:inset 0 0 0 1px var(--line);display:flex;flex-direction:column;gap:10px;min-height:180px}
+.fav h3{font-size:24px;line-height:1.1}
+.fav{padding:12px 12px 20px}
+.fav .fph{aspect-ratio:4/3;border-radius:10px;overflow:hidden;margin-bottom:6px}
+.fav .fph img{width:100%;height:100%;object-fit:cover;transition:transform 700ms var(--ease-out)}
+@media (hover:hover) and (pointer:fine){ .fav:hover .fph img{transform:scale(1.05)} }
+.fav h3,.fav p{padding-inline:8px}
+.fav p{color:var(--muted);font-size:15px;margin-top:auto}
+@media (max-width:860px){ .favs{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:480px){ .favs{grid-template-columns:1fr} }
+/* Stations: three counters, stacked like order tickets */
+.stations{padding-top:clamp(56px,8vw,112px)}
+.stack .inner{display:flex;flex-direction:column;gap:24px}
+.station{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(20px,3.4vw,48px);align-items:center;border-radius:24px;padding:clamp(18px,2.6vw,32px);transform-origin:50% 0;box-shadow:0 30px 60px -36px var(--shadow)}
+.station{position:relative}
+.st-dim{position:absolute;inset:0;border-radius:inherit;background:#0b120e;opacity:0;pointer-events:none}
+.st-panini{z-index:1}.st-coffee{z-index:2}.st-cheese{z-index:3}
+.st-panini{background:var(--bloom);color:var(--bloom-ink)}
+.st-coffee{background:var(--sign);color:var(--on-sign)}
+.st-cheese{background:var(--card);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line),0 30px 60px -36px var(--shadow)}
+.st-media{aspect-ratio:4/4.2;border-radius:16px;overflow:hidden;background:rgba(0,0,0,.08);max-width:100%}
+.st-media img{width:100%;height:100%;object-fit:cover;display:block}
+.st-blank{background:var(--facade-2)}
+.st-trio{display:grid;grid-template-columns:1.2fr 1fr;grid-template-rows:1fr 1fr;gap:8px;background:transparent}
+.st-trio img{border-radius:12px;min-height:0}
+.st-trio img:first-child{grid-row:1/3}
+.st-body{min-width:0;display:flex;flex-direction:column;gap:14px}
+.station h3{font-size:clamp(38px,4.6vw,64px)}
+.st-lede{font-size:clamp(16px,1.4vw,19px);max-width:44ch;opacity:.86}
+.st-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:6px}
+.st-cols h4{font:600 12px/1 var(--f-body);letter-spacing:.12em;text-transform:uppercase;margin:16px 0 8px;opacity:.72}
+.st-cols > div > h4:first-child{margin-top:0}
+.st-list,.st-steps{margin:0;padding:0;list-style:none;display:flex;flex-direction:column}
+.st-list li,.st-steps li{font:400 clamp(18px,1.6vw,22px)/1.25 var(--f-display);padding:7px 0;border-bottom:1px solid color-mix(in srgb,currentColor 18%,transparent)}
+.st-steps{counter-reset:st}
+.st-steps li{counter-increment:st;display:flex;gap:12px;align-items:baseline}
+.st-steps li::before{content:counter(st);font:600 12px/1 var(--f-mono);width:22px;height:22px;flex:none;border-radius:50%;display:grid;place-items:center;background:var(--bloom-ink);color:var(--bloom);translate:0 -2px}
+.st-tags{flex-direction:row;flex-wrap:wrap;gap:8px}
+.st-tags li{border:0;padding:9px 14px;border-radius:999px;background:var(--facade-2);font-size:18px}
+.st-cheese .st-cols{grid-template-columns:1fr}
+@media (max-width:860px){ .station{grid-template-columns:1fr} .st-media{aspect-ratio:16/11} }
+@media (max-width:520px){ .st-cols{grid-template-columns:1fr;gap:4px} }
+.mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:22px 16px}
+.mcard{display:flex;flex-direction:column;gap:10px}
+.mcard .ph{position:relative;aspect-ratio:5/4;border-radius:14px;overflow:hidden;background:var(--facade-2)}
+.mcard img{width:100%;height:100%;object-fit:cover;transition:transform 700ms var(--ease-out)}
+@media (hover:hover) and (pointer:fine){ .mcard:hover img{transform:scale(1.05)} }
+.mcard h3{font-size:21px;line-height:1.12}
+@media (max-width:560px){ .mgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px} .mcard h3{font-size:17px} .mcard .ph{border-radius:10px} }
+.mcard .sec-l{font:500 11px/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.mcard .mprice{font:600 15px/1.2 var(--f-mono);color:var(--sign);margin-top:-4px}
+.mcard .mprice.ask{font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.msub{grid-column:1/-1;font:400 clamp(24px,2.4vw,30px)/1.1 var(--f-display);padding-top:18px;border-top:1px solid var(--line);margin-top:8px}
+.msub:first-child{margin-top:0;border-top:0;padding-top:0}
+.photo-slot{border:1.5px dashed var(--line);border-radius:18px;padding:28px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;color:var(--muted)}
+.cta-split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.cta-card{border-radius:18px;padding:clamp(24px,4vw,40px);display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.cta-card h3{font-size:clamp(30px,3.4vw,44px)}
+.cta-card.uber{background:var(--sign);color:var(--on-sign)}
+.cta-card.rev{background:var(--bloom);color:var(--bloom-ink)}
+@media (max-width:760px){ .cta-split{grid-template-columns:1fr} }
+
+/* CATERING */
+.kitchen{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:28px}
+.kbtn{border:0;text-align:left;border-radius:16px;padding:20px;background:var(--card);box-shadow:inset 0 0 0 1.5px var(--line);display:flex;flex-direction:column;gap:8px;transition:box-shadow 200ms ease,transform 160ms var(--ease-out),background-color 200ms ease}
+.kbtn:active{transform:scale(.98)}
+.kbtn .k{align-self:flex-start}
+.kbtn b{font:400 26px/1.05 var(--f-display)}
+.kbtn span{font-size:14px;color:var(--muted)}
+.kbtn[aria-pressed="true"]{box-shadow:inset 0 0 0 2.5px var(--sign);background:color-mix(in srgb,var(--chair) 22%,var(--card))}
+.kbtn[data-k="M"][aria-pressed="true"]{box-shadow:inset 0 0 0 2.5px var(--meat);background:color-mix(in srgb,var(--meat) 9%,var(--card))}
+.kbtn[data-k="D"][aria-pressed="true"]{box-shadow:inset 0 0 0 2.5px var(--dairy);background:color-mix(in srgb,var(--dairy) 9%,var(--card))}
+@media (max-width:700px){ .kitchen{grid-template-columns:1fr} }
+.rule-note{margin-top:14px;font-size:14px;color:var(--muted);max-width:70ch}
+.tools{position:sticky;top:calc(68px + env(safe-area-inset-top,0px));z-index:20;background:color-mix(in srgb,var(--facade) 94%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding-block:14px;border-bottom:1px solid var(--line)}
+.tools .inner{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1 1 420px;min-width:0;padding-block:2px}
+.chips::-webkit-scrollbar{display:none}
+.chip{border:0;flex:0 0 auto;border-radius:999px;padding:9px 14px;font:500 14px/1 var(--f-body);background:var(--facade-2);transition:background-color 200ms ease,color 200ms ease,transform 160ms var(--ease-out)}
+.chip:active{transform:scale(.96)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--facade)}
+.chip small{font-family:var(--f-mono);opacity:.6;margin-left:4px}
+.search{flex:0 1 260px;min-width:0;border:0;border-radius:999px;padding:11px 16px;background:var(--card);box-shadow:inset 0 0 0 1.5px var(--line);font:inherit;color:inherit}
+.count-line{padding-block:20px 0;color:var(--muted);font:500 13px/1 var(--f-mono)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px 18px;padding-block:20px 80px}
+.item{display:flex;flex-direction:column;background:var(--card);border-radius:16px;overflow:hidden;box-shadow:inset 0 0 0 1px var(--line);transition:opacity 300ms ease,filter 300ms ease}
+.item .ph{position:relative;aspect-ratio:4/3;background:var(--facade-2);overflow:hidden}
+.item .ph img{width:100%;height:100%;object-fit:cover;transition:transform 700ms var(--ease-out),opacity 400ms ease}
+.item .ph .k{position:absolute;left:10px;top:10px}
+.item .ph .n{position:absolute;right:10px;top:10px;font:600 11px/1 var(--f-mono);background:rgba(20,30,24,.66);color:#F3EFE3;padding:6px 8px;border-radius:999px}
+@media (hover:hover) and (pointer:fine){ .item:hover .ph img{transform:scale(1.05)} }
+.tag-ph{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;background:repeating-linear-gradient(135deg,var(--facade-2) 0 12px,color-mix(in srgb,var(--facade-2) 70%,var(--card)) 12px 24px)}
+.tag-ph b{font:400 26px/1.05 var(--f-display)}
+.tag-ph span{font:500 11px/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.item .body{padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.item h3{font-size:22px;line-height:1.12}
+.item .d{font-size:14px;color:var(--muted)}
+.item .row{display:flex;gap:8px;align-items:center;margin-top:auto;padding-top:10px}
+.item select{flex:1;min-width:0;border:0;border-radius:10px;padding:10px;background:var(--facade-2);font:500 14px/1.2 var(--f-body);color:inherit}
+.qty{display:flex;align-items:center;border-radius:10px;background:var(--facade-2)}
+.qty button{border:0;background:transparent;width:32px;height:38px;font-size:18px}
+.qty input{width:34px;border:0;background:transparent;text-align:center;font:600 14px/1 var(--f-mono);color:inherit;-moz-appearance:textfield}
+.qty input::-webkit-outer-spin-button,.qty input::-webkit-inner-spin-button{-webkit-appearance:none}
+.add{border:0;border-radius:10px;padding:0 14px;height:38px;background:var(--sign);color:var(--on-sign);font-weight:600;transition:transform 160ms var(--ease-out),background-color 200ms ease}
+.add:active{transform:scale(.95)}
+.price-line{display:flex;justify-content:space-between;align-items:baseline;font:600 15px/1 var(--f-mono)}
+.price-line small{font-weight:400;color:var(--muted)}
+.item.off{opacity:.42;filter:grayscale(.9)}
+.item.off .add{background:var(--line);color:var(--muted);cursor:not-allowed}
+.item .why{display:none;font:500 12px/1.3 var(--f-mono);color:var(--muted)}
+.item.off .why{display:block}
+.empty{padding:60px 0;color:var(--muted)}
+
+/* Quote tray */
+.tray-btn{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:45;display:flex;align-items:center;gap:12px;border:0;border-radius:999px;padding:10px 12px 10px 20px;background:var(--ink);color:var(--facade);box-shadow:0 18px 40px -14px var(--shadow);transition:transform 220ms var(--ease-out)}
+.tray-btn:active{transform:scale(.97)}
+.tray-btn .tot{font:600 15px/1 var(--f-mono)}
+.tray-btn .cnt{min-width:30px;height:30px;border-radius:999px;background:var(--bloom);color:var(--bloom-ink);display:grid;place-items:center;font:700 13px/1 var(--f-mono)}
+.tray-btn.bump{animation:bump 420ms var(--ease-out)}
+@keyframes bump{30%{transform:scale(1.08)}100%{transform:scale(1)}}
+@media (max-width:900px){ .tray-btn{bottom:calc(84px + env(safe-area-inset-bottom,0px))} }
+.scrim{position:fixed;inset:0;z-index:89;background:rgba(10,16,12,.42);opacity:0;pointer-events:none;transition:opacity 300ms ease}
+.scrim.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;z-index:90;width:min(520px,100%);background:var(--facade);box-shadow:-30px 0 60px -30px var(--shadow);transform:translateX(102%);transition:transform 480ms var(--ease-drawer);display:flex;flex-direction:column;padding:calc(18px + env(safe-area-inset-top,0px)) calc(20px + env(safe-area-inset-right,0px)) calc(18px + env(safe-area-inset-bottom,0px)) 20px}
+.drawer.on{transform:translateX(0)}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.drawer-head h2{font-size:34px}
+.drawer .x{border:0;background:var(--facade-2);border-radius:999px;padding:8px 14px;font-weight:600}
+.drawer-body{flex:1;overflow-y:auto;padding-block:16px;display:flex;flex-direction:column;gap:18px;overscroll-behavior:contain}
+.lines{display:flex;flex-direction:column}
+.line{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:12px;align-items:center;padding-block:10px;border-bottom:1px solid var(--line)}
+.line img,.line .noimg{width:52px;height:52px;border-radius:10px;object-fit:cover;background:var(--facade-2)}
+.line .nm{font-weight:600;font-size:15px;line-height:1.25}
+.line .sub{font:500 12px/1.3 var(--f-mono);color:var(--muted)}
+.line .rt{text-align:right;font:600 14px/1.3 var(--f-mono)}
+.line .rm{border:0;background:none;color:var(--muted);font:500 12px/1 var(--f-mono);text-decoration:underline;padding:4px 0}
+.est{display:flex;justify-content:space-between;align-items:baseline;padding:14px 16px;border-radius:12px;background:var(--facade-2)}
+.est b{font:400 34px/1 var(--f-display)}
+.est small{display:block;color:var(--muted);font-size:12px;margin-top:4px}
+form.q{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+form.q .full{grid-column:1/-1}
+form.q label{display:flex;flex-direction:column;gap:6px;font:600 12px/1 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+form.q input,form.q select,form.q textarea{border:0;border-radius:10px;padding:12px;background:var(--card);box-shadow:inset 0 0 0 1.5px var(--line);font:500 15px/1.3 var(--f-body);color:var(--ink);text-transform:none;letter-spacing:0;width:100%}
+form.q textarea{min-height:84px;resize:vertical}
+form.q.tried input:invalid{box-shadow:inset 0 0 0 1.5px var(--meat)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.err{color:var(--meat);font-size:14px}
+.kmode{display:flex;align-items:center;gap:8px;font-size:14px}
+.done{display:flex;flex-direction:column;gap:14px;align-items:flex-start;padding-block:12px}
+.done h3{font-size:38px}
+.ref{font:600 22px/1 var(--f-mono);background:var(--bloom);color:var(--bloom-ink);padding:10px 14px;border-radius:10px}
+.fly{position:fixed;z-index:95;border-radius:12px;object-fit:cover;pointer-events:none;box-shadow:0 20px 40px -20px var(--shadow)}
+
+/* About */
+.about .inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(28px,5vw,72px);align-items:start}
+.portrait{aspect-ratio:4/5;border-radius:18px;border:1.5px dashed var(--line);display:grid;place-items:center;text-align:center;color:var(--muted);padding:24px;background:var(--facade-2)}
+.portrait b{display:block;font:400 64px/1 var(--f-script);color:var(--sign)}
+.prose p{font-size:18px;max-width:60ch;margin-top:16px}
+.prose .draft{font:500 13px/1.4 var(--f-mono);color:var(--muted);border-left:3px solid var(--bloom);padding-left:12px;margin-top:20px}
+.offers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:28px}
+.offers div{border-top:2px solid var(--ink);padding-top:12px}
+.offers b{font:400 24px/1.1 var(--f-display);display:block}
+.offers span{font-size:14px;color:var(--muted)}
+@media (max-width:860px){ .about .inner{grid-template-columns:1fr} .offers{grid-template-columns:1fr} }
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.ccard{background:var(--card);border-radius:18px;padding:24px;box-shadow:inset 0 0 0 1px var(--line);display:flex;flex-direction:column;gap:10px;min-width:0}
+.ccard h3{font-size:30px}
+.ccard .big{font:600 22px/1.2 var(--f-mono);user-select:all;word-break:break-word}
+.ccard .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+@media (max-width:760px){ .contact-grid{grid-template-columns:1fr} }
+
+/* Dashboard */
+.dash-row{display:grid;grid-template-columns:110px minmax(0,1.3fr) minmax(0,1fr) 120px 150px;gap:14px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.dash-row .refc{font:600 13px/1 var(--f-mono)}
+.dash-row .who b{display:block}
+.dash-row .who span,.dash-row .ev{font-size:14px;color:var(--muted)}
+.dash-row select{border:0;border-radius:10px;padding:10px;background:var(--facade-2);font:600 13px/1 var(--f-mono);color:inherit}
+.dash-row details{grid-column:1/-1}
+.dash-row summary{cursor:pointer;font:500 13px/1 var(--f-mono);color:var(--muted)}
+.dash-items{margin-top:10px;font:500 13px/1.6 var(--f-mono)}
+.st-New{color:var(--bloom-ink);background:var(--bloom)!important}
+@media (max-width:760px){ .dash-row{grid-template-columns:1fr 1fr} }
+
+/* Mobile action bar */
+.actionbar{display:none}
+@media (max-width:900px){
+  .actionbar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));position:fixed;left:0;right:0;bottom:0;z-index:46;background:var(--sign-deep);color:var(--on-sign);padding:8px var(--gut-r) calc(8px + env(safe-area-inset-bottom,0px)) var(--gut)}
+  .actionbar a,.actionbar button{border:0;background:transparent;color:inherit;display:flex;flex-direction:column;align-items:center;gap:4px;font:600 12px/1 var(--f-body);text-decoration:none;padding:6px 0}
+  .actionbar svg{width:22px;height:22px}
+  .actionbar .q{color:var(--bloom)}
+  footer.site{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))!important}
+}
+footer.site{background:var(--sign-deep);color:var(--on-sign);padding-block:56px}
+footer.site .inner{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:28px}
+footer.site .script{font:400 64px/0.9 var(--f-script);color:var(--chair)}
+footer.site h4{font:600 11px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;margin:0 0 12px;color:color-mix(in srgb,var(--on-sign) 60%,transparent)}
+footer.site a{display:block;text-decoration:none;padding:3px 0}
+footer.site .fine{grid-column:1/-1;border-top:1px solid color-mix(in srgb,var(--on-sign) 18%,transparent);padding-top:18px;font:500 12px/1.4 var(--f-mono);color:color-mix(in srgb,var(--on-sign) 60%,transparent)}
+@media (max-width:760px){ footer.site .inner{grid-template-columns:minmax(0,1fr) minmax(0,1fr)} }
+
+
+
+/* Shutter: the storefront's roll-up shutter, used for the hero reveal and page transitions */
+.shutter{position:absolute;inset:0;z-index:2;pointer-events:none;transform:translateY(-101%);background:repeating-linear-gradient(to bottom,var(--sign) 0 15px,var(--sign-deep) 15px 17px)}
+.shutter::after{content:"";position:absolute;left:50%;bottom:14px;width:64px;height:6px;margin-left:-32px;border-radius:3px;background:var(--bloom)}
+.wipe{background:repeating-linear-gradient(to bottom,var(--sign) 0 15px,var(--sign-deep) 15px 17px)}
+.ribbon{overflow:hidden;background:var(--sign);color:var(--on-sign);padding-block:18px;margin-top:clamp(28px,4vw,48px)}
+.rtrack{display:flex;width:max-content;will-change:transform}
+.rset{display:flex;align-items:center;gap:28px;padding-right:28px;font:400 clamp(26px,3.2vw,44px)/1 var(--f-display);white-space:nowrap}
+.rset i{width:10px;height:10px;border-radius:50%;background:var(--bloom);flex:none}
+.footbig{grid-column:1/-1;min-width:0;overflow:hidden;line-height:1;margin-block:10px 0}
+.footbig span{display:block;font:400 clamp(104px,26vw,380px)/1.05 var(--f-script);padding:.06em .12em .16em .22em;color:var(--chair);white-space:nowrap;will-change:transform}
+.visit-h{font-size:clamp(40px,5vw,72px)}
+.visually-hidden{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+::selection{background:var(--bloom);color:var(--bloom-ink)}
+html{scrollbar-color:var(--sign) var(--facade-2);accent-color:var(--sign)}
+input,textarea{caret-color:var(--sign)}
+html.lenis,html.lenis body{height:auto}
+.motion .store-frame img{animation:none;transform:none}
+.motion .reel{height:auto!important}
+.btn{transition:transform 160ms var(--ease-out),background-color 200ms ease,box-shadow 200ms ease,translate 380ms var(--ease-out)}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
+/* Photo zoom */
+.mail-opts{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+[hidden]{display:none!important}
+.mail-opts[hidden]{display:none}
+@media (pointer:coarse){
+  input,select,textarea{font-size:16px!important}
+  .chip{padding:13px 16px}
+  .qty button{width:44px;height:44px}
+  .qty input{width:40px}
+  footer.site a{padding:11px 0}
+  .ccard .big{display:inline-block;padding:8px 0}
+  .addr,.maplink{padding-block:6px}
+  .btn{min-height:44px}
+  .add{height:44px}
+  .qty{min-height:44px}
+  .cline .val{display:inline-block;padding-block:10px}
+}
+.mcard .sec-l,.tag-ph span{font-size:12px}
+.drawer{visibility:hidden;transition:transform 480ms var(--ease-drawer),visibility 0s linear 480ms}
+.drawer.on{visibility:visible;transition:transform 480ms var(--ease-drawer),visibility 0s}
+.send-row{display:flex;flex-wrap:wrap;gap:10px;width:100%}
+.send-row .btn{flex:1 1 200px;justify-content:center}
+.lb{position:fixed;inset:0;z-index:140;display:grid;place-items:center;padding:calc(64px + env(safe-area-inset-top,0px)) max(64px, env(safe-area-inset-right,0px)) calc(72px + env(safe-area-inset-bottom,0px)) max(64px, env(safe-area-inset-left,0px));background:rgba(8,13,10,0);transition:background-color 320ms ease}
+.lb.on{background:rgba(8,13,10,.94);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.lb-img{max-width:min(1100px,100%);max-height:calc(100vh - 160px);max-height:calc(100dvh - 160px);object-fit:contain;border-radius:12px;box-shadow:0 30px 80px -30px rgba(0,0,0,.6);transform-origin:0 0;will-change:transform}
+.lb-cap{position:absolute;left:0;right:0;bottom:calc(24px + env(safe-area-inset-bottom,0px));text-align:center;color:#F3EFE3;font:400 20px/1.2 var(--f-display);padding-inline:72px;opacity:0;transition:opacity 260ms ease}
+.lb.on .lb-cap,.lb.on .lb-btn,.lb.on .lb-count{opacity:1}
+.lb-btn{position:absolute;width:48px;height:48px;border-radius:50%;border:0;display:grid;place-items:center;background:rgba(243,239,227,.14);color:#F3EFE3;opacity:0;transition:opacity 260ms ease,background-color 200ms ease,transform 160ms var(--ease-out)}
+.lb-btn svg{width:22px;height:22px}
+.lb-btn:active{transform:scale(.94)}
+@media (hover:hover) and (pointer:fine){ .lb-btn:hover{background:rgba(243,239,227,.26)} }
+.lb-x{top:calc(14px + env(safe-area-inset-top,0px));right:max(14px, env(safe-area-inset-right,0px))}
+.lb-prev{left:max(12px, env(safe-area-inset-left,0px));top:50%;margin-top:-24px}
+.lb-next{right:max(12px, env(safe-area-inset-right,0px));top:50%;margin-top:-24px}
+.lb-count{position:absolute;top:calc(28px + env(safe-area-inset-top,0px));left:max(20px, env(safe-area-inset-left,0px));color:rgba(243,239,227,.8);font-size:13px;opacity:0;transition:opacity 260ms ease}
+.lb-btn[hidden],.lb-count:empty{display:none}
+@media (max-width:600px){ .lb{padding-inline:12px} .lb-prev,.lb-next{top:auto;bottom:calc(16px + env(safe-area-inset-bottom,0px));margin-top:0} .lb-cap{bottom:calc(78px + env(safe-area-inset-bottom,0px));padding-inline:16px;font-size:18px} }
+.item .ph img,.mcard .ph img,.fav .fph img,.st-media img,.dish .ph img,.store-frame img{cursor:zoom-in}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:120;translate:-50% 0;background:var(--ink);color:var(--facade);padding:12px 18px;border-radius:999px;font-weight:600;font-size:14px;opacity:0;transform:translateY(12px);transition:opacity 250ms ease,transform 300ms var(--ease-out);pointer-events:none}
+.toast.on{opacity:1;transform:translateY(0)}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:1ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}
+  .rv,.rv.pre{opacity:1;transform:none}
+  .store-frame img{transform:none}
+  .door,.door img,.dish img,.item .ph img{transition:none}
+}
+</style>
+
+
+</head>
+<body>
+<header class="top wrap">
+  <div class="inner">
+    <a class="logo" href="/julies-market-cafe-demo./" aria-label="Julie's Market Café, home"><span class="logo-art" aria-hidden="true"></span></a>
+    <nav class="main" aria-label="Main">
+      <a href="/julies-market-cafe-demo./" data-nav="home">Home</a>
+      <a href="/julies-market-cafe-demo./market/" data-nav="market">Market &amp; Cafe</a>
+      <a href="/julies-market-cafe-demo./catering/" data-nav="catering">Catering</a>
+      <a href="/julies-market-cafe-demo./about/" data-nav="about">About Julie</a>
+      <a href="/julies-market-cafe-demo./contact/" data-nav="contact">Contact</a>
+    </nav>
+    <span class="open-pill" id="openPill"><i></i><span>Checking hours</span></span>
+    <a class="btn btn-bloom" href="/julies-market-cafe-demo./catering/">Get a quote <span class="arr">→</span></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="sheet">Menu</button>
+  </div>
+</header>
+
+<div class="sheet" id="sheet" aria-label="Site menu">
+  <button class="x" id="sheetX">Close</button>
+  <a href="/julies-market-cafe-demo./">Home</a><a href="/julies-market-cafe-demo./market/">Market &amp; Cafe</a><a href="/julies-market-cafe-demo./catering/">Catering</a><a href="/julies-market-cafe-demo./about/">About Julie</a><a href="/julies-market-cafe-demo./contact/">Contact</a>
+</div>
+<div class="wipe" aria-hidden="true"><span class="logo-art wipe-logo"></span></div>
+
+<main>
+<!-- ============ HOME ============ -->
+<section data-view="home" hidden>
+  <div class="hero wrap">
+    <div class="inner">
+      <div>
+        <h1 class="split">A kosher <em>market &amp; café</em> located on Kings Highway, and a catering service for all.</h1>
+        <p class="lede">Salads, bowls, coffee and fresh baking at 514 Kings Highway, Brooklyn. Platters, boards and full catering menus for Shabbat, holidays and every celebration in between.</p>
+        <div class="ctas">
+          <a class="btn btn-sign" href="/julies-market-cafe-demo./market/">Visit the market <span class="arr">→</span></a>
+          <a class="btn btn-bloom" href="/julies-market-cafe-demo./catering/">Plan your event <span class="arr">→</span></a>
+        </div>
+        <p class="hero-vaad"><img src="img/vaad-flatbush.png" alt="" width="740" height="456"><span>Kosher under the Vaad Hakashrus of Flatbush</span></p>
+      </div>
+      <div class="hero-wrap">
+        <div class="store-frame"><div class="shutter" aria-hidden="true"></div><img src="img/storefront-1200.webp" srcset="img/storefront-800.webp 800w, img/storefront-1200.webp 1200w, img/storefront-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 42vw" width="1200" height="900" alt="The front of Julie's Market Café at 514 Kings Highway, with green bistro chairs and flower boxes" fetchpriority="high"></div>
+        
+      </div>
+    </div>
+    <div class="inner today" id="todayLine"></div>
+  </div>
+  <div class="ribbon" aria-hidden="true"><div class="rtrack"><span class="rset">Vaad of Flatbush kosher<i></i>Chalav Yisrael<i></i>Pat Yisrael<i></i>Bishul Yisrael<i></i>Glatt meat catering<i></i>Shabbat &amp; holiday menus<i></i>514 Kings Highway<i></i></span><span class="rset">Vaad of Flatbush kosher<i></i>Chalav Yisrael<i></i>Pat Yisrael<i></i>Bishul Yisrael<i></i>Glatt meat catering<i></i>Shabbat &amp; holiday menus<i></i>514 Kings Highway<i></i></span></div></div>
+
+  <div class="doors wrap">
+    <div class="inner">
+      <div class="row">
+        <a class="door rv" href="/julies-market-cafe-demo./market/">
+          <img src="img/t/m-8e6903ecb21b9626366f2256eafa6c0b.webp" alt="" loading="lazy">
+          <div class="tags"><span class="k D"><i></i>Dairy kitchen</span></div>
+                    <h2>The Market &amp; Café</h2>
+          <p>Fresh salads and bowls, coffee and matcha, breads, sweets and a kosher pantry. Dairy only, no meat.</p>
+          <span class="go">See what's inside →</span>
+        </a>
+        <a class="door rv" href="/julies-market-cafe-demo./catering/">
+          <img src="img/t/183-1.webp" alt="" loading="lazy">
+          <div class="tags"><span class="k M"><i></i>Meat</span><span class="k D"><i></i>Dairy</span><span class="k P"><i></i>Parve</span></div>
+                    <h2>Catering</h2>
+          <p>193 dishes, from boards and platters to Shabbat mains. Glatt meat or Chalav Yisrael dairy, never mixed. Pat Yisrael and Bishul Yisrael.</p>
+          <span class="go">Build a quote →</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="reel" id="reel">
+    <div class="wrap"><div class="inner sec-head" style="margin-bottom:0">
+      <h2 class="rv">From the catering kitchen</h2>
+      <p class="rv">A few of the dishes people order most. Every price is the real menu price.</p>
+    </div></div>
+    <div class="stick"><div class="track" id="track"></div></div>
+  </div>
+
+  <section class="reviews sec wrap" aria-labelledby="revh">
+    <div class="inner">
+      <div class="rv">
+        <h2 class="visually-hidden" id="revh">Google reviews</h2>
+        <div class="rating tab" data-count="4.3">4.3</div>
+        <div class="stars" aria-label="4.3 out of 5 stars">
+          <svg viewBox="0 0 24 24"><path fill="var(--bloom)" d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24"><path fill="var(--bloom)" d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24"><path fill="var(--bloom)" d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24"><path fill="var(--bloom)" d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24"><defs><linearGradient id="partStar"><stop offset="38%" style="stop-color:var(--bloom)"/><stop offset="38%" style="stop-color:color-mix(in srgb,var(--on-sign) 25%,transparent)"/></linearGradient></defs><path fill="url(#partStar)" d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg>
+        </div>
+        <p style="margin-top:12px;color:color-mix(in srgb,var(--on-sign) 75%,transparent)">on Google, from 16 reviews</p>
+        <a class="btn btn-bloom" href="https://search.google.com/local/writereview?placeid=ChIJF51RSLVFwokR3KhAxMfZJSc" target="_blank" rel="noopener">Leave a review <span class="arr">→</span></a>
+      </div>
+      <div class="quotes">
+        <blockquote class="rv"><q>Julie's Cafe is an absolute gem!</q><cite>Raquel S. · Google review</cite></blockquote>
+        <blockquote class="rv"><q>The tuna on sourdough was delicious also tofu bowl!!!</q><cite>Diane A. · Google review</cite></blockquote>
+        <blockquote class="rv"><q>Excellent coffee, fresh sandwiches and salads. Best staff as well.</q><cite>Google review</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit sec wrap" aria-labelledby="visith">
+    <div class="inner">
+      <div class="rv">
+        <h2 id="visith" class="visit-h">Visit the market</h2>
+        <a class="addr maplink" style="margin-top:14px" href="https://www.google.com/maps/search/?api=1&query=Julie%27s+Market+Cafe+514+Kings+Hwy+Brooklyn+NY+11223" target="_blank" rel="noopener">514 Kings Hwy<br>Brooklyn, NY 11223<span class="maptag">Open in Google Maps ↗</span></a>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px">
+          <a class="btn btn-sign" href="https://www.google.com/maps/dir/?api=1&destination=Julie%27s+Market+Cafe+514+Kings+Hwy+Brooklyn+NY+11223" target="_blank" rel="noopener">Get directions <span class="arr">→</span></a>
+          <a class="btn btn-ghost" href="https://www.ubereats.com/store/julies-market-cafe/qobyJZ7BVXCvS2kCOyTnuw" target="_blank" rel="noopener">Order on Uber Eats</a>
+        </div>
+        <div class="contact-list">
+          <div class="cline"><div><div class="lbl">Store</div><a class="val tab tel" href="tel:+17185739453">(718) 573-9453</a></div></div>
+        </div>
+      </div>
+      <div class="rv"><table class="hours tab" id="hoursTable" aria-label="Store hours"></table>
+        <p style="margin-top:14px;color:var(--muted);font-size:14px">Friday closes early for Shabbat. Closed Saturday.</p></div>
+    </div>
+  </section>
+
+  <section class="sec wrap" style="padding-top:0" aria-labelledby="igh">
+    <div class="inner">
+      <div class="sec-head"><h2 id="igh" class="rv">@julieebani</h2><a class="btn btn-ghost rv" href="https://www.instagram.com/julieebani/" target="_blank" rel="noopener">Follow on Instagram <span class="arr">→</span></a></div>
+      <div class="ig" id="igGrid"></div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ MARKET ============ -->
+<section data-view="market" hidden>
+  <div class="page-hero wrap"><div class="inner">
+    <h1 class="split">Come in hungry.</h1>
+    <p class="lede">A kosher dairy market and café on Kings Highway. Grab a salad or a bowl, an iced coffee or a matcha, something sweet, and a few things from the pantry for home.</p>
+  </div></div>
+  <div class="wrap"><div class="inner">
+    <div class="dairy-band rv">
+      <img class="vaad-seal" src="img/vaad-flatbush.png" alt="Vaad Hakashrus of Flatbush" width="740" height="456">
+      <div><h3>Kosher dairy, under the Vaad of Flatbush</h3><p>The store kitchen is dairy only, so nothing here contains meat. Everything is Chalav Yisrael, Pat Yisrael and Bishul Yisrael. Meat dishes are made for catering orders in a separate kitchen.</p></div>
+    </div>
+  </div></div>
+  <section class="sec wrap" aria-labelledby="deph"><div class="inner">
+    <div class="sec-head"><h2 id="deph" class="rv">Four ways to shop</h2><p class="rv">Pick a section to see everything in it, with prices.</p></div>
+    <div class="depts">
+      <button class="dept rv" data-ms="Café"><h3>Café</h3><p>Coffee, matcha, smoothies and pastries from the counter.</p><span class="dept-n"></span></button>
+      <button class="dept rv" data-ms="Grab &amp; Go"><h3>Grab &amp; Go</h3><p>Salads, grain bowls, sandwiches, wraps, sides, soups and breakfast cups, packed and ready in the fridge.</p><span class="dept-n"></span></button>
+      <button class="dept rv" data-ms="Prepared Food"><h3>Prepared Food</h3><p>Bagels, breakfast burritos, toasts, grilled cheese and hot sandwiches, prepared fresh.</p><span class="dept-n"></span></button>
+      <button class="dept rv" data-ms="Gourmet Goods / Pantry"><h3>Gourmet Goods / Pantry</h3><p>Fresh breads, loose tea, spices and a gluten free shelf for your own kitchen.</p><span class="dept-n"></span></button>
+    </div>
+  </div></section>
+  <section class="sec wrap" style="padding-top:0" aria-labelledby="counterh"><div class="inner">
+    <div class="sec-head"><h2 id="counterh" class="rv">The menu</h2><a class="btn btn-sign rv" href="https://www.ubereats.com/store/julies-market-cafe/qobyJZ7BVXCvS2kCOyTnuw" target="_blank" rel="noopener">Order these on Uber Eats <span class="arr">→</span></a></div>
+    <div class="chips" id="mChips" role="group" aria-label="Filter the café menu" style="margin-bottom:22px"></div>
+    <div class="mgrid" id="mGrid"></div>
+  </div></section>
+  <section class="sec wrap" style="padding-top:0" aria-labelledby="favh"><div class="inner">
+    <div class="sec-head"><h2 id="favh" class="rv">What regulars order</h2><p class="rv">Taken from what customers mention most in their Google reviews.</p></div>
+    <div class="favs">
+      <div class="fav rv" data-photo><div class="fph"><img src="img/t/m-ea55cddd4c6f4a719aa3c4f37165c488.webp" data-full="img/m-ea55cddd4c6f4a719aa3c4f37165c488.webp" alt="Italian Tuna Sourdough" loading="lazy"></div><h3>Italian Tuna Sourdough</h3><p>The tuna on sourdough reviewers keep coming back for.</p></div>
+      <div class="fav rv" data-photo><div class="fph"><img src="img/t/m-183ff912701349bf7b7378b7b1ade2a2.webp" data-full="img/m-183ff912701349bf7b7378b7b1ade2a2.webp" alt="Brown Sugar Shaken Espresso" loading="lazy"></div><h3>Brown Sugar Shaken Espresso</h3><p>The iced espresso people mention by name.</p></div>
+      <div class="fav rv" data-photo><div class="fph"><img src="img/t/m-35f4d7ec62a62bb3f07720714f0be542.webp" data-full="img/m-35f4d7ec62a62bb3f07720714f0be542.webp" alt="Matcha Latte" loading="lazy"></div><h3>Matcha Latte</h3><p>Reviewers call the matcha unmatched.</p></div>
+      <div class="fav rv" data-photo><div class="fph"><img src="img/t/m-5a7c56f6d3c2cd5f5154351297ff49f0.webp" data-full="img/m-5a7c56f6d3c2cd5f5154351297ff49f0.webp" alt="Kale Caesar Salad" loading="lazy"></div><h3>Kale Caesar Salad</h3><p>One of the fresh salads customers praise most.</p></div>
+    </div>
+  </div></section>
+  <div class="wrap"><div class="inner">
+    <div class="photo-slot rv"><div><b style="color:var(--ink)">Store photos are on their way.</b><br>Photos of the counter, shelves and seating go here.</div><span class="mono" style="font-size:12px">PLACEHOLDER FOR THE DEMO</span></div>
+  </div></div>
+  <section class="sec wrap"><div class="inner cta-split">
+    <div class="cta-card uber rv"><h3>Order the café for pickup or delivery</h3><a class="btn btn-bloom" href="https://www.ubereats.com/store/julies-market-cafe/qobyJZ7BVXCvS2kCOyTnuw" target="_blank" rel="noopener">Open Uber Eats <span class="arr">→</span></a></div>
+    <div class="cta-card rev rv"><h3>Been in? Tell people what you ordered</h3><a class="btn btn-sign" href="https://search.google.com/local/writereview?placeid=ChIJF51RSLVFwokR3KhAxMfZJSc" target="_blank" rel="noopener">Leave a Google review <span class="arr">→</span></a></div>
+  </div></section>
+  <section class="visit sec wrap" style="padding-top:0"><div class="inner">
+    <div><p class="eyebrow">Hours</p><table class="hours tab" style="margin-top:14px" data-hours aria-label="Store hours"></table></div>
+    <div><p class="eyebrow">Find us</p><a class="addr maplink" style="margin-top:14px" href="https://www.google.com/maps/search/?api=1&query=Julie%27s+Market+Cafe+514+Kings+Hwy+Brooklyn+NY+11223" target="_blank" rel="noopener">514 Kings Hwy<br>Brooklyn, NY 11223<span class="maptag">Open in Google Maps ↗</span></a>
+      <div class="contact-list"><div class="cline"><div><div class="lbl">Store</div><a class="val tab tel" href="tel:+17185739453">(718) 573-9453</a></div></div></div>
+      <a class="btn btn-sign" style="margin-top:16px" href="https://www.google.com/maps/dir/?api=1&destination=Julie%27s+Market+Cafe+514+Kings+Hwy+Brooklyn+NY+11223" target="_blank" rel="noopener">Get directions <span class="arr">→</span></a></div>
+  </div></section>
+</section>
+
+<!-- ============ CATERING ============ -->
+<section data-view="catering">
+  <div class="page-hero wrap"><div class="inner">
+    <h1 class="split">Build your order.</h1>
+    <p class="lede">Pick the dishes and sizes, see the estimate as you go, and send it to Julie. She'll confirm the final quote with you.</p>
+    <div class="kitchen" role="group" aria-label="Choose your order type">
+      <button class="kbtn" data-k="M" aria-pressed="false"><span class="k M"><i></i>Meat</span><b>Meat order</b><span>Glatt meat and parve dishes, including fish.</span></button>
+      <button class="kbtn" data-k="D" aria-pressed="false"><span class="k D"><i></i>Dairy</span><b>Dairy order</b><span>Chalav Yisrael, Pat Yisrael and Bishul Yisrael. Dairy and parve dishes, including fish.</span></button>
+      <button class="kbtn" data-k="" aria-pressed="true"><span class="k P"><i></i>Parve</span><b>Just browsing</b><span>See everything. Choose meat or dairy before you add dishes.</span></button>
+    </div>
+    <p class="rule-note">Kosher rules apply to every order: meat and dairy are never combined. Once you choose meat or dairy, dishes from the other side are set aside. Meat, Dairy and Parve labels are being confirmed with Julie for this demo.</p>
+  </div></div>
+  <div class="tools wrap"><div class="inner">
+    <div class="chips" id="chips" data-lenis-prevent role="group" aria-label="Filter by category"></div>
+    <input class="search" id="search" type="search" placeholder="Search 193 dishes" aria-label="Search dishes">
+  </div></div>
+  <div class="wrap"><div class="inner">
+    <p class="count-line" id="countLine"></p>
+    <div class="grid" id="grid"></div>
+  </div></div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section data-view="about" hidden>
+  <div class="page-hero wrap"><div class="inner">
+    <h1 class="split">The person behind the food.</h1>
+  </div></div>
+  <section class="about sec wrap" style="padding-top:0"><div class="inner">
+    <div class="portrait rv"><div><b>Julie</b><span class="mono" style="font-size:12px">Portrait coming for the demo</span></div></div>
+    <div class="prose">
+      <p class="rv" style="font:400 clamp(26px,2.8vw,36px)/1.2 var(--f-display);margin-top:0">Julie's Kitchen started with platters and boards for friends and family, and grew into boutique catering across the tri-state area.</p>
+      <p class="rv">Today it is two things under one roof: a kosher dairy market and café at 514 Kings Highway, and a catering kitchen cooking for Shabbat, holidays, brunches and celebrations of every size. Julie also teaches private and group cooking lessons for adults and children.</p>
+      <p class="rv">Her recipe book, <i>Julie's Holiday Table</i>, collects more than 30 tried and true holiday recipes.</p>
+      <p class="draft rv">Julie's own story and photo replace this text before launch.</p>
+      <div class="offers rv">
+        <div><b>Catering</b><span>Meat and dairy menus for events</span></div>
+        <div><b>Platters &amp; boards</b><span>Designed for any occasion</span></div>
+        <div><b>Cooking lessons</b><span>Private or group, adults and kids</span></div>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:28px" class="rv">
+        <a class="btn btn-bloom" href="/julies-market-cafe-demo./catering/">Plan your event <span class="arr">→</span></a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/julieebani/" target="_blank" rel="noopener">Follow @julieebani</a>
+      </div>
+    </div>
+  </div></section>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section data-view="contact" hidden>
+  <div class="page-hero wrap"><div class="inner">
+    <h1 class="split">Call, text or stop by.</h1>
+    <p class="lede">Questions about the store go to the store line. For catering, build a quote or call Julie directly.</p>
+  </div></div>
+  <section class="sec wrap" style="padding-top:0"><div class="inner contact-grid">
+    <div class="ccard rv"><h3>The store line</h3><a class="big tab tel" href="tel:+17185739453">(718) 573-9453</a><p style="color:var(--muted)">Hours, today's salads, pickup questions.</p></div>
+    <div class="ccard rv"><h3>Julie's cell, for catering</h3><a class="big tab tel" href="tel:+19178808999">917-880-8999</a><p style="color:var(--muted)">Events, platters and custom orders.</p><div class="row"><a class="btn btn-bloom" style="padding:10px 16px" href="/julies-market-cafe-demo./catering/">Build a quote</a></div></div>
+    <div class="ccard rv"><h3>Email Julie</h3><a class="big" href="mailto:julie@jebani.com" data-email="julie@jebani.com">julie@jebani.com</a><div class="mail-opts" hidden><a class="btn btn-sign" style="padding:10px 16px" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=julie@jebani.com" target="_blank" rel="noopener">Gmail</a><a class="btn btn-ghost" style="padding:10px 16px" href="https://outlook.live.com/mail/0/deeplink/compose?to=julie@jebani.com" target="_blank" rel="noopener">Outlook</a><a class="btn btn-ghost" style="padding:10px 16px" href="mailto:julie@jebani.com">Mail app</a></div><p style="color:var(--muted)">Catering questions, events and anything else.</p></div>
+    <div class="ccard rv"><h3>Instagram &amp; Uber Eats</h3><a class="big" href="https://www.instagram.com/julieebani/" target="_blank" rel="noopener">@julieebani</a><div class="row"><a class="btn btn-sign" style="padding:10px 16px" href="https://www.instagram.com/julieebani/" target="_blank" rel="noopener">Instagram</a><a class="btn btn-ghost" style="padding:10px 16px" href="https://www.ubereats.com/store/julies-market-cafe/qobyJZ7BVXCvS2kCOyTnuw" target="_blank" rel="noopener">Uber Eats</a></div></div>
+  </div></section>
+  <section class="visit sec wrap" style="padding-top:0"><div class="inner">
+    <div><p class="eyebrow">Store hours</p><table class="hours tab" style="margin-top:14px" data-hours aria-label="Store hours"></table></div>
+    <div><p class="eyebrow">Address</p><a class="addr maplink" style="margin-top:14px" href="https://www.google.com/maps/search/?api=1&query=Julie%27s+Market+Cafe+514+Kings+Hwy+Brooklyn+NY+11223" target="_blank" rel="noopener">514 Kings Hwy<br>Brooklyn, NY 11223<span class="maptag">Open in Google Maps ↗</span></a><a class="btn btn-sign" style="margin-top:20px" href="https://www.google.com/maps/dir/?api=1&destination=Julie%27s+Market+Cafe+514+Kings+Hwy+Brooklyn+NY+11223" target="_blank" rel="noopener">Get directions <span class="arr">→</span></a></div>
+  </div></section>
+</section>
+
+<!-- ============ JULIE'S QUOTE DASHBOARD ============ -->
+<section data-view="quotes" hidden>
+  <div class="page-hero wrap"><div class="inner">
+    <h1>Julie’s quote requests</h1>
+    <p class="lede" id="dashNote">Loading requests…</p>
+  </div></div>
+  <div class="wrap"><div class="inner" id="dashList" style="padding-bottom:80px"></div></div>
+</section>
+</main>
+<script>(function(){var b=document.documentElement.getAttribute('data-base'),v=location.hash.slice(1);if(!v&&b&&location.pathname.indexOf(b)===0)v=location.pathname.slice(b.length).split('/')[0];if(v&&v!=='home'&&v!=='quotes'){var t=document.querySelector('[data-view="'+v+'"]');if(t){document.querySelector('[data-view="home"]').hidden=true;t.hidden=false}}})()</script>
+
+<footer class="site wrap">
+  <div class="inner">
+    <div><span class="logo-art foot" aria-label="Julie's Market Café" role="img"></span><p style="margin-top:14px;max-width:30ch">Kosher market, café and catering under the Vaad of Flatbush. <a href="https://www.google.com/maps/search/?api=1&query=Julie%27s+Market+Cafe+514+Kings+Hwy+Brooklyn+NY+11223" target="_blank" rel="noopener" style="display:inline;text-decoration:underline">514 Kings Highway, Brooklyn</a>.</p></div>
+    <div><h4>Visit</h4><a href="/julies-market-cafe-demo./market/">The Market &amp; Café</a><a href="https://www.google.com/maps/dir/?api=1&destination=Julie%27s+Market+Cafe+514+Kings+Hwy+Brooklyn+NY+11223" target="_blank" rel="noopener">Directions</a><a href="https://www.ubereats.com/store/julies-market-cafe/qobyJZ7BVXCvS2kCOyTnuw" target="_blank" rel="noopener">Uber Eats</a></div>
+    <div><h4>Catering</h4><a href="/julies-market-cafe-demo./catering/">Build a quote</a><a href="/julies-market-cafe-demo./about/">About Julie</a><a href="#quotes" id="inboxLink" hidden>Julie's quote inbox</a></div>
+    <div><h4>Talk to us</h4><a class="tab" href="tel:+17185739453">Store (718) 573-9453</a><a class="tab" href="tel:+19178808999">Julie 917-880-8999</a><a href="mailto:julie@jebani.com" data-email="julie@jebani.com">julie@jebani.com</a><a href="https://www.instagram.com/julieebani/" target="_blank" rel="noopener">@julieebani</a></div>
+    <div class="footbig" aria-hidden="true"><span>Julie's</span></div>
+    <p class="fine">Sun–Thu 8 AM–5 PM · Fri 8 AM–2 PM · Sat closed. Catering estimates are not final until Julie confirms them.</p>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Quick actions">
+  <a href="tel:+17185739453"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Call</a>
+  <a href="https://www.google.com/maps/dir/?api=1&destination=Julie%27s+Market+Cafe+514+Kings+Hwy+Brooklyn+NY+11223" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Directions</a>
+  <a href="https://www.ubereats.com/store/julies-market-cafe/qobyJZ7BVXCvS2kCOyTnuw" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 8h16l-1.5 11a2 2 0 0 1-2 1.7h-9A2 2 0 0 1 5.5 19z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Uber Eats</a>
+  <a class="q" href="/julies-market-cafe-demo./catering/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg>Get a quote</a>
+</nav>
+
+<button class="tray-btn" id="trayBtn" aria-controls="drawer" hidden><span>Your quote</span><span class="tot tab" id="trayTot">$0</span><span class="cnt" id="trayCnt">0</span></button>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Your catering quote" aria-hidden="true">
+  <div class="drawer-head"><h2>Your quote</h2><button class="x" id="drawerX">Close</button></div>
+  <div class="drawer-body" id="drawerBody" data-lenis-prevent></div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo" hidden>
+  <img class="lb-img" id="lbImg" alt="">
+  <p class="lb-cap" id="lbCap"></p>
+  <button class="lb-btn lb-x" id="lbX" aria-label="Close photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+  <span class="lb-count mono" id="lbCount"></span>
+</div>
+
+
+<script id="menuData" type="application/json">[{"id":1,"name":"Pesto Cream Sauce","cats":["Dairy / Parve Lunch"],"desc":"Price per Pint","sizes":[{"label":"","price":50.0,"k":null}],"k":"D","guess":false,"img":[]},{"id":2,"name":"Rigatoni Sauce with Eggplant","cats":["Dairy / Parve Lunch"],"desc":"Price per Pint","sizes":[{"label":"","price":60.0,"k":null}],"k":"P","guess":true,"img":[]},{"id":3,"name":"Zucchini and Eggplant Rollups","cats":["Dairy / Parve Lunch"],"desc":"Price per Dozen","sizes":[{"label":"","price":36.0,"k":null}],"k":"D","guess":true,"img":[]},{"id":4,"name":"Pistachio Crusted Salmon","cats":["Main Course","Plated Dinners"],"desc":"Price per Pound","sizes":[{"label":"","price":50.0,"k":null}],"k":"P","guess":false,"img":[]},{"id":5,"name":"Shell Roast with Dijon Onion Sauce","cats":["Main Course","Plated Dinners","Mazza / Meats"],"desc":"Price per Pound","sizes":[{"label":"","price":75.0,"k":null}],"k":"M","guess":false,"img":[]},{"id":6,"name":"Chicken/Veal Piccata","cats":["Main Course","Plated Dinners"],"desc":"Price per Pound","sizes":[{"label":"","price":75.0,"k":null}],"k":"M","guess":false,"img":["img/6-1.webp"]},{"id":7,"name":"Cream of Jerusalem Artichoke Soup","cats":["Hors d'oeuvres / Appetizers"],"desc":"Price per Pint","sizes":[{"label":"","price":60.0,"k":null}],"k":"D","guess":true,"img":["img/7-1.webp"]},{"id":8,"name":"Spiced Butternut Squash Soup","cats":["Hors d'oeuvres / Appetizers"],"desc":"Price per Pint","sizes":[{"label":"","price":60.0,"k":null}],"k":"P","guess":false,"img":["img/8-1.webp"]},{"id":9,"name":"String Bean Almondine","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/9-1.webp"]},{"id":10,"name":"Roasted baby Sweet Potatoes","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":[]},{"id":11,"name":"Smashed baby Yukon Potatoes","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/11-1.webp"]},{"id":12,"name":"French Lentil Salad","cats":["Salads"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/12-1.webp"]},{"id":13,"name":"Fattoush Chicken Salad","cats":["Salads"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"M","guess":false,"img":[]},{"id":14,"name":"Miso Glazed Sea Bass","cats":["Main Course","Plated Dinners"],"desc":"Price Per Pound","sizes":[{"label":"","price":60.0,"k":null}],"k":"P","guess":false,"img":["img/14-1.webp"]},{"id":15,"name":"Crispy Rice Salad / chili crisp tahini dressing","cats":["Salads"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/15-1.webp"]},{"id":16,"name":"Tricolore with Fennel, Oranges, Calestrano Olives","cats":["Salads"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/16-1.webp"]},{"id":17,"name":"Cauliflower Steaks with Chimmichuri","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/17-1.webp"]},{"id":18,"name":"Pretzel Crusted Fried Fish","cats":["Dairy / Parve Lunch"],"desc":"Price Per Pound","sizes":[{"label":"","price":50.0,"k":null}],"k":"P","guess":false,"img":["img/18-1.webp"]},{"id":19,"name":"Julie's Holiday Table","cats":[],"desc":"A curated recipe booked with over 30 tried and true holiday recipes!","sizes":[{"label":"","price":36.0,"k":null}],"k":"BOOK","guess":false,"img":["img/19-1.webp"]},{"id":20,"name":"Mozarella Tomato on Brioche","cats":["Dairy / Parve Lunch"],"desc":"Price per dozen","sizes":[{"label":"","price":120.0,"k":null}],"k":"D","guess":false,"img":["img/20-1.webp"]},{"id":21,"name":"Mexican Corn","cats":["Hors d'oeuvres / Appetizers","Sides"],"desc":"Price per dozen","sizes":[{"label":"","price":60.0,"k":null}],"k":"D","guess":true,"img":["img/21-1.webp"]},{"id":22,"name":"Avocado Salad","cats":["Salads"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"P","guess":false,"img":["img/22-1.webp"]},{"id":23,"name":"Focaccia","cats":["Dairy / Parve Lunch"],"desc":"Price Per Dozen","sizes":[{"label":"","price":36.0,"k":null}],"k":"P","guess":false,"img":["img/23-1.webp"]},{"id":24,"name":"Corn Salad","cats":["Salads"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"P","guess":false,"img":["img/24-1.webp"]},{"id":25,"name":"Skewer Salmon","cats":["Hors d'oeuvres / Appetizers","Dairy / Parve Lunch"],"desc":"Price per 4 skewers","sizes":[{"label":"","price":50.0,"k":null}],"k":"P","guess":false,"img":["img/25-1.webp"]},{"id":26,"name":"Crudite","cats":["Platters / Boards"],"desc":"Price per dozen","sizes":[{"label":"","price":120.0,"k":null}],"k":"P","guess":false,"img":["img/26-1.webp"]},{"id":27,"name":"Fried Fish","cats":["Dairy / Parve Lunch"],"desc":"Price per piece","sizes":[{"label":"","price":10.0,"k":null}],"k":"P","guess":false,"img":["img/27-1.webp"]},{"id":28,"name":"Yebre Pie","cats":["Mazza / Meats","Shabbat"],"desc":"","sizes":[{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":200.0,"k":null}],"k":"M","guess":false,"img":["img/28-1.webp","img/28-2.webp"]},{"id":29,"name":"Surprise Steak","cats":["Mazza / Meats","Shabbat"],"desc":"Price Per Steak","sizes":[{"label":"","price":350.0,"k":null}],"k":"M","guess":false,"img":["img/29-1.webp"]},{"id":30,"name":"Fried Fish and Chips","cats":["Dairy / Parve Lunch"],"desc":"Price Per Pound","sizes":[{"label":"","price":50.0,"k":null}],"k":"P","guess":false,"img":["img/30-1.webp","img/30-2.webp"]},{"id":31,"name":"Mini Pita Tuna Sandwiches","cats":["Hors d'oeuvres / Appetizers","Dairy / Parve Lunch"],"desc":"Price per dozen","sizes":[{"label":"","price":36.0,"k":null}],"k":"P","guess":false,"img":["img/31-1.webp"]},{"id":32,"name":"Falafel and Israeli Salads Bowls","cats":["Dairy / Parve Lunch"],"desc":"Price Per Dozen","sizes":[{"label":"","price":120.0,"k":null}],"k":"P","guess":false,"img":["img/32-1.webp"]},{"id":33,"name":"Schnitzel and Fries","cats":["Hors d'oeuvres / Appetizers"],"desc":"Price Per Dozen Bowls","sizes":[{"label":"","price":120.0,"k":null}],"k":"M","guess":false,"img":["img/33-1.webp"]},{"id":34,"name":"Truffle Chips","cats":["Sides"],"desc":"Price Per Pound","sizes":[{"label":"","price":50.0,"k":null}],"k":"P","guess":false,"img":["img/34-1.webp"]},{"id":35,"name":"Mazza Board","cats":["Platters / Boards","Mazza / Meats"],"desc":"X Small - 2 Dozen Pieces Small - 3 Dozen PiecesMedium - 4 Dozen Pieces Large - 6 Dozen Pieces","sizes":[{"label":"XSmall","price":150.0,"k":null},{"label":"Small","price":175.0,"k":null},{"label":"Medium","price":200.0,"k":null},{"label":"Large","price":300.0,"k":null}],"k":"P","guess":true,"img":["img/35-1.webp"]},{"id":36,"name":"Pasta Sauces","cats":["Main Course"],"desc":"","sizes":[{"label":"Spicy Rig Sauce","price":65.0,"k":"D"},{"label":"Bolognese Sauce","price":75.0,"k":"M"},{"label":"Pesto Sauce","price":65.0,"k":"D"}],"k":"MIX","guess":false,"img":["img/36-1.webp","img/36-2.webp","img/36-3.webp","img/36-4.webp","img/36-5.webp","img/36-6.webp"]},{"id":37,"name":"Kibbe Mushroom","cats":["Mazza / Meats","Shabbat"],"desc":"Price per 1 dozen kibbe balls and 2 pounds of mushroom","sizes":[{"label":"","price":75.0,"k":null}],"k":"M","guess":false,"img":["img/37-1.webp","img/37-2.webp","img/37-3.webp"]},{"id":38,"name":"Coffee Rubbed Minute Steak","cats":["Mazza / Meats","Shabbat"],"desc":"Price for both pieces","sizes":[{"label":"","price":200.0,"k":null}],"k":"M","guess":false,"img":[]},{"id":39,"name":"Steak Sandwiches","cats":["Mazza / Meats"],"desc":"Price per sub size steak sandwich.","sizes":[{"label":"","price":30.0,"k":null}],"k":"M","guess":false,"img":[]},{"id":40,"name":"Arayes","cats":["Mazza / Meats"],"desc":"Price Per Piece","sizes":[{"label":"","price":7.0,"k":null}],"k":"M","guess":false,"img":["img/40-1.webp","img/40-2.webp"]},{"id":41,"name":"Mini Spinach Tarts","cats":["Hors d'oeuvres / Appetizers","Bris / Bar Mitzvah / Brunch"],"desc":"Comes with a dozen.","sizes":[{"label":"","price":24.0,"k":null}],"k":"D","guess":true,"img":["img/41-1.webp"]},{"id":42,"name":"Zaatar Chicken and Potatoes","cats":["Main Course"],"desc":"","sizes":[{"label":"1 chicken","price":150.0,"k":null},{"label":"2 chickens","price":200.0,"k":null},{"label":"3 chickens","price":250.0,"k":null}],"k":"M","guess":false,"img":["img/42-1.webp"]},{"id":43,"name":"Chicken with Hasselback Potatoes","cats":["Main Course"],"desc":"","sizes":[{"label":"1 chicken","price":150.0,"k":null},{"label":"2 chickens","price":200.0,"k":null},{"label":"3 chickens","price":250.0,"k":null}],"k":"M","guess":false,"img":["img/43-1.webp"]},{"id":44,"name":"Glazed Corned Beef","cats":["Main Course","Mazza / Meats","Shabbat"],"desc":"","sizes":[{"label":"Medium","price":225.0,"k":null},{"label":"Large","price":250.0,"k":null}],"k":"M","guess":false,"img":["img/44-1.webp"]},{"id":45,"name":"Spiral Vegetable Tart","cats":["Sides"],"desc":"","sizes":[{"label":"","price":150.0,"k":null}],"k":"P","guess":true,"img":["img/45-1.webp"]},{"id":46,"name":"Summer Vegetable Sauté","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/46-1.webp"]},{"id":47,"name":"Falafel Bites","cats":["Hors d'oeuvres / Appetizers"],"desc":"Price Per Dozen","sizes":[{"label":"","price":50.0,"k":null}],"k":"P","guess":false,"img":["img/47-1.webp"]},{"id":48,"name":"Italian Gigante Beans","cats":["Sides"],"desc":"","sizes":[{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/48-1.webp"]},{"id":49,"name":"Mini Eggplant Parmesan","cats":["Hors d'oeuvres / Appetizers","Bris / Bar Mitzvah / Brunch"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"D","guess":false,"img":["img/49-1.webp"]},{"id":50,"name":"Bok Choy Salad","cats":["Salads"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"P","guess":false,"img":["img/50-1.webp"]},{"id":51,"name":"Asian Veggie Platter","cats":["Platters / Boards","Sides"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null},{"label":"XLarge","price":200.0,"k":null}],"k":"P","guess":false,"img":["img/51-1.webp"]},{"id":52,"name":"Spicy BBQ Salmon","cats":["Main Course","Plated Dinners"],"desc":"Price Per Pound","sizes":[{"label":"","price":50.0,"k":null}],"k":"P","guess":false,"img":["img/52-1.webp"]},{"id":53,"name":"Veal Chops with Artichokes","cats":["Plated Dinners","Mazza / Meats","Shabbat"],"desc":"Pan seared veal chops with a white wine dijon sauce and sauteed artichokes.Price per piece.","sizes":[{"label":"","price":80.0,"k":null}],"k":"M","guess":false,"img":["img/53-1.webp"]},{"id":54,"name":"Endive Spears with Smoked Salmon","cats":["Bris / Bar Mitzvah / Brunch"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":true,"img":["img/54-1.webp","img/54-2.webp"]},{"id":55,"name":"Dessert/Cookie Platters","cats":["Platters / Boards","Bris / Bar Mitzvah / Brunch"],"desc":"mix of beautiful mini desserts and cookies","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":200.0,"k":null},{"label":"Extra Large","price":225.0,"k":null}],"k":"P","guess":true,"img":["img/55-1.webp","img/55-2.webp","img/55-3.webp"]},{"id":56,"name":"French Onion Tartlets","cats":["Hors d'oeuvres / Appetizers","Bris / Bar Mitzvah / Brunch"],"desc":"Comes with a dozen French Onion Tartlets","sizes":[{"label":"","price":60.0,"k":null}],"k":"D","guess":false,"img":["img/56-1.webp"]},{"id":57,"name":"Dried Fruit Platter","cats":["Platters / Boards"],"desc":"","sizes":[{"label":"Small","price":50.0,"k":null},{"label":"Medium","price":65.0,"k":null},{"label":"Large","price":100.0,"k":null},{"label":"Extra Large","price":125.0,"k":null}],"k":"P","guess":false,"img":["img/57-1.webp"]},{"id":58,"name":"Israeli Board","cats":["Platters / Boards"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null},{"label":"Extra Large","price":225.0,"k":null}],"k":"P","guess":true,"img":["img/58-1.webp","img/58-2.webp","img/58-3.webp"]},{"id":59,"name":"Chicken Pot Pie","cats":["Main Course"],"desc":"","sizes":[{"label":"","price":200.0,"k":null}],"k":"M","guess":false,"img":["img/59-1.webp"]},{"id":60,"name":"String Beans/Carrots","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/60-1.webp","img/60-2.webp"]},{"id":61,"name":"Snacking Platters","cats":["Platters / Boards"],"desc":"","sizes":[{"label":"Small","price":75.0,"k":null},{"label":"Medium","price":100.0,"k":null},{"label":"Large","price":125.0,"k":null},{"label":"XLarge","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/61-1.webp","img/61-2.webp"]},{"id":62,"name":"Fruit Platter","cats":["Platters / Boards","Bris / Bar Mitzvah / Brunch"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null},{"label":"Extra Large","price":200.0,"k":null}],"k":"P","guess":false,"img":["img/62-1.webp","img/62-2.webp","img/62-3.webp"]},{"id":63,"name":"Pickles/Dips","cats":["Platters / Boards"],"desc":"","sizes":[{"label":"small","price":75.0,"k":null},{"label":"medi","price":100.0,"k":null},{"label":"large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/63-1.webp","img/63-2.webp"]},{"id":64,"name":"Spicy Olive Bolognese","cats":["Main Course"],"desc":"","sizes":[{"label":"Small","price":150.0,"k":null},{"label":"Medium","price":175.0,"k":null},{"label":"Large","price":200.0,"k":null},{"label":"Just The Sauce","price":75.0,"k":null}],"k":"M","guess":false,"img":["img/64-1.webp"]},{"id":65,"name":"Spinach Salad with Crispy Quinoa","cats":["Salads"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null},{"label":"Extra Large","price":200.0,"k":null}],"k":"P","guess":true,"img":["img/65-1.webp"]},{"id":66,"name":"Friday Night Potatoes","cats":["Shabbat"],"desc":"Price Per Pound","sizes":[{"label":"","price":15.0,"k":null}],"k":"P","guess":false,"img":["img/66-1.webp","img/66-2.webp"]},{"id":67,"name":"Fingerling Potato Chips","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/67-1.webp"]},{"id":68,"name":"Candy Platter","cats":["Platters / Boards"],"desc":"","sizes":[{"label":"Small","price":75.0,"k":null},{"label":"Medium","price":100.0,"k":null},{"label":"Large","price":125.0,"k":null},{"label":"XLarge","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/68-1.webp"]},{"id":69,"name":"Lo Mein","cats":["Dairy / Parve Lunch"],"desc":"","sizes":[{"label":"Small","price":150.0,"k":null},{"label":"Medium","price":175.0,"k":null},{"label":"Large","price":200.0,"k":null}],"k":"P","guess":true,"img":["img/69-1.webp"]},{"id":70,"name":"Hammed","cats":["Mazza / Meats","Shabbat"],"desc":"Per 1 Quart Container","sizes":[{"label":"","price":65.0,"k":null}],"k":"M","guess":false,"img":["img/70-1.webp"]},{"id":71,"name":"Zaatar Chicken and Potatoes","cats":["Shabbat"],"desc":"","sizes":[{"label":"1 Chicken","price":125.0,"k":null},{"label":"2 Chickens","price":175.0,"k":null},{"label":"3 Chickens","price":225.0,"k":null},{"label":"4 Chickens","price":275.0,"k":null}],"k":"M","guess":false,"img":["img/71-1.webp"]},{"id":72,"name":"Hasselback Chicken and Potatoes","cats":["Shabbat"],"desc":"","sizes":[{"label":"1 Chicken","price":125.0,"k":null},{"label":"2 Chickens","price":175.0,"k":null},{"label":"3 Chickens","price":225.0,"k":null},{"label":"4 Chickens","price":275.0,"k":null}],"k":"M","guess":false,"img":["img/72-1.webp","img/72-2.webp"]},{"id":73,"name":"Eggplant and medias","cats":["Mazza / Meats","Shabbat"],"desc":"Price Per Dozen","sizes":[{"label":"","price":75.0,"k":null}],"k":"M","guess":false,"img":[]},{"id":74,"name":"Brick Roast with Onions/Red Wine Mustard Sauce","cats":["Mazza / Meats","Shabbat"],"desc":"","sizes":[{"label":"3/3.5 Pounds","price":200.0,"k":null},{"label":"4 Pounds","price":250.0,"k":null},{"label":"5 Pounds","price":275.0,"k":null}],"k":"M","guess":false,"img":["img/74-1.webp"]},{"id":75,"name":"Truffled BBQ Surprise Steak","cats":["Mazza / Meats","Shabbat"],"desc":"","sizes":[{"label":"","price":350.0,"k":null}],"k":"M","guess":false,"img":["img/75-1.webp"]},{"id":76,"name":"Coffee Rubbed Cowboy Steaks","cats":["Mazza / Meats","Shabbat"],"desc":"Price Per Piece","sizes":[{"label":"","price":225.0,"k":null}],"k":"M","guess":false,"img":["img/76-1.webp"]},{"id":77,"name":"Wagyu or NY Strip Steak","cats":["Mazza / Meats","Shabbat"],"desc":"Price Per Piece","sizes":[{"label":"","price":150.0,"k":null}],"k":"M","guess":false,"img":["img/77-1.webp","img/77-2.webp","img/77-3.webp","img/77-4.webp"]},{"id":78,"name":"Kibbe Cherry Roll","cats":["Mazza / Meats","Shabbat"],"desc":"Price per 1 quart container.","sizes":[{"label":"","price":65.0,"k":null}],"k":"M","guess":false,"img":[]},{"id":79,"name":"Sweet Yebra with Apricots","cats":["Mazza / Meats","Shabbat"],"desc":"Price Per Dozen","sizes":[{"label":"","price":36.0,"k":null}],"k":"M","guess":false,"img":["img/79-1.webp","img/79-2.webp"]},{"id":80,"name":"Assorted Mechshes","cats":["Mazza / Meats","Shabbat"],"desc":"tomato, zucchini, onion, carrot, pepper Price per dozen","sizes":[{"label":"","price":75.0,"k":null}],"k":"M","guess":false,"img":["img/80-1.webp","img/80-2.webp","img/80-3.webp"]},{"id":81,"name":"Kiftes","cats":["Mazza / Meats","Shabbat"],"desc":"Price per 1 quart container.","sizes":[{"label":"","price":65.0,"k":null}],"k":"M","guess":false,"img":["img/81-1.webp"]},{"id":82,"name":"Fassouliah","cats":["Mazza / Meats","Shabbat"],"desc":"Price per 1 quart container","sizes":[{"label":"","price":65.0,"k":null}],"k":"M","guess":false,"img":["img/82-1.webp"]},{"id":83,"name":"Persian Rice","cats":["Sides","Shabbat"],"desc":"","sizes":[{"label":"","price":125.0,"k":null}],"k":"P","guess":false,"img":["img/83-1.webp"]},{"id":84,"name":"Kibbe Peas","cats":["Mazza / Meats","Shabbat"],"desc":"Price per a dozen kibbe balls and a bag of peas","sizes":[{"label":"","price":65.0,"k":null}],"k":"M","guess":false,"img":["img/84-1.webp"]},{"id":85,"name":"String Beans/Flanken","cats":["Mazza / Meats","Shabbat"],"desc":"Price per 2 pounds","sizes":[{"label":"","price":80.0,"k":null}],"k":"M","guess":false,"img":[]},{"id":86,"name":"Parve Yebrat with Artichokes","cats":["Sides","Mazza / Meats"],"desc":"Price Per Dozen","sizes":[{"label":"","price":48.0,"k":null}],"k":"P","guess":false,"img":["img/86-1.webp","img/86-2.webp"]},{"id":87,"name":"Hasselback Potatoes","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/87-1.webp"]},{"id":88,"name":"Herbed Roasted Baby Potato's","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/88-1.webp","img/88-2.webp"]},{"id":89,"name":"Crispy Parm Potatoes","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"D","guess":false,"img":["img/89-1.webp"]},{"id":90,"name":"Grilled Vegetables","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/90-1.webp"]},{"id":91,"name":"Roasted Root Vegetables","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/91-1.webp"]},{"id":92,"name":"Organic Sweet Potato Wedges/Cubes","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/92-1.webp"]},{"id":93,"name":"Sauteed Baby Artichokes","cats":["Sides"],"desc":"Price Per Pound","sizes":[{"label":"","price":20.0,"k":null}],"k":"P","guess":false,"img":["img/93-1.webp"]},{"id":94,"name":"Sauteed String Beans With Garlic","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/94-1.webp"]},{"id":95,"name":"French Beans with Sundried Tomato Sauce","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/95-1.webp"]},{"id":96,"name":"Sauteed Brocolli/Brocollini","cats":["Sides"],"desc":"","sizes":[{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/96-1.webp"]},{"id":97,"name":"Herbed Roasted Cauliflower","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/97-1.webp"]},{"id":98,"name":"Creamy Mafaldini with Shitakes and Peas","cats":["Dairy / Parve Lunch"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"D","guess":false,"img":["img/98-1.webp"]},{"id":99,"name":"Spicy Orrechiette/Rigatoni, Pink Cream Sauce","cats":["Dairy / Parve Lunch"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null},{"label":"Just The Sauce","price":65.0,"k":null}],"k":"D","guess":false,"img":["img/99-1.webp"]},{"id":100,"name":"Spaghetti al Pomodoro","cats":["Dairy / Parve Lunch"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"P","guess":false,"img":["img/100-1.webp"]},{"id":101,"name":"Fusilli Pesto with Haricot Vert and Potato","cats":["Dairy / Parve Lunch"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null},{"label":"Just The Sauce","price":65.0,"k":null}],"k":"D","guess":false,"img":["img/101-1.webp"]},{"id":102,"name":"Truffled Fettucine with Mushrooms","cats":["Dairy / Parve Lunch"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"D","guess":false,"img":["img/102-1.webp"]},{"id":103,"name":"Creamy Pacherre with Cauliflower and Pecorino","cats":["Dairy / Parve Lunch"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"D","guess":false,"img":["img/103-1.webp"]},{"id":104,"name":"Asian Fried Rice","cats":["Sides"],"desc":"","sizes":[{"label":"","price":125.0,"k":null}],"k":"P","guess":false,"img":["img/104-1.webp"]},{"id":105,"name":"Veggie Lo Mein","cats":["Dairy / Parve Lunch"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":200.0,"k":null}],"k":"P","guess":false,"img":["img/105-1.webp"]},{"id":106,"name":"Bolognese","cats":["Main Course"],"desc":"","sizes":[{"label":"Small","price":150.0,"k":null},{"label":"Medium","price":175.0,"k":null},{"label":"Large","price":200.0,"k":null},{"label":"Just The Sauce","price":75.0,"k":null}],"k":"M","guess":false,"img":["img/106-1.webp"]},{"id":107,"name":"Spanish Rice","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"P","guess":false,"img":["img/107-1.webp"]},{"id":108,"name":"Mushroom Rice","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"P","guess":false,"img":["img/108-1.webp","img/108-2.webp"]},{"id":109,"name":"Jeweled Brown Rice- dried fruits and nuts","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"P","guess":false,"img":["img/109-1.webp","img/109-2.webp"]},{"id":110,"name":"Vegetable Paella","cats":["Sides"],"desc":"","sizes":[{"label":"Small","price":150.0,"k":null},{"label":"Medium","price":175.0,"k":null},{"label":"Large","price":200.0,"k":null},{"label":"XLarge","price":250.0,"k":null}],"k":"P","guess":false,"img":["img/110-1.webp"]},{"id":111,"name":"Seared Tuna/Caramelized Fennel","cats":["Main Course"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":200.0,"k":null}],"k":"P","guess":false,"img":["img/111-1.webp"]},{"id":112,"name":"Pan seared Salmon/Crispy Leeks/Dijon Sauce","cats":["Main Course","Plated Dinners"],"desc":"Price is per pound","sizes":[{"label":"","price":50.0,"k":null}],"k":"P","guess":false,"img":["img/112-1.webp","img/112-2.webp"]},{"id":113,"name":"Roasted Salmon/ Saffron Butter Sauce","cats":["Main Course","Plated Dinners"],"desc":"Per pound","sizes":[{"label":"","price":50.0,"k":null}],"k":"D","guess":false,"img":["img/113-1.webp"]},{"id":114,"name":"Pan Seared Herb Branzino/Kalamata Herb Vinagrette","cats":["Main Course","Plated Dinners"],"desc":"Price is per pound","sizes":[{"label":"","price":40.0,"k":null}],"k":"P","guess":false,"img":["img/114-1.webp"]},{"id":115,"name":"Roasted Cod /Spinach/Wine Reduction","cats":["Main Course","Plated Dinners"],"desc":"Prices are Per Pound","sizes":[{"label":"","price":50.0,"k":null}],"k":"P","guess":false,"img":["img/115-1.webp"]},{"id":116,"name":"Sole Almondine","cats":["Main Course","Plated Dinners"],"desc":"Prices are per pound.","sizes":[{"label":"","price":50.0,"k":null}],"k":"P","guess":true,"img":["img/116-1.webp"]},{"id":117,"name":"Miso Glazed Sea Bass/Salmon","cats":["Main Course","Plated Dinners"],"desc":"Prices are per pound","sizes":[{"label":"","price":60.0,"k":null}],"k":"P","guess":false,"img":["img/117-1.webp"]},{"id":118,"name":"Tuna Milanese/Lemon caper sauce","cats":["Main Course","Plated Dinners"],"desc":"Price is per pound","sizes":[{"label":"","price":75.0,"k":null}],"k":"P","guess":false,"img":["img/118-1.webp"]},{"id":119,"name":"Veal Chops with Lemon Roasted Potatoes","cats":["Main Course","Plated Dinners","Mazza / Meats"],"desc":"Price per chop","sizes":[{"label":"","price":50.0,"k":null}],"k":"M","guess":false,"img":["img/119-1.webp"]},{"id":120,"name":"Veal Marsala/Piccata","cats":["Main Course","Mazza / Meats"],"desc":"","sizes":[{"label":"Small","price":150.0,"k":null},{"label":"Medium","price":200.0,"k":null},{"label":"Large","price":250.0,"k":null}],"k":"M","guess":false,"img":[]},{"id":121,"name":"Short Ribs Over Polenta/Mashed Potatoes","cats":["Main Course","Mazza / Meats"],"desc":"","sizes":[{"label":"","price":250.0,"k":null}],"k":"M","guess":false,"img":[]},{"id":122,"name":"Wagyu Strip Steak with Pearl Onions","cats":["Main Course","Plated Dinners","Mazza / Meats"],"desc":"Price per piece","sizes":[{"label":"","price":130.0,"k":null}],"k":"M","guess":false,"img":["img/122-1.webp"]},{"id":123,"name":"Butter Basted Cowboy Steaks","cats":["Main Course","Mazza / Meats"],"desc":"Price per steak","sizes":[{"label":"","price":250.0,"k":null}],"k":"M","guess":false,"img":["img/123-1.webp","img/123-2.webp"]},{"id":124,"name":"Zaatar Crusted Lamb Chops/Baby Carrots","cats":["Main Course","Mazza / Meats"],"desc":"Price per rack","sizes":[{"label":"","price":250.0,"k":null}],"k":"M","guess":false,"img":["img/124-1.webp","img/124-2.webp","img/124-3.webp"]},{"id":125,"name":"Mushroom Stuffed Rib Steaks","cats":["Main Course","Plated Dinners","Mazza / Meats"],"desc":"Price per steak","sizes":[{"label":"","price":125.0,"k":null}],"k":"M","guess":false,"img":["img/125-1.webp"]},{"id":126,"name":"Osso Buco Over Polenta","cats":["Main Course","Mazza / Meats"],"desc":"","sizes":[{"label":"","price":250.0,"k":null}],"k":"M","guess":false,"img":[]},{"id":127,"name":"Hoisin Glazed Wagyu Ribs","cats":["Main Course","Mazza / Meats"],"desc":"Price per pound","sizes":[{"label":"","price":100.0,"k":null}],"k":"M","guess":false,"img":[]},{"id":128,"name":"Chicken Paillard with Grilled Vegetables/ Pesto Coulis","cats":["Main Course"],"desc":"Price per 18 pieces","sizes":[{"label":"","price":150.0,"k":null}],"k":"M","guess":false,"img":["img/128-1.webp"]},{"id":129,"name":"Chicken Steaks with Wild Mushroom Gravy","cats":["Main Course","Plated Dinners"],"desc":"2 Steaks","sizes":[{"label":"","price":50.0,"k":null}],"k":"M","guess":false,"img":["img/129-1.webp"]},{"id":130,"name":"Pretzel Crusted Chicken Fingers","cats":["Hors d'oeuvres / Appetizers"],"desc":"Price per pound.","sizes":[{"label":"","price":50.0,"k":null}],"k":"M","guess":false,"img":[]},{"id":131,"name":"Chicken Paella","cats":["Main Course"],"desc":"","sizes":[{"label":"Medium","price":200.0,"k":null},{"label":"Large","price":250.0,"k":null}],"k":"M","guess":false,"img":["img/131-1.webp"]},{"id":132,"name":"Chicken marsala/Piccata","cats":["Main Course"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":175.0,"k":null},{"label":"Large","price":225.0,"k":null}],"k":"M","guess":false,"img":[]},{"id":133,"name":"Balsamic Chicken Modenese","cats":["Main Course"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":175.0,"k":null},{"label":"Large","price":225.0,"k":null}],"k":"M","guess":false,"img":["img/133-1.webp"]},{"id":134,"name":"Oven Roasted Turkey Breast","cats":["Main Course","Shabbat"],"desc":"Price per breast","sizes":[{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":200.0,"k":null}],"k":"M","guess":false,"img":["img/134-1.webp"]},{"id":135,"name":"Spicy Chicken Wings","cats":["Hors d'oeuvres / Appetizers","Main Course"],"desc":"Price per dozen","sizes":[{"label":"","price":50.0,"k":null}],"k":"M","guess":false,"img":[]},{"id":136,"name":"Deviled Eggs","cats":["Bris / Bar Mitzvah / Brunch"],"desc":"Comes with a dozen","sizes":[{"label":"","price":50.0,"k":null}],"k":"P","guess":false,"img":["img/136-1.webp"]},{"id":137,"name":"Poached, Hard Boiled, Jammy Eggs","cats":["Bris / Bar Mitzvah / Brunch"],"desc":"Comes with a dozen","sizes":[{"label":"","price":50.0,"k":null}],"k":"P","guess":false,"img":["img/137-1.webp","img/137-2.webp","img/137-3.webp"]},{"id":138,"name":"Shakshuka","cats":["Bris / Bar Mitzvah / Brunch","Dairy / Parve Lunch"],"desc":"","sizes":[{"label":"Mini","price":20.0,"k":null},{"label":"Small","price":75.0,"k":null},{"label":"Medium","price":100.0,"k":null}],"k":"P","guess":true,"img":["img/138-1.webp"]},{"id":139,"name":"Fritattas","cats":["Bris / Bar Mitzvah / Brunch","Dairy / Parve Lunch"],"desc":"","sizes":[{"label":"Mini","price":10.0,"k":null},{"label":"Small","price":20.0,"k":null},{"label":"Medium","price":30.0,"k":null},{"label":"Large","price":75.0,"k":null}],"k":"D","guess":true,"img":["img/139-1.webp","img/139-2.webp","img/139-3.webp"]},{"id":140,"name":"Assorted Quiches","cats":["Bris / Bar Mitzvah / Brunch","Dairy / Parve Lunch"],"desc":"Comes with a dozen","sizes":[{"label":"","price":50.0,"k":null}],"k":"D","guess":false,"img":["img/140-1.webp"]},{"id":141,"name":"Silver Dollar Pancake Stacks","cats":["Bris / Bar Mitzvah / Brunch"],"desc":"Comes with a dozen stacks.","sizes":[{"label":"Chocolate Chip","price":120.0,"k":null},{"label":"Blueberry","price":120.0,"k":null},{"label":"Buttermilk","price":120.0,"k":null}],"k":"D","guess":false,"img":["img/141-1.webp"]},{"id":142,"name":"French Toast Skewers","cats":["Bris / Bar Mitzvah / Brunch"],"desc":"Comes with a dozen skewers.","sizes":[{"label":"","price":75.0,"k":null}],"k":"D","guess":false,"img":["img/142-1.webp","img/142-2.webp"]},{"id":143,"name":"Pastries","cats":["Bris / Bar Mitzvah / Brunch"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":200.0,"k":null}],"k":"D","guess":true,"img":["img/143-1.webp"]},{"id":144,"name":"Avocado Toasts","cats":["Bris / Bar Mitzvah / Brunch","Dairy / Parve Lunch"],"desc":"Comes with a dozen pieces","sizes":[{"label":"","price":75.0,"k":null}],"k":"P","guess":true,"img":["img/144-1.webp","img/144-2.webp","img/144-3.webp"]},{"id":145,"name":"Preassembled Bagels","cats":["Bris / Bar Mitzvah / Brunch"],"desc":"Comes with a dozen mini bagels","sizes":[{"label":"","price":75.0,"k":null}],"k":"D","guess":false,"img":["img/145-1.webp"]},{"id":146,"name":"Sambusak","cats":["Hors d'oeuvres / Appetizers","Bris / Bar Mitzvah / Brunch"],"desc":"Per Dozen","sizes":[{"label":"","price":36.0,"k":null}],"k":"D","guess":false,"img":["img/146-1.webp"]},{"id":147,"name":"Phyllo Triangles","cats":["Hors d'oeuvres / Appetizers","Bris / Bar Mitzvah / Brunch"],"desc":"Per Dozen","sizes":[{"label":"","price":36.0,"k":null}],"k":"D","guess":false,"img":["img/147-1.webp"]},{"id":148,"name":"Mini Pizzas","cats":["Bris / Bar Mitzvah / Brunch","Dairy / Parve Lunch"],"desc":"Comes with a dozen","sizes":[{"label":"","price":24.0,"k":null}],"k":"D","guess":false,"img":["img/148-1.webp"]},{"id":149,"name":"Burrata","cats":["Bris / Bar Mitzvah / Brunch","Dairy / Parve Lunch"],"desc":"","sizes":[{"label":"Small","price":75.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"D","guess":false,"img":["img/149-1.webp"]},{"id":150,"name":"Kale Caesar Salad","cats":["Salads"],"desc":"sweet potato, ezekiel and chickpea croutons","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null},{"label":"Extra Large","price":200.0,"k":null}],"k":"D","guess":true,"img":["img/150-1.webp"]},{"id":151,"name":"Spinach Salad with Crispy Leeks","cats":["Salads"],"desc":"dried miso, parm, lime/truffle vinaigrette","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"D","guess":false,"img":["img/151-1.webp"]},{"id":152,"name":"Spinach Salad with Mushrooms/Crispy Quinoa","cats":["Salads"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null},{"label":"Extra Large","price":200.0,"k":null}],"k":"P","guess":true,"img":["img/152-1.webp"]},{"id":153,"name":"Chopped Italian","cats":["Salads"],"desc":"chopped tomato, kalamata, French beans, chickpeas","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null},{"label":"Extra Large","price":200.0,"k":null}],"k":"P","guess":false,"img":["img/153-1.webp"]},{"id":154,"name":"Chopped Israeli","cats":["Salads"],"desc":"finely chopped cucumber, tomato, peppers, onion, fresh herbs","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null},{"label":"Extra Large","price":200.0,"k":null}],"k":"P","guess":false,"img":["img/154-1.webp"]},{"id":155,"name":"Warm Lentil Salad","cats":["Salads"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"P","guess":false,"img":["img/155-1.webp","img/155-2.webp"]},{"id":156,"name":"Carciofi Salad","cats":["Salads"],"desc":"sliced baby artichokes, avocado, parm","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":200.0,"k":null},{"label":"Extra Large","price":250.0,"k":null}],"k":"D","guess":false,"img":["img/156-1.webp"]},{"id":157,"name":"Greek Feta Salad","cats":["Salads"],"desc":"cucumber, tomato, beans, kalamatas, parve yebrat","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null},{"label":"Extra Large","price":200.0,"k":null}],"k":"D","guess":false,"img":["img/157-1.webp"]},{"id":158,"name":"Pickled Vegetable Salad","cats":["Salads"],"desc":"mix of romaine and pickled veggies, good for Shabbat","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null},{"label":"Extra Large","price":200.0,"k":null}],"k":"P","guess":false,"img":["img/158-1.webp"]},{"id":159,"name":"French Nicoise","cats":["Salads"],"desc":"mesculin, olives, Italian tuna, capers, balsamic vinaigrette","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null},{"label":"Extra Large","price":200.0,"k":null}],"k":"P","guess":false,"img":["img/159-1.webp"]},{"id":160,"name":"Baby Gem/Roasted Cauliflower/ Halloumi Salad","cats":["Salads"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"D","guess":false,"img":["img/160-1.webp"]},{"id":161,"name":"Baby Arugula/Blood Orange/Endive Salad","cats":["Salads"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/161-1.webp"]},{"id":162,"name":"Autumn Kale Salad","cats":["Salads"],"desc":"kale, butternut squash, pomegranate, apple cider vinaigrette","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null},{"label":"Extra Large","price":200.0,"k":null}],"k":"P","guess":false,"img":["img/162-1.webp","img/162-2.webp"]},{"id":163,"name":"Tea Sandwiches","cats":["Hors d'oeuvres / Appetizers","Bris / Bar Mitzvah / Brunch"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":true,"img":["img/163-1.webp"]},{"id":164,"name":"Tuna/Egg Salad on Brioche","cats":["Hors d'oeuvres / Appetizers","Dairy / Parve Lunch"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/164-1.webp","img/164-2.webp"]},{"id":165,"name":"Mini Italian Tuna Subs","cats":["Hors d'oeuvres / Appetizers","Dairy / Parve Lunch"],"desc":"$10 A Piece","sizes":[{"label":"","price":10.0,"k":null}],"k":"P","guess":false,"img":["img/165-1.webp","img/165-2.webp","img/165-3.webp"]},{"id":166,"name":"Deli Wraps","cats":["Hors d'oeuvres / Appetizers"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"M","guess":false,"img":["img/166-1.webp"]},{"id":167,"name":"Mini Beef/Chicken Skewers","cats":["Hors d'oeuvres / Appetizers"],"desc":"$7 A Piece","sizes":[{"label":"","price":7.0,"k":null}],"k":"M","guess":false,"img":["img/167-1.webp"]},{"id":168,"name":"Vegetable or Chicken Dumplings","cats":["Hors d'oeuvres / Appetizers"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":200.0,"k":null}],"k":"PM","guess":false,"img":["img/168-1.webp"]},{"id":169,"name":"Vegetable or Chicken Egg Rolls","cats":["Hors d'oeuvres / Appetizers"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":200.0,"k":null}],"k":"PM","guess":false,"img":["img/169-1.webp"]},{"id":170,"name":"Mini Felafel Pita Bites with Tahini Sauce","cats":["Hors d'oeuvres / Appetizers"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"P","guess":false,"img":["img/170-1.webp","img/170-2.webp"]},{"id":171,"name":"Vegetable Rice Paper Rolls/Miso Tahini Dipping Sauce","cats":["Hors d'oeuvres / Appetizers"],"desc":"Price Per Dozen Pieces","sizes":[{"label":"","price":36.0,"k":null}],"k":"P","guess":false,"img":["img/171-1.webp","img/171-2.webp","img/171-3.webp"]},{"id":172,"name":"Smoked Salmon on Blinis or Cucumber Rounds","cats":["Hors d'oeuvres / Appetizers","Bris / Bar Mitzvah / Brunch"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"D","guess":true,"img":["img/172-1.webp"]},{"id":173,"name":"Pulled Beef/Chicken Tacos","cats":["Hors d'oeuvres / Appetizers"],"desc":"","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"M","guess":false,"img":["img/173-1.webp","img/173-2.webp"]},{"id":174,"name":"Spicy Tuna Tacos","cats":["Hors d'oeuvres / Appetizers"],"desc":"Small -> 30 PiecesMedium -> 50 PiecesLarge -> 75 Pieces","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":200.0,"k":null}],"k":"P","guess":false,"img":["img/174-1.webp"]},{"id":175,"name":"Tuna/Salmon tartare on chips or cucumber rounds","cats":["Hors d'oeuvres / Appetizers"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/175-1.webp"]},{"id":176,"name":"Seared Tuna on Wontons","cats":["Hors d'oeuvres / Appetizers"],"desc":"Small -> 35 PiecesMedium -> 50 PiecesLarge -> 75 Pieces","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":175.0,"k":null}],"k":"P","guess":false,"img":["img/176-1.webp"]},{"id":177,"name":"Halloumi Pepper Skewers","cats":["Hors d'oeuvres / Appetizers"],"desc":"Small -> 30 PiecesMedium -> 50 PiecesLarge -> 75 Pieces","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"D","guess":false,"img":["img/177-1.webp"]},{"id":178,"name":"Caprese Skewers","cats":["Hors d'oeuvres / Appetizers"],"desc":"Small -> 30 PiecesMedium -> 50 PiecesLarge -> 75 Pieces","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"D","guess":false,"img":["img/178-1.webp"]},{"id":179,"name":"Mushroom Ricotta Toasts","cats":["Hors d'oeuvres / Appetizers"],"desc":"Small -> 35 PiecesMedium -> 50 PiecesLarge -> 75 Pieces","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"D","guess":false,"img":["img/179-1.webp"]},{"id":180,"name":"Fig Ricotta Toasts","cats":["Hors d'oeuvres / Appetizers","Bris / Bar Mitzvah / Brunch"],"desc":"Small -> 35 PiecesMedium -> 50 PiecesLarge -> 75 Pieces","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"D","guess":false,"img":["img/180-1.webp"]},{"id":181,"name":"Mini Bruschetta Toasts","cats":["Hors d'oeuvres / Appetizers"],"desc":"Small -> 35 PiecesMedium -> 50 PiecesLarge -> 75 Pieces","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null}],"k":"P","guess":true,"img":["img/181-1.webp"]},{"id":182,"name":"Crudite","cats":["Hors d'oeuvres / Appetizers","Platters / Boards"],"desc":"a mix of freshly cut vegetables and dips","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null},{"label":"Extra Large","price":175.0,"k":null}],"k":"P","guess":false,"img":["img/182-1.webp","img/182-2.webp","img/182-3.webp","img/182-4.webp","img/182-5.webp","img/182-6.webp","img/182-7.webp"]},{"id":183,"name":"Charcuterie Boards","cats":["Platters / Boards"],"desc":"mix of df dried and cured meats (beef jerky, bresaola, basturma, pepperoni, Italian salami, cubed turkey and pastrami), crackers, fruits, veggies, dips Fruit Platters- mix of melons, grapes berries and exotic and decorative seasonal fruits","sizes":[{"label":"Small","price":150.0,"k":null},{"label":"Medium","price":175.0,"k":null},{"label":"Large","price":250.0,"k":null},{"label":"Extra Large","price":275.0,"k":null}],"k":"M","guess":false,"img":["img/183-1.webp","img/183-2.webp","img/183-3.webp","img/183-4.webp"]},{"id":184,"name":"Smoked Salmon/Breakfast Board","cats":["Platters / Boards","Bris / Bar Mitzvah / Brunch"],"desc":"Different varieties of smoked salmon, cucumbers, tomatoes, cream cheese, onions, capers and all the fixings","sizes":[{"label":"Small","price":150.0,"k":null},{"label":"Medium","price":175.0,"k":null},{"label":"Large","price":225.0,"k":null}],"k":"D","guess":false,"img":["img/184-1.webp"]},{"id":185,"name":"Fancy Cheese Board","cats":["Platters / Boards"],"desc":"anytime cheeses with crackers, breads, nuts, fruits, etc (mix of mini mozzarella, parm, cheddar, gouda, swiss, brie, Manchego, torio, etc)","sizes":[{"label":"Small","price":150.0,"k":null},{"label":"Medium","price":175.0,"k":null},{"label":"Large","price":225.0,"k":null},{"label":"Extra Large","price":250.0,"k":null}],"k":"D","guess":false,"img":["img/185-1.webp","img/185-2.webp"]},{"id":186,"name":"Breakfast Cheese Board","cats":["Platters / Boards","Bris / Bar Mitzvah / Brunch"],"desc":"Breakfast type cheeses with breads, crackers, fruits, nuts, jellies, kaak (twisted cheese, mozzarella, Syrian cheese, cheddars, parm, swiss, goat)","sizes":[{"label":"Small","price":150.0,"k":null},{"label":"Medium","price":175.0,"k":null},{"label":"Large","price":225.0,"k":null},{"label":"Extra Large","price":250.0,"k":null}],"k":"D","guess":false,"img":["img/186-1.webp"]},{"id":187,"name":"Candy Platters","cats":["Platters / Boards"],"desc":"mix of gummy candies, themed upon request","sizes":[{"label":"Small","price":75.0,"k":null},{"label":"Medium","price":100.0,"k":null},{"label":"Large","price":125.0,"k":null},{"label":"Extra Large","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/187-1.webp","img/187-2.webp","img/187-3.webp","img/187-4.webp","img/187-5.webp","img/187-6.webp"]},{"id":188,"name":"Mansoura/Chocolate Platters","cats":["Platters / Boards"],"desc":"","sizes":[{"label":"Small","price":100.0,"k":null},{"label":"Medium","price":125.0,"k":null},{"label":"Large","price":150.0,"k":null},{"label":"Extra Large","price":200.0,"k":null}],"k":"P","guess":true,"img":["img/188-1.webp","img/188-2.webp","img/188-3.webp","img/188-4.webp"]},{"id":189,"name":"Specialty Pastry/Bread Platter","cats":["Platters / Boards"],"desc":"curated selection of artisan breads and French pastries, bagels, crackers","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":200.0,"k":null},{"label":"Extra Large","price":250.0,"k":null}],"k":"P","guess":true,"img":["img/189-1.webp"]},{"id":190,"name":"Grazing/Snacking Boards","cats":["Platters / Boards"],"desc":"mix of themed savory and sweet snacks, bar snacks","sizes":[{"label":"Small","price":75.0,"k":null},{"label":"Medium","price":100.0,"k":null},{"label":"Large","price":125.0,"k":null},{"label":"XLarge","price":150.0,"k":null}],"k":"P","guess":false,"img":["img/190-1.webp"]},{"id":191,"name":"Italian Antipasti Platter","cats":["Platters / Boards"],"desc":"perfect for your themed Italian dinner parties- mix of Italian pickles, marinated vegetables, dipping oils, sourdough, breadsticks, crackers, parm, olives","sizes":[{"label":"Small","price":150.0,"k":null},{"label":"Medium","price":175.0,"k":null},{"label":"Large","price":225.0,"k":null},{"label":"XLarge","price":250.0,"k":null}],"k":"D","guess":false,"img":[]},{"id":192,"name":"Mediterranean/Greek/Israeli Platters","cats":["Platters / Boards"],"desc":"mix of Mediterranean veggies, dips and snacks- stuffed grape leaves, olives, feta, halloumi skewers, marinated tomatoes, cucumbers, roasted peppers, hummus, tahini, felafel, pita chips, etc","sizes":[{"label":"Small","price":150.0,"k":null},{"label":"Medium","price":175.0,"k":null},{"label":"Large","price":225.0,"k":null},{"label":"XLarge","price":250.0,"k":null}],"k":"D","guess":true,"img":["img/192-1.webp","img/192-2.webp","img/192-3.webp","img/192-4.webp","img/192-5.webp"]},{"id":193,"name":"“Lou’s Deli” Board","cats":["Platters / Boards"],"desc":"mix of deli meats (turkeys, pastrami, corned beef, salami), rye , pumpernickel, club rolls, df mustards and mayos, pickle variety, coleslaw","sizes":[{"label":"Small","price":125.0,"k":null},{"label":"Medium","price":150.0,"k":null},{"label":"Large","price":200.0,"k":null},{"label":"Extra Large","price":250.0,"k":null}],"k":"M","guess":false,"img":["img/193-1.webp","img/193-2.webp","img/193-3.webp"]}]</script>
+<script id="marketData" type="application/json">[["Drip Coffee","Café","","Reg $5 · Lg $6","Coffee & Matcha"],["Americano","Café","","Reg $5.25 · Lg $6.25","Coffee & Matcha"],["Cappuccino","Café","d57fcae9e349265400e1671d758dae8a","Reg $6 · Lg $7","Coffee & Matcha"],["Latte","Café","","Reg $6 · Lg $7","Coffee & Matcha"],["Cold Brew","Café","","Reg $7 · Lg $8","Coffee & Matcha"],["Iced Coffee","Café","593d214fb5581fe8667d07fa8cb92bd6","","Coffee & Matcha"],["Brown Sugar Shaken Espresso","Café","183ff912701349bf7b7378b7b1ade2a2","$9","Coffee & Matcha"],["Black Sesame Latte","Café","","$10","Coffee & Matcha"],["Cardamom Rose Latte","Café","","$9","Coffee & Matcha"],["Pistachio Cardamom Latte","Café","","$10","Coffee & Matcha"],["Pumpkin Spice Latte","Café","","","Coffee & Matcha"],["Matcha Latte (iced or hot)","Café","35f4d7ec62a62bb3f07720714f0be542","$10","Coffee & Matcha"],["Lavender Matcha","Café","ea94da9cc4bfd31a892694ac6ebc0e3b","$12","Coffee & Matcha"],["Mango Matcha","Café","","$12","Coffee & Matcha"],["Strawberry Matcha","Café","","$12","Coffee & Matcha"],["Green Protein Smoothie","Café","","$12","Smoothies"],["Berry Blast Smoothie","Café","","$12","Smoothies"],["Tropical Smoothie","Café","","$12","Smoothies"],["PB Chocolate Smoothie","Café","","$12","Smoothies"],["Strawberry Banana Smoothie","Café","","$12","Smoothies"],["GF Coffee Cake","Café","1309c6c81293c969213126b8f3dd8ec9","","Pastries"],["GF Chocolate Chip Cookie","Café","33df44d2f29c9d43efa34787c8c51bab","","Pastries"],["GF S’mores Cookie","Café","1d1cf9c7deb6afc1ca1a8aa00db88dac","","Pastries"],["Chocolate Crumb Muffin","Café","","","Pastries"],["Mini Croissant","Café","","","Pastries"],["Mini Chocolate Croissant","Café","","","Pastries"],["GF Brownie","Café","","","Pastries"],["Kale Caesar Salad","Grab & Go","5a7c56f6d3c2cd5f5154351297ff49f0","$22","Salads"],["Chopped Italian Salad","Grab & Go","010c5b5671019b034c1ce2c9b5830fd4","$22","Salads"],["Greek Salad","Grab & Go","e7f08a9b80f7eca5adeed89fe920b7c4","$22","Salads"],["Chopped Market Salad","Grab & Go","3b1b75e07590c68927ccddfb281e75f6","$22","Salads"],["Green Goddess Salad","Grab & Go","e0631dd16506f787b174fe0cccd6df04","$22","Salads"],["Arugula Beet Salad","Grab & Go","80ed107c72a860a6059a4b44d66df732","$22","Salads"],["Aztec Summer Salad","Grab & Go","fbf10c8330a008569d3312fbbd79585c","$22","Salads"],["Asian Grain Bowl","Grab & Go","8e6903ecb21b9626366f2256eafa6c0b","$24","Grain Bowls"],["Mediterranean Falafel Bowl","Grab & Go","90ca36621a02d80272152f271ba61eff","$24","Grain Bowls"],["Wild Salmon Bowl","Grab & Go","8f7e103eec6df875770ecc9138a527a3","$24","Grain Bowls"],["Egg White Wrap","Grab & Go","","$20","Sandwiches & Wraps"],["Italian Tuna Sourdough","Grab & Go","ea55cddd4c6f4a719aa3c4f37165c488","$20","Sandwiches & Wraps"],["Spa Tuna Sourdough","Grab & Go","fc41b893f328a000e0d710ad67bdbe46","$20","Sandwiches & Wraps"],["Caprese Sourdough","Grab & Go","","$18","Sandwiches & Wraps"],["Veggie Burger Wrap","Grab & Go","a5ce99817fa60b793b95689178350d30","$18","Sandwiches & Wraps"],["Mediterranean Tuna Wrap","Grab & Go","72c0934add34f417db9035c03d96caaa","$18","Sandwiches & Wraps"],["Grilled Salmon Caesar Wrap","Grab & Go","","$20","Sandwiches & Wraps"],["Egg White Royo","Grab & Go","26724b813ef33a23c6101d37d9c253f2","$16","Royos"],["Tuna Royo","Grab & Go","1132879018b2b28e76aeec8f6b899248","$16","Royos"],["Tofu Rice Paper Rolls","Grab & Go","858db46ed66d28b6636eb0cd09885480","$14","Rice Paper Rolls"],["Shiitake Rice Paper Rolls","Grab & Go","5b677dc98ee364e254d6e1a4a5f19660","$14","Rice Paper Rolls"],["Veggie Rice Paper Rolls","Grab & Go","","$12","Rice Paper Rolls"],["Lentil Salad","Grab & Go","a2cc17be93013cb4924ca41911d77d2f","$10","Sides"],["Seitan Chimichurri","Grab & Go","ec5e0f278c0dfe790d2018193a8ed36c","$20","Sides"],["Macaroni Salad","Grab & Go","97686b6b84865533d62f04658fa2c096","$8","Sides"],["Lentil Barley Soup","Grab & Go","","$12","Soups"],["Winter Squash Pumpkin Soup","Grab & Go","","$12","Soups"],["Regular Oats","Grab & Go","","$10","Breakfast Cups"],["Plain Greek Yogurt and Granola","Grab & Go","7d2e49716dbf720fdd12523bf15a40ac","$12","Breakfast Cups"],["Overnight Oats","Grab & Go","589d91e0fd0aa99fa5d4361b78624b2a","$12","Breakfast Cups"],["Peanut Butter Oat Balls","Grab & Go","f234e479233cd8b158e0ac9c6a927d7c","$10","Breakfast Cups"],["Chia Pudding","Grab & Go","16601d067f89243469dd799ecdaceecb","$10","Breakfast Cups"],["Fruit Salad","Grab & Go","","$10","Breakfast Cups"],["Bagel & Cream Cheese","Prepared Food","","$6","Breakfast"],["Bagel, Cream Cheese, Smoked Salmon & Cucumber","Prepared Food","","$8","Breakfast"],["Breakfast Burrito","Prepared Food","","$20","Breakfast"],["Avocado Toast","Prepared Food","","$16","Toasts & Hot Sandwiches"],["Smoked Salmon Toast","Prepared Food","","$16","Toasts & Hot Sandwiches"],["Fig Ricotta Toast","Prepared Food","","$16","Toasts & Hot Sandwiches"],["Classic Grilled Cheese","Prepared Food","","$16","Toasts & Hot Sandwiches"],["Truffle Grilled Cheese","Prepared Food","","$22","Toasts & Hot Sandwiches"],["Caprese Panini","Prepared Food","","$18","Toasts & Hot Sandwiches"],["Eddie’s Tuna Melt","Prepared Food","d207167c60b7d1dec058e9b414cd9a7a","$22","Toasts & Hot Sandwiches"],["Grilled Veggie Sandwich","Prepared Food","","$22","Toasts & Hot Sandwiches"],["Egg White Delight Sandwich","Prepared Food","","$20","Toasts & Hot Sandwiches"],["Melanzane Sandwich","Prepared Food","","$22","Toasts & Hot Sandwiches"],["BBQ Tempeh on Sourdough","Prepared Food","","$20","Toasts & Hot Sandwiches"],["Fresh Breads & Sourdough","Gourmet Goods / Pantry","","","Breads"],["Loose Tea Tins","Gourmet Goods / Pantry","","","Tea"],["Spices & Seasonings","Gourmet Goods / Pantry","","","Seasonings"],["Gluten Free Shelf","Gourmet Goods / Pantry","","","Gluten Free"],["Sweet Treats","Gourmet Goods / Pantry","","","Snacks & Sweets"]]</script>
+<script>
+const __jmc = () => {
+const MENU = JSON.parse(document.getElementById('menuData').textContent);
+const BY = Object.fromEntries(MENU.map(m => [m.id, m]));
+const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const logEvent = (event, data = {}) => { try { (window.dataLayer = window.dataLayer || []).push({event, ...data}); } catch (e) {} };
+document.addEventListener('click', e => { const a = e.target.closest && e.target.closest('a[href]'); if (!a) return; const h = a.getAttribute('href');
+  const ev = h.startsWith('tel:') ? 'call' : h.startsWith('sms:') ? 'text_julie' : h.startsWith('mailto:') ? 'email' : /ubereats\.com/.test(h) ? 'order_uber_eats' : /google\.com\/maps/.test(h) ? 'directions' : /instagram\.com/.test(h) ? 'instagram' : /writereview/.test(h) ? 'leave_review' : null;
+  if (ev) logEvent(ev, {label: (a.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 40)}); }, true);
+const thumb = src => src.replace(/^img\//, 'img/t/');
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const G = window.gsap, ST = window.ScrollTrigger, MOTION = !!(G && ST) && !reduce;
+// If the page was already painted before the scripts arrived (slow phone networks), don't replay the opening animation on content people can already see.
+const LATE = (performance.getEntriesByType && performance.getEntriesByType('paint').length > 0); let firstView = true;
+if (G && ST) G.registerPlugin(ST);
+if (MOTION) document.documentElement.classList.add('motion');
+let lenis = null;
+if (MOTION && window.Lenis) { try { lenis = new Lenis({lerp: .09, smoothWheel: true}); lenis.on('scroll', ST.update); G.ticker.add(t => lenis.raf(t * 1000)); G.ticker.lagSmoothing(0); } catch (e) { lenis = null; } }
+const toTop = () => lenis ? lenis.scrollTo(0, {immediate: true, force: true}) : scrollTo(0, 0);
+const money = n => '$' + (Math.round(n * 100) / 100).toLocaleString('en-US', {minimumFractionDigits: n % 1 ? 2 : 0, maximumFractionDigits: 2});
+const KNAME = {M: 'Meat', D: 'Dairy', P: 'Parve'};
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let toastT; const toast = msg => { const t = $('#toast'); t.textContent = msg; t.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('on'), 2200); };
+const store = { get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} } };
+
+/* ---------- Hours (America/New_York) ---------- */
+const HOURS = [['Sunday',8,17],['Monday',8,17],['Tuesday',8,17],['Wednesday',8,17],['Thursday',8,17],['Friday',8,14],['Saturday',null,null]];
+const fmtH = h => (h > 12 ? h - 12 : h) + (h >= 12 ? ' PM' : ' AM');
+function nyNow() { const p = new Intl.DateTimeFormat('en-US', {timeZone: 'America/New_York', weekday: 'long', hour: 'numeric', minute: 'numeric', hour12: false}).formatToParts(new Date()); const g = t => p.find(x => x.type === t)?.value; return {day: g('weekday'), h: +g('hour') % 24, m: +g('minute')}; }
+function renderHours() {
+  const now = nyNow(), di = HOURS.findIndex(d => d[0] === now.day), d = HOURS[di];
+  const t = now.h + now.m / 60, open = d && d[1] !== null && t >= d[1] && t < d[2];
+  let txt;
+  if (open) txt = 'Open now · until ' + fmtH(d[2]);
+  else { let j = di, label = ''; for (let k = 0; k < 8; k++) { const dd = HOURS[j]; if (dd[1] !== null && (k > 0 || t < dd[1])) { label = (k === 0 ? 'today' : k === 1 ? 'tomorrow' : dd[0]) + ' ' + fmtH(dd[1]); break; } j = (j + 1) % 7; } txt = 'Closed · opens ' + label; }
+  const pill = $('#openPill'); pill.classList.toggle('is-open', open); pill.lastElementChild.textContent = txt;
+  const order = [3,4,5,6,0,1,2]; // Wednesday first, as the store lists it
+  const rows = order.map(i => { const r = HOURS[i]; return `<tr class="${i === di ? 'now' : ''}"><td>${r[0]}</td><td>${r[1] === null ? 'Closed' : fmtH(r[1]) + ' – ' + fmtH(r[2])}</td></tr>`; }).join('');
+  $$('#hoursTable, [data-hours]').forEach(tb => tb.innerHTML = rows);
+  $('#todayLine').innerHTML = `<b>${txt}</b><span>Sun–Thu 8 AM–5 PM</span><span>Fri 8 AM–2 PM</span><span>Sat closed for Shabbat</span>`;
+}
+renderHours(); setInterval(renderHours, 60000);
+
+/* ---------- Split headlines into words for the rise-in ---------- */
+function splitWords(el) {
+  if (el.dataset.split) return; el.dataset.split = 1;
+  const walk = node => { [...node.childNodes].forEach(n => {
+    if (n.nodeType === 3) { const frag = document.createDocumentFragment(); n.textContent.split(/(\s+)/).forEach(w => { if (!w) return; if (/^\s+$/.test(w)) frag.append(w); else { const o = document.createElement('span'); o.className = 'w'; const i = document.createElement('span'); i.textContent = w; o.append(i); frag.append(o); } }); n.replaceWith(frag); }
+    else if (n.nodeType === 1) walk(n); }); };
+  walk(el);
+}
+function riseIn(view) {
+  if (reduce) return;
+  $$('.split', view).forEach(h => { splitWords(h); $$('.w>span', h).forEach((s, i) => s.animate([{transform: 'translateY(105%)'}, {transform: 'translateY(0)'}], {duration: 900, delay: 120 + i * 55, easing: 'cubic-bezier(.23,1,.32,1)', fill: 'backwards'})); });
+}
+
+/* ---------- Scroll reveal (only blocks below the fold start lifted) ---------- */
+const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.remove('pre'); io.unobserve(e.target); } }), {rootMargin: '0px 0px -8% 0px'}) : null;
+function armReveal(view) {
+  if (reduce || !io) return;
+  const vh = innerHeight;
+  $$('.rv', view).forEach((el, i) => { const r = el.getBoundingClientRect(); if (r.top > vh * .92) { el.classList.add('pre'); el.style.transitionDelay = (i % 4) * 70 + 'ms'; io.observe(el); } });
+}
+
+/* ---------- Home: dish reel + instagram ---------- */
+const REEL = [[192,1],[124,2],[185,1],[141,1],[77,2],[22,1],[35,1],[150,1],[14,1],[144,3],[183,3],[36,1]];
+const fromPrice = m => Math.min(...m.sizes.map(s => s.price));
+$('#track').innerHTML = REEL.map(([id, n]) => { const m = BY[id]; return `<a class="dish" href="/julies-market-cafe-demo./catering/" data-photo data-goto="${id}"><div class="ph"><img src="img/t/${id}-${n}.webp" data-full="img/${id}-${n}.webp" alt="${esc(m.name)}" loading="lazy" decoding="async"></div><div class="meta"><h3>${esc(m.name)}</h3><span class="from tab">from ${money(fromPrice(m))}</span></div><div style="margin-top:8px">${kTag(m.k)}</div></a>`; }).join('');
+$('#igGrid').innerHTML = [[187,3],[192,1],[57,1],[62,2],[171,3],[182,7]].map(([id, n]) => `<a href="https://www.instagram.com/julieebani/" target="_blank" rel="noopener" data-photo aria-label="Julie on Instagram"><img src="img/t/${id}-${n}.webp" alt="" loading="lazy" decoding="async"></a>`).join('');
+function kTag(k) { if (k === 'PM') return '<span class="k P"><i></i>Veg parve</span> <span class="k M"><i></i>Chicken meat</span>'; if (k === 'MIX') return '<span class="k M"><i></i>Meat</span> <span class="k D"><i></i>Dairy</span>'; if (k === 'BOOK') return '<span class="k P"><i></i>Book</span>'; return `<span class="k ${k}"><i></i>${KNAME[k]}</span>`; }
+const reel = $('#reel'), track = $('#track');
+function sizeReel() { if (MOTION) { reel.style.height = ''; return; } if (innerWidth <= 760) { reel.style.height = ''; return; } const extra = Math.max(0, track.scrollWidth - innerWidth + 32); reel.style.height = (reel.firstElementChild.offsetHeight + innerHeight + extra) + 'px'; }
+function moveReel() { if (MOTION || innerWidth <= 760 || reduce || $('[data-view="home"]').hidden) return; const r = reel.getBoundingClientRect(), extra = Math.max(0, track.scrollWidth - innerWidth + 32), span = reel.offsetHeight - innerHeight; const p = Math.min(1, Math.max(0, (-r.top + reel.firstElementChild.offsetHeight) / Math.max(1, span - reel.firstElementChild.offsetHeight))); track.style.transform = `translate3d(${-p * extra}px,0,0)`; }
+if (reduce) { reel.style.height = ''; $('.stick', reel).style.position = 'static'; track.style.overflowX = 'auto'; } else { addEventListener('resize', () => { sizeReel(); moveReel(); }); addEventListener('scroll', () => requestAnimationFrame(moveReel), {passive: true}); }
+
+/* ---------- Market counter (photos from the store's Uber Eats listing) ---------- */
+const MARKET = JSON.parse(document.getElementById('marketData').textContent);
+const MSECS = ['All', 'Café', 'Grab & Go', 'Prepared Food', 'Gourmet Goods / Pantry'];
+let mSec = 'All';
+const mCount = sec => sec === 'All' ? MARKET.length : MARKET.filter(m => m[1] === sec).length;
+$('#mChips').innerHTML = MSECS.map(s => `<button class="chip" data-ms="${esc(s)}" aria-pressed="${s === mSec}">${esc(s)}<small>${mCount(s)}</small></button>`).join('');
+$$('.dept[data-ms]').forEach(d => { d.querySelector('.dept-n').textContent = `${mCount(d.dataset.ms)} items →`; d.setAttribute('aria-pressed', 'false'); });
+function renderMarket() {
+  const g = $('#mGrid'), prev = new Map($$('.mcard', g).map(el => [el.dataset.h, el.getBoundingClientRect()]));
+  const SO = MSECS.slice(1), subs = [...new Set(MARKET.map(m => m[4]))];
+  const shown = MARKET.filter(m => mSec === 'All' || m[1] === mSec).map((m, i) => [m, i]).sort(([a, i], [b, j]) => (SO.indexOf(a[1]) - SO.indexOf(b[1])) || (subs.indexOf(a[4]) - subs.indexOf(b[4])) || (!!b[2] - !!a[2]) || i - j).map(([m]) => m);
+  const lbl = sub => mSec === 'All' ? `<span class="sec-l">${esc(sub)}</span>` : '';
+  let last = '';
+  g.innerHTML = shown.map(([n, s, h, price, sub]) => {
+    const head = (mSec === 'All' ? s : sub) !== last ? `<h3 class="msub">${esc(last = (mSec === 'All' ? s : sub))}</h3>` : '';
+    const pr = price ? `<p class="mprice">${esc(price)}</p>` : `<p class="mprice ask">Price in store</p>`;
+    return head + (h
+      ? `<article class="mcard" data-h="${h}" data-photo><div class="ph"><img src="img/t/m-${h}.webp" data-full="img/m-${h}.webp" alt="${esc(n)}" loading="lazy" decoding="async"></div>${lbl(sub)}<h3>${esc(n)}</h3>${pr}</article>`
+      : `<article class="mcard" data-h="${esc(n)}"><div class="ph"><div class="tag-ph"><span>Photo coming</span></div></div>${lbl(sub)}<h3>${esc(n)}</h3>${pr}</article>`);
+  }).join('');
+  if (!reduce) $$('.mcard', g).forEach((el, i) => { const p = prev.get(el.dataset.h), r = el.getBoundingClientRect(); if (p) { const dx = p.left - r.left, dy = p.top - r.top; if (dx || dy) el.animate([{transform: `translate(${dx}px,${dy}px)`}, {transform: 'none'}], {duration: 520, easing: 'cubic-bezier(.77,0,.175,1)'}); } else if (prev.size) el.animate([{opacity: 0, transform: 'translateY(14px) scale(.98)'}, {opacity: 1, transform: 'none'}], {duration: 420, delay: Math.min(i, 12) * 22, easing: 'cubic-bezier(.23,1,.32,1)'}); });
+}
+function pickMarket(sec) {
+  mSec = sec;
+  $$('#mChips .chip').forEach(c => c.setAttribute('aria-pressed', c.dataset.ms === sec));
+  $$('.dept[data-ms]').forEach(d => d.setAttribute('aria-pressed', d.dataset.ms === sec));
+  renderMarket(); if (MOTION) refreshSoon();
+}
+$('#mChips').addEventListener('click', e => { const b = e.target.closest('.chip'); if (b) pickMarket(b.dataset.ms); });
+$$('.dept[data-ms]').forEach(d => d.addEventListener('click', () => {
+  pickMarket(d.dataset.ms);
+  const t = $('#counterh'); if (lenis) lenis.scrollTo(t, {offset: -90, duration: 1.1}); else t.scrollIntoView({behavior: reduce ? 'auto' : 'smooth'});
+}));
+renderMarket();
+
+/* ---------- Catering menu ---------- */
+const CATS = ['All',"Hors d'oeuvres / Appetizers",'Platters / Boards','Salads','Main Course','Sides','Bris / Bar Mitzvah / Brunch','Dairy / Parve Lunch','Plated Dinners','Mazza / Meats','Shabbat'];
+let state = { cat: 'All', q: '', kitchen: store.get('jmc.kitchen', ''), cart: store.get('jmc.cart', []) };
+const kOf = (m, size) => (m.k === 'MIX' ? (m.sizes.find(s => s.label === size)?.k || 'P') : m.k);
+function allowed(m, size) {
+  const k = kOf(m, size);
+  if (m.k === 'BOOK' || !state.kitchen) return true;
+  if (k === 'P' || k === 'PM') return true;
+  return k === state.kitchen;
+}
+function blockedReason(m) {
+  if (!state.kitchen || m.k === 'BOOK') return '';
+  if (m.k === 'MIX') return '';
+  if (m.k === 'P' || m.k === 'PM') return '';
+  return m.k !== state.kitchen ? `${KNAME[m.k]} dish · not part of a ${KNAME[state.kitchen].toLowerCase()} order` : '';
+}
+$('#chips').innerHTML = CATS.map(c => { const n = c === 'All' ? MENU.length : MENU.filter(m => m.cats.includes(c)).length; return `<button class="chip" data-cat="${esc(c)}" aria-pressed="${c === state.cat}">${esc(c)}<small>${n}</small></button>`; }).join('');
+function card(m) {
+  const reason = blockedReason(m), off = !!reason;
+  const ph = m.img.length ? `<img src="${thumb(m.img[0])}" data-full="${m.img[0]}" alt="${esc(m.name)}" loading="lazy" decoding="async">` : `<div class="tag-ph"><b>${esc(m.cats[0] || 'Catering')}</b><span>Photo coming</span></div>`;
+  const sizes = m.sizes.map((s, i) => `<option value="${i}">${esc(s.label || 'Standard')} · ${money(s.price)}</option>`).join('');
+  return `<article class="item${off ? ' off' : ''}" data-id="${m.id}" id="dish-${m.id}">
+    <div class="ph" ${m.img.length ? 'data-photo' : ''}>${ph}<span style="position:absolute;left:10px;top:10px;display:flex;gap:4px;flex-wrap:wrap">${kTag(m.k)}</span>${m.img.length > 1 ? `<span class="n">${m.img.length} photos</span>` : ''}</div>
+    <div class="body">
+      <h3>${esc(m.name)}</h3>
+      ${m.desc ? `<p class="d">${esc(m.desc)}</p>` : ''}
+      <div class="price-line tab"><span>${m.sizes.length > 1 ? 'from ' + money(fromPrice(m)) : money(m.sizes[0].price)}</span><small>${m.sizes.length > 1 ? m.sizes.length + ' sizes' : ''}</small></div>
+      <p class="why">${esc(reason)}</p>
+      <div class="row">
+        ${m.sizes.length > 1 ? `<select aria-label="Size for ${esc(m.name)}" id="sz-${m.id}">${sizes}</select>` : `<span style="flex:1;font:500 13px/1.2 var(--f-mono);color:var(--muted)">${esc(m.sizes[0].label || 'One size')}</span>`}
+        <div class="qty"><button data-q="-1" aria-label="Fewer">−</button><input id="qt-${m.id}" type="number" min="1" max="99" value="1" aria-label="Quantity"><button data-q="1" aria-label="More">+</button></div>
+        <button class="add" ${off ? 'disabled aria-disabled="true"' : ''}>Add</button>
+      </div>
+    </div></article>`;
+}
+let firstGrid = true;
+function renderGrid() {
+  const q = state.q.trim().toLowerCase();
+  const list = MENU.filter(m => (state.cat === 'All' || m.cats.includes(state.cat)) && (!q || (m.name + ' ' + m.desc).toLowerCase().includes(q)))
+    .sort((a, b) => { const ci = m => m.cats.length ? CATS.indexOf(m.cats[0]) : 99; return state.cat === 'All' && ci(a) !== ci(b) ? ci(a) - ci(b) : (b.img.length > 0) - (a.img.length > 0); });
+  const grid = $('#grid');
+  const prev = new Map($$('.item', grid).map(el => [el.dataset.id, el.getBoundingClientRect()]));
+  grid.innerHTML = list.length ? list.map(card).join('') : `<p class="empty">No dishes match “${esc(state.q)}”. Try another word or category.</p>`;
+  $('#countLine').textContent = `${list.length} ${list.length === 1 ? 'dish' : 'dishes'}${state.cat !== 'All' ? ' in ' + state.cat : ''}${state.kitchen ? ' · ' + KNAME[state.kitchen] + ' order' : ''}`;
+  if (!reduce && !firstGrid) $$('.item', grid).forEach((el, i) => { const p = prev.get(el.dataset.id), r = el.getBoundingClientRect(); if (p) { const dx = p.left - r.left, dy = p.top - r.top; if (dx || dy) el.animate([{transform: `translate(${dx}px,${dy}px)`}, {transform: 'none'}], {duration: 520, easing: 'cubic-bezier(.77,0,.175,1)'}); } else if (r.top < innerHeight) el.animate([{opacity: 0, transform: 'translateY(16px) scale(.98)'}, {opacity: 1, transform: 'none'}], {duration: 420, delay: Math.min(i, 12) * 30, easing: 'cubic-bezier(.23,1,.32,1)', fill: 'backwards'}); });
+  firstGrid = false;
+  if (MOTION) refreshSoon();
+}
+$('#chips').addEventListener('click', e => { const b = e.target.closest('.chip'); if (!b) return; state.cat = b.dataset.cat; $$('.chip').forEach(c => c.setAttribute('aria-pressed', c === b)); renderGrid(); });
+let st; $('#search').addEventListener('input', e => { clearTimeout(st); st = setTimeout(() => { state.q = e.target.value; renderGrid(); }, 120); });
+const cartSide = () => { for (const l of state.cart) { const kk = kOf(BY[l.id], l.size); if (kk === 'M' || kk === 'D') return kk; } return ''; };
+function setKitchen(k) {
+  if (!k && cartSide()) { toast(`Your quote is a ${KNAME[cartSide()].toLowerCase()} order. Remove those dishes to browse everything.`); return; }
+  if (k && state.cart.some(l => { const m = BY[l.id]; const kk = kOf(m, l.size); return (kk === 'M' || kk === 'D') && kk !== k; })) {
+    if (!confirmSwitch(k)) return;
+  }
+  state.kitchen = k; store.set('jmc.kitchen', k);
+  $$('.kbtn').forEach(b => b.setAttribute('aria-pressed', b.dataset.k === k));
+  renderGrid(); renderTray();
+}
+let pendingSwitch = null;
+function confirmSwitch(k) {
+  if (pendingSwitch === k) { state.cart = state.cart.filter(l => { const kk = kOf(BY[l.id], l.size); return kk !== 'M' && kk !== 'D' || kk === k; }); saveCart(); pendingSwitch = null; toast('Removed dishes from the other kitchen'); return true; }
+  pendingSwitch = k; toast(`Your quote has ${k === 'M' ? 'dairy' : 'meat'} dishes. Tap again to remove them and switch.`); return false;
+}
+$$('.kbtn').forEach(b => b.addEventListener('click', () => setKitchen(b.dataset.k)));
+$$('.kbtn').forEach(b => b.setAttribute('aria-pressed', b.dataset.k === state.kitchen));
+
+$('#grid').addEventListener('click', e => {
+  const art = e.target.closest('.item'); if (!art) return; const m = BY[art.dataset.id];
+  const qi = $('input', art);
+  if (e.target.closest('[data-q]')) { qi.value = Math.max(1, Math.min(99, (+qi.value || 1) + +e.target.closest('[data-q]').dataset.q)); return; }
+  if (!e.target.closest('.add') || art.classList.contains('off')) return;
+  const sel = $('select', art), si = sel ? +sel.value : 0, size = m.sizes[si];
+  const k = kOf(m, size.label);
+  if (!state.kitchen && (k === 'M' || k === 'D')) { setKitchen(k); toast(`Started a ${KNAME[k].toLowerCase()} order`); }
+  else if (!allowed(m, size.label)) { toast(`That size is ${KNAME[k].toLowerCase()}. This is a ${KNAME[state.kitchen].toLowerCase()} order.`); return; }
+  const qty = Math.max(1, Math.min(99, +qi.value || 1));
+  const ex = state.cart.find(l => l.id === m.id && l.size === size.label);
+  if (ex) ex.qty = Math.min(99, ex.qty + qty); else state.cart.push({id: m.id, size: size.label, price: size.price, qty});
+  saveCart(); flyToTray($('img', art)); qi.value = 1;
+});
+function saveCart() { store.set('jmc.cart', state.cart); renderTray(); }
+const total = () => state.cart.reduce((a, l) => a + l.price * l.qty, 0);
+function countUp(el, to) { const from = +(el.dataset.v || 0); el.dataset.v = to; if (reduce) { el.textContent = money(to); return; } const t0 = performance.now(); const step = t => { const p = Math.min(1, (t - t0) / 500), e = 1 - Math.pow(1 - p, 3); el.textContent = money(Math.round(from + (to - from) * e)); if (p < 1) requestAnimationFrame(step); else el.textContent = money(to); }; requestAnimationFrame(step); }
+function renderTray() {
+  const n = state.cart.reduce((a, l) => a + l.qty, 0), btn = $('#trayBtn');
+  btn.hidden = !n;
+  $('#trayCnt').textContent = n; countUp($('#trayTot'), total());
+  if ($('#drawer').classList.contains('on') && !$('.done', $('#drawerBody'))) drawDrawer();
+}
+function flyToTray(img) {
+  const btn = $('#trayBtn'); btn.hidden = false;
+  if (reduce || !img) { btn.classList.remove('bump'); void btn.offsetWidth; btn.classList.add('bump'); return; }
+  const a = img.getBoundingClientRect(), b = btn.getBoundingClientRect();
+  const f = img.cloneNode(); f.className = 'fly'; Object.assign(f.style, {left: a.left + 'px', top: a.top + 'px', width: a.width + 'px', height: a.height + 'px'}); document.body.append(f);
+  const dx = b.left + b.width - 30 - a.left - a.width / 2, dy = b.top + b.height / 2 - a.top - a.height / 2;
+  f.animate([{transform: 'translate(0,0) scale(1)', opacity: 1}, {transform: `translate(${dx * .55}px,${dy * .2 - 60}px) scale(.45)`, opacity: 1, offset: .55}, {transform: `translate(${dx}px,${dy}px) scale(.08)`, opacity: .2}], {duration: 720, easing: 'cubic-bezier(.65,0,.35,1)'}).onfinish = () => { f.remove(); btn.classList.remove('bump'); void btn.offsetWidth; btn.classList.add('bump'); };
+}
+
+/* ---------- Drawer + quote form ---------- */
+const drawer = $('#drawer'), scrim = $('#scrim');
+function openDrawer() { lenis?.stop(); drawDrawer(); drawer.classList.add('on'); scrim.classList.add('on'); drawer.setAttribute('aria-hidden', 'false'); setTimeout(() => $('#drawerX').focus(), 50); }
+function closeDrawer() { lenis?.start(); drawer.classList.remove('on'); scrim.classList.remove('on'); drawer.setAttribute('aria-hidden', 'true'); }
+$('#trayBtn').addEventListener('click', openDrawer); $('#drawerX').addEventListener('click', closeDrawer); scrim.addEventListener('click', closeDrawer);
+addEventListener('keydown', e => { if (e.key === 'Escape') { closeDrawer(); closeSheet(); } });
+const draft = store.get('jmc.form', {});
+function drawDrawer() {
+  const body = $('#drawerBody');
+  if (!state.cart.length) { body.innerHTML = `<p style="color:var(--muted)">Your quote is empty. Add dishes from the catering menu.</p><a class="btn btn-sign" href="/julies-market-cafe-demo./catering/" id="goMenu">Browse the menu</a>`; $('#goMenu').onclick = closeDrawer; return; }
+  const k = state.kitchen || 'P';
+  body.innerHTML = `<div class="kmode">${state.kitchen ? kTag(state.kitchen) + `<span>${KNAME[state.kitchen]} order · glatt meat and Chalav Yisrael dairy are never mixed · Pat Yisrael · Bishul Yisrael</span>` : '<span class="k P"><i></i>Parve</span><span>Parve order. Add a meat or dairy dish and the order takes that side.</span>'}</div>
+  <div class="lines">${state.cart.map((l, i) => { const m = BY[l.id]; return `<div class="line">${m.img.length ? `<img src="${thumb(m.img[0])}" alt="" loading="lazy">` : '<div class="noimg"></div>'}<div><div class="nm">${esc(m.name)}</div><div class="sub">${esc(l.size || 'One size')} · ${money(l.price)} × ${l.qty}</div><button class="rm" data-rm="${i}">Remove</button></div><div class="rt tab">${money(l.price * l.qty)}</div></div>`; }).join('')}</div>
+  <div class="est"><div><span class="eyebrow">Estimate</span><small>Before delivery, staffing or changes. Julie confirms the final price.</small></div><b class="tab">${money(total())}</b></div>
+  <form class="q" id="qform" novalidate>
+    <label>Name<input id="f-name" name="name" required autocomplete="name" placeholder="Your name"></label>
+    <label>Phone<input id="f-phone" name="phone" required type="tel" autocomplete="tel" placeholder="(718) 555-0100"></label>
+    <label class="full">Email<input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></label>
+    <label>Event date<input id="f-date" name="date" required type="date"></label>
+    <label>Guests<input id="f-guests" name="guests" type="number" min="1" placeholder="40"></label>
+    <label>Pickup or delivery<select id="f-mode" name="mode"><option>Pickup</option><option>Delivery</option></select></label>
+    <label>Occasion<select id="f-occ" name="occasion"><option>Shabbat</option><option>Holiday</option><option>Kiddush</option><option>Brunch</option><option>Birthday or simcha</option><option>Office or other</option></select></label>
+    <label class="full" id="addrWrap" hidden>Delivery address<input id="f-addr" name="address" autocomplete="street-address" placeholder="Street, city"></label>
+    <label class="full">Notes for Julie<textarea id="f-notes" name="notes" placeholder="Allergies, serving times, anything else"></textarea></label>
+    <input class="hp" tabindex="-1" autocomplete="off" name="company" aria-hidden="true">
+    <p class="err full" id="ferr" role="alert"></p>
+    <button class="btn btn-bloom full" type="submit" id="sendBtn" style="justify-content:center">Send quote request <span class="arr">→</span></button>
+  </form>`;
+  const f = $('#qform');
+  Object.entries(draft).forEach(([k2, v]) => { if (f.elements[k2] && k2 !== 'company') f.elements[k2].value = v; });
+  $('#addrWrap').hidden = f.elements.mode.value !== 'Delivery';
+  f.addEventListener('input', () => { [...f.elements].forEach(el => { if (el.name && el.name !== 'company') draft[el.name] = el.value; }); store.set('jmc.form', draft); $('#addrWrap').hidden = f.elements.mode.value !== 'Delivery'; });
+  f.addEventListener('submit', submitQuote);
+  $$('[data-rm]', body).forEach(b => b.addEventListener('click', () => { state.cart.splice(+b.dataset.rm, 1); saveCart(); drawDrawer(); }));
+}
+
+/* ---------- Saving requests (db) ---------- */
+let dbP = null, userP = null;
+const getDb = () => dbP || (dbP = (window.claude?.use ? claude.use('db') : Promise.resolve(null)).catch(() => null));
+const getUser = () => userP || (userP = (window.claude?.use ? claude.use('user') : Promise.resolve(null)).catch(() => null));
+async function submitQuote(e) {
+  e.preventDefault();
+  const f = e.target, err = $('#ferr'), btn = $('#sendBtn');
+  if (f.elements.company.value) return;
+  f.classList.add('tried');
+  const need = ['name', 'phone', 'date'].filter(n => !f.elements[n].value.trim());
+  if (need.length) { err.textContent = 'Please add your ' + need.map(n => ({name: 'name', phone: 'phone number', date: 'event date'})[n]).join(', ') + '.'; f.elements[need[0]].focus(); return; }
+  if (f.elements.mode.value === 'Delivery' && !f.elements.address.value.trim()) { err.textContent = 'Please add the delivery address.'; f.elements.address.focus(); return; }
+  err.textContent = ''; btn.disabled = true; btn.firstChild.textContent = 'Sending… ';
+  const ref = 'JMC-' + Date.now().toString(36).toUpperCase().slice(-5);
+  const req = { ref, at: new Date().toISOString(), status: 'New', kitchen: state.kitchen || 'P',
+    name: f.elements.name.value.trim(), phone: f.elements.phone.value.trim(), email: f.elements.email.value.trim(),
+    date: f.elements.date.value, guests: +f.elements.guests.value || null, mode: f.elements.mode.value, occasion: f.elements.occasion.value,
+    address: f.elements.address.value.trim(), notes: f.elements.notes.value.trim(),
+    items: state.cart.map(l => ({id: l.id, name: BY[l.id].name, size: l.size, price: l.price, qty: l.qty})), estimate: Math.round(total() * 100) / 100 };
+  let saved = false;
+  try {
+    const [db, user] = await Promise.all([getDb(), getUser()]);
+    if (db && user) { const uid = await user.id(); const ref2 = db.doc('quotes/' + uid); const snap = await ref2.get(); const list = (snap.exists ? snap.data().list : null) || []; list.push(req); await ref2.set({list, updated: req.at}); saved = true; }
+  } catch (x) { console.warn(x); }
+  const summary = state.cart.map(l => `${l.qty} × ${BY[l.id].name}${l.size ? ' (' + l.size + ')' : ''}`).join('\n');
+  const text = [`Catering quote request ${ref}`, `Name: ${req.name}`, `Phone: ${req.phone}`, (req.email ? `Email: ${req.email}` : null), `Event date: ${req.date}`, req.guests && `Guests: ${req.guests}`, `${req.mode}${req.address ? ': ' + req.address : ''}`, `Occasion: ${req.occasion}`, `Order: ${KNAME[req.kitchen]}`, '', summary, `Estimate: ${money(req.estimate)}`, (req.notes ? `\nNotes: ${req.notes}` : null)].filter(v => v || v === '').join('\n');
+  const smsHref = `sms:+19178808999${/iPhone|iPad|Macintosh/.test(navigator.userAgent) ? '&' : '?'}body=${encodeURIComponent(text)}`;
+  const mailHref = `mailto:julie@jebani.com?subject=${encodeURIComponent('Catering quote request · ' + req.name + ' · ' + req.date)}&body=${encodeURIComponent(text)}`;
+  const phone = matchMedia('(pointer: coarse)').matches;
+  const sendBtns = phone
+    ? `<a class="btn btn-bloom" href="${smsHref}">Text it to Julie <span class="arr">→</span></a><a class="btn btn-sign" href="${mailHref}">Email it instead</a>`
+    : `<a class="btn btn-bloom" href="${mailHref}">Email it to Julie <span class="arr">→</span></a><a class="btn btn-sign" href="${smsHref}">Text it instead</a>`;
+  $('#drawerBody').innerHTML = `<div class="done"><span class="eyebrow">${saved ? 'Request sent' : 'One last step'}</span><h3>${saved ? 'Thank you, ' + esc(req.name.split(' ')[0]) + '.' : 'Send it to Julie.'}</h3>
+    <div class="ref">${ref}</div>
+    <p>${saved ? `Julie has your ${KNAME[req.kitchen].toLowerCase()} order request for ${esc(req.date)} with an estimate of <b>${money(req.estimate)}</b>. She'll reach you at ${esc(req.phone)} to confirm the final quote.` : `Your order is written out for you. Tap below and send it, and Julie will reach you at ${esc(req.phone)} to confirm the final quote.`}</p>
+    ${saved ? '' : `<div class="send-row">${sendBtns}</div><p style="font-size:14px;color:var(--muted)">Or call Julie at <a class="tab" href="tel:+19178808999"><b>917-880-8999</b></a>.</p>`}
+    <pre style="white-space:pre-wrap;font:500 13px/1.6 var(--f-mono);background:var(--facade-2);padding:14px;border-radius:10px;width:100%">${esc(summary)}\nEstimate: ${money(req.estimate)}</pre>
+    <button class="btn btn-ghost" id="newQ">${saved ? 'Start a new quote' : 'Back to the menu'}</button></div>`;
+  logEvent('quote_submit', {value: req.estimate, saved});
+  if (saved) { state.cart = []; saveCart(); }
+  $('#newQ').onclick = () => { closeDrawer(); };
+}
+
+/* ---------- Julie's dashboard (editors only) ---------- */
+getUser().then(u => { try { if (u && u.canEdit()) $('#inboxLink').hidden = false; } catch (e) {} });
+let unsub = null;
+async function openDash() {
+  const note = $('#dashNote'), list = $('#dashList');
+  const [db, user] = await Promise.all([getDb(), getUser()]);
+  if (!db || !user) { go('home'); return; }
+  if (!user.canEdit()) { go('home'); return; }
+  note.textContent = 'Requests arrive here as customers send them. Change a status to keep track.';
+  if (unsub) return;
+  const timer = setTimeout(() => { if (!list.dataset.loaded) list.innerHTML = '<p class="empty">Still loading. Check your connection.</p>'; }, 10000);
+  unsub = db.collection('quotes').onSnapshot(snap => {
+    clearTimeout(timer); list.dataset.loaded = 1;
+    const rows = []; snap.docs.forEach(d => (d.data().list || []).forEach((q, i) => rows.push({doc: d, i, q})));
+    rows.sort((a, b) => b.q.at.localeCompare(a.q.at));
+    list.innerHTML = rows.length ? rows.map(({doc, i, q}) => `<div class="dash-row"><span class="refc">${esc(q.ref)}</span><div class="who"><b>${esc(q.name)}</b><span class="tab">${esc(q.phone)}${q.email ? ' · ' + esc(q.email) : ''}</span></div><div class="ev">${kTag(q.kitchen)} ${esc(q.occasion || '')} · ${esc(q.date)}${q.guests ? ' · ' + q.guests + ' guests' : ''} · ${esc(q.mode)}</div><b class="tab">${money(q.estimate)}</b><select data-doc="${esc(doc.id)}" data-i="${i}" aria-label="Status for ${esc(q.ref)}" class="${q.status === 'New' ? 'st-New' : ''}">${['New','Quoted','Confirmed','Done'].map(s => `<option${s === q.status ? ' selected' : ''}>${s}</option>`).join('')}</select><details><summary>${q.items.length} items${q.notes ? ' · notes' : ''}${q.address ? ' · delivery address' : ''}</summary><div class="dash-items">${q.items.map(it => `${it.qty} × ${esc(it.name)}${it.size ? ' (' + esc(it.size) + ')' : ''} — ${money(it.price * it.qty)}`).join('<br>')}${q.address ? '<br><br>Deliver to: ' + esc(q.address) : ''}${q.notes ? '<br><br>Notes: ' + esc(q.notes) : ''}</div></details></div>`).join('') : '<p class="empty">No quote requests yet. When a customer sends one from the catering page, it appears here.</p>';
+  }, er => { clearTimeout(timer); list.innerHTML = '<p class="empty">Couldn’t load requests: ' + esc(er.message || er.code || 'unknown error') + '</p>'; });
+  list.addEventListener('change', async e => { const s = e.target.closest('select[data-doc]'); if (!s) return; s.disabled = true; try { const ref = db.doc('quotes/' + s.dataset.doc); const snap = await ref.get(); const data = snap.data(); data.list[+s.dataset.i].status = s.value; await ref.update({list: data.list}); toast('Status saved'); } catch (x) { toast('Couldn’t save the status'); } s.disabled = false; });
+}
+
+/* ---------- Copy buttons ---------- */
+document.addEventListener('click', e => { const b = e.target.closest('[data-copy]'); if (!b) return; const t = b.dataset.copy; const done = () => { const o = b.textContent; b.textContent = 'Copied'; setTimeout(() => b.textContent = o, 1400); }; try { navigator.clipboard.writeText(t).then(done, () => { selectNear(b); }); } catch { selectNear(b); } });
+function selectNear(b) { const v = b.parentElement.querySelector('.val,.big'); if (!v) return; const r = document.createRange(); r.selectNodeContents(v); const s = getSelection(); s.removeAllRanges(); s.addRange(r); toast('Number selected, copy it'); }
+
+/* ---------- Phone links ---------- */
+const embedded = (() => { try { return window.self !== window.top; } catch { return true; } })();
+document.addEventListener('click', e => { const a = e.target.closest('a[href^="tel:"], a[href^="mailto:"], a[href^="sms:"]'); if (a && embedded) { a.target = '_blank'; a.rel = 'noopener'; } }, true);
+
+/* ---------- Photo zoom ---------- */
+const ZOOM_SEL = '.item .ph img, .mcard .ph img, .fav .fph img, .st-media img, .dish .ph img, .store-frame img';
+const lb = $('#lb'), lbImg = $('#lbImg');
+let lbList = [], lbIdx = 0, lbFrom = null;
+function lbShow(i, animateFrom) {
+  lbIdx = (i + lbList.length) % lbList.length;
+  const it = lbList[lbIdx];
+  lbImg.src = it.src; lbImg.alt = it.alt; $('#lbCap').textContent = it.alt;
+  $('#lbCount').textContent = lbList.length > 1 ? `${lbIdx + 1} / ${lbList.length}` : '';
+  $('#lbPrev').hidden = $('#lbNext').hidden = lbList.length < 2;
+  if (!animateFrom || reduce) { lbImg.animate([{opacity: 0, transform: 'scale(.97)'}, {opacity: 1, transform: 'none'}], {duration: 220, easing: 'cubic-bezier(.23,1,.32,1)'}); return; }
+  const go = () => { const a = animateFrom.getBoundingClientRect(), b = lbImg.getBoundingClientRect(); if (!b.width) return;
+    lbImg.animate([{transform: `translate(${a.left - b.left}px,${a.top - b.top}px) scale(${a.width / b.width},${a.height / b.height})`, borderRadius: '14px'}, {transform: 'none', borderRadius: '12px'}], {duration: 480, easing: 'cubic-bezier(.16,1,.3,1)'}); };
+  if (lbImg.complete && lbImg.naturalWidth) go(); else lbImg.onload = () => { lbImg.onload = null; go(); };
+}
+function lbOpen(img) {
+  const card = img.closest('.item');
+  if (card && BY[card.dataset.id] && BY[card.dataset.id].img.length) { const m = BY[card.dataset.id]; lbList = m.img.map(src => ({src, alt: m.name})); lbIdx = 0; }
+  else { lbList = [{src: img.dataset.full || img.currentSrc || img.src, alt: img.alt || ''}]; lbIdx = 0; }
+  lbFrom = img; lenis?.stop(); lb.hidden = false; requestAnimationFrame(() => lb.classList.add('on'));
+  lbShow(0, img); $('#lbX').focus();
+}
+function lbClose() {
+  if (lb.hidden) return;
+  lb.classList.remove('on'); lenis?.start();
+  const back = lbFrom && lbIdx === 0 && lbFrom.isConnected ? lbFrom.getBoundingClientRect() : null, b = lbImg.getBoundingClientRect();
+  const done = () => { lb.hidden = true; lbImg.removeAttribute('src'); };
+  if (reduce || !back || !back.width || back.bottom < 0 || back.top > innerHeight) { lbImg.animate([{opacity: 1}, {opacity: 0}], {duration: 180}).onfinish = done; return; }
+  lbImg.animate([{transform: 'none'}, {transform: `translate(${back.left - b.left}px,${back.top - b.top}px) scale(${back.width / b.width},${back.height / b.height})`}], {duration: 320, easing: 'cubic-bezier(.32,.72,0,1)'}).onfinish = done;
+}
+document.addEventListener('click', e => {
+  const img = e.target.closest && e.target.closest(ZOOM_SEL);
+  if (!img || !img.matches('img')) return;
+  e.preventDefault(); e.stopPropagation(); lbOpen(img);
+}, true);
+$('#lbX').addEventListener('click', lbClose);
+$('#lbPrev').addEventListener('click', e => { e.stopPropagation(); lbShow(lbIdx - 1); });
+$('#lbNext').addEventListener('click', e => { e.stopPropagation(); lbShow(lbIdx + 1); });
+lb.addEventListener('click', e => { if (e.target === lb || e.target === lbImg) lbClose(); });
+addEventListener('keydown', e => { if (lb.hidden) return; if (e.key === 'Escape') lbClose(); if (e.key === 'ArrowRight' && lbList.length > 1) lbShow(lbIdx + 1); if (e.key === 'ArrowLeft' && lbList.length > 1) lbShow(lbIdx - 1); });
+let tx0 = null; lb.addEventListener('touchstart', e => { tx0 = e.touches[0].clientX; }, {passive: true});
+lb.addEventListener('touchend', e => { if (tx0 === null || lbList.length < 2) return; const dx = e.changedTouches[0].clientX - tx0; if (Math.abs(dx) > 50) lbShow(lbIdx + (dx < 0 ? 1 : -1)); tx0 = null; });
+
+/* ---------- Email: phones open the Mail app; computers and the preview get Gmail / Outlook / Mail app choices ---------- */
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[data-email]'); if (!a) return;
+  const phone = matchMedia('(pointer: coarse)').matches;
+  if (phone && !embedded) return;              // let the phone's Mail app open
+  e.preventDefault(); e.stopPropagation();
+  let opts = a.parentElement.querySelector('.mail-opts');
+  if (!opts) { go('contact'); setTimeout(() => { const o = $('.mail-opts'); if (o) { o.hidden = false; o.animate([{opacity: 0, transform: 'translateY(6px)'}, {opacity: 1, transform: 'none'}], {duration: 260, easing: 'cubic-bezier(.23,1,.32,1)'}); } }, 1100); return; }
+  opts.hidden = !opts.hidden;
+  if (!opts.hidden) opts.animate([{opacity: 0, transform: 'translateY(6px)'}, {opacity: 1, transform: 'none'}], {duration: 260, easing: 'cubic-bezier(.23,1,.32,1)'});
+}, true);
+
+/* ---------- Mobile sheet ---------- */
+const sheet = $('#sheet');
+function closeSheet() { lenis?.start(); sheet.classList.remove('on'); $('#menuBtn').setAttribute('aria-expanded', 'false'); }
+$('#menuBtn').addEventListener('click', () => { lenis?.stop(); sheet.classList.add('on'); $('#menuBtn').setAttribute('aria-expanded', 'true'); });
+$('#sheetX').addEventListener('click', closeSheet); $$('a', sheet).forEach(a => a.addEventListener('click', closeSheet));
+
+
+
+/* ---------- Motion (GSAP + ScrollTrigger + Lenis). Content is visible by default; only blocks below the fold start hidden. ---------- */
+let vctx = null, vmm = null, rT;
+function refreshSoon() { clearTimeout(rT); rT = setTimeout(() => ST.refresh(), 120); }
+function setupView(name, view, intro = true) {
+  if (vctx) vctx.revert(); if (vmm) vmm.revert();
+  ST.getAll().forEach(t => t.kill());
+  const E = 'expo.out';
+  const below = els => els.filter(el => el.getBoundingClientRect().top > innerHeight * .95);
+  const batchIn = (sel, from, to) => { const els = below($$(sel, view)); if (!els.length) return; G.set(els, from); ST.batch(els, {start: 'top 90%', once: true, onEnter: b => G.to(b, {...to, stagger: .06, overwrite: true})}); };
+  vctx = G.context(() => {
+    $$('.split', view).forEach(h => { splitWords(h); if (intro) G.from($$('.w>span', h), {yPercent: 112, duration: 1.1, ease: E, stagger: .045, delay: name === 'home' ? .35 : .15}); });
+    if (intro) $$('.page-hero .lede, .page-hero .kitchen .kbtn, .page-hero .rule-note', view).forEach((el, i) => G.from(el, {y: 22, opacity: 0, duration: .9, ease: E, delay: .35 + i * .07}));
+    $$('.sec-head h2, .visit-h', view).forEach(h => { splitWords(h); if (h.getBoundingClientRect().top > innerHeight * .9) G.from($$('.w>span', h), {yPercent: 112, duration: .95, ease: E, stagger: .045, scrollTrigger: {trigger: h, start: 'top 88%', once: true}}); });
+    batchIn('.ig a, .mcard .ph, .fav .fph, .item .ph', {clipPath: 'inset(0% 0% 100% 0%)'}, {clipPath: 'inset(0% 0% 0% 0%)', duration: 1, ease: 'power4.inOut'});
+    batchIn('.st-list li, .st-steps li', {y: 16, opacity: 0}, {y: 0, opacity: 1, duration: .7, ease: E});
+    batchIn('.dept, .cta-card, .ccard, .quotes blockquote, .item .body, .fav h3, .fav p, .mcard h3, .mcard .sec-l, .dairy-band, .photo-slot, .hours, .offers > div', {y: 26, opacity: 0}, {y: 0, opacity: 1, duration: .85, ease: E});
+    if (name === 'home') homeMotion(view, intro);
+    const fb = $('.footbig span');
+    if (fb) G.fromTo(fb, {xPercent: 12}, {xPercent: 0, ease: 'none', scrollTrigger: {trigger: 'footer.site', start: 'top bottom', end: 'bottom bottom', scrub: true}});
+  }, view);
+  vmm = G.matchMedia();
+  if (name === 'home') vmm.add('(min-width: 761px)', () => reelMotion(view));
+  ST.refresh();
+}
+function homeMotion(view, intro = true) {
+  const E = 'expo.out', frame = $('.store-frame', view), shut = $('.shutter', frame), img = $('img', frame), stamp = null;
+  // The focal moment: the shop's shutter rolls up, the window comes into focus, the Vaad line fades in.
+  if (intro) G.timeline({defaults: {ease: E}}).fromTo(shut, {yPercent: 0}, {yPercent: -101, duration: 1.5, ease: 'power3.inOut'}, .2)
+    .fromTo(img, {scale: 1.28, filter: 'blur(6px) saturate(.7)'}, {scale: 1, filter: 'blur(0px) saturate(1)', duration: 2.2}, .35)
+    .from($('.hero .lede', view), {y: 22, opacity: 0, duration: 1}, .8)
+    .from($$('.hero .ctas .btn', view), {y: 18, opacity: 0, duration: .9, stagger: .09}, .95)
+    .from($('.hero-vaad', view), {y: 12, opacity: 0, duration: .9}, 1.15)
+    .from('#todayLine', {clipPath: 'inset(0% 100% 0% 0%)', duration: 1.3, ease: 'power3.inOut'}, 1.05);
+  // Scroll: the window drifts and the stamp turns as you leave the hero
+  G.to(img, {yPercent: 9, ease: 'none', scrollTrigger: {trigger: frame, start: 'top top', end: 'bottom top', scrub: true}});
+  G.to($('.hero h1', view), {yPercent: -14, opacity: .35, ease: 'none', scrollTrigger: {trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true}});
+  // Kosher ribbon: drifts on its own, speeds up and reverses with the scroll
+  const loop = G.to($('.rtrack', view), {xPercent: -50, ease: 'none', duration: 30, repeat: -1});
+  let dir = 1;
+  ST.create({trigger: $('.ribbon', view), start: 'top bottom', end: 'bottom top',
+    onToggle: self => self.isActive ? loop.play() : loop.pause(),
+    onUpdate: self => { dir = self.direction; const boost = Math.min(7, 1 + Math.abs(self.getVelocity()) / 350); G.to(loop, {timeScale: dir * boost, duration: .25, overwrite: true, onComplete: () => G.to(loop, {timeScale: dir, duration: 1.4, ease: 'power2.out'})}); }});
+  // Two doors open as they reach the middle of the screen
+  $$('.door', view).forEach(d => {
+    G.fromTo(d, {clipPath: 'inset(9% 7% 9% 7% round 22px)'}, {clipPath: 'inset(0% 0% 0% 0% round 18px)', ease: 'none', scrollTrigger: {trigger: d, start: 'top 98%', end: 'top 40%', scrub: true}});
+    G.fromTo($('img', d), {scale: 1.3}, {scale: 1.02, ease: 'none', scrollTrigger: {trigger: d, start: 'top bottom', end: 'bottom top', scrub: true}});
+  });
+  // Google rating counts up when it arrives
+  const r = $('.rating', view);
+  if (r) { const o = {v: 0}; G.to(o, {v: 4.3, duration: 1.6, ease: 'power2.out', onUpdate: () => r.textContent = o.v.toFixed(1), scrollTrigger: {trigger: r, start: 'top 82%', once: true}}); G.from($$('.stars svg', view), {scale: .3, opacity: 0, rotate: -30, stagger: .09, duration: .7, ease: E, scrollTrigger: {trigger: r, start: 'top 82%', once: true}}); }
+}
+function marketMotion(view) {
+  // Stations stack like order tickets: each one pins, the next slides over it, the one underneath settles back
+  const list = $$('.station', view); if (!list.length) return;
+  const top0 = 92;
+  list.forEach((st, i) => {
+    G.from($$('.st-media img', st), {scale: 1.25, ease: 'none', scrollTrigger: {trigger: st, start: 'top bottom', end: 'top top', scrub: true}});
+    const next = list[i + 1]; if (!next) return;
+    ST.create({trigger: st, start: `top ${top0 + i * 14}px`, endTrigger: list[list.length - 1], end: `top ${top0 + (list.length - 1) * 14}px`, pin: true, pinSpacing: false});
+    G.to($('.st-dim', st), {opacity: .32, ease: 'none', scrollTrigger: {trigger: next, start: 'top bottom', end: `top ${top0 + (i + 1) * 14}px`, scrub: true}});
+    G.to(st, {scale: .93, ease: 'none', scrollTrigger: {trigger: next, start: 'top bottom', end: `top ${top0 + (i + 1) * 14}px`, scrub: true}});
+  });
+}
+function reelMotion(view) {
+  const tr = $('#track'), stick = $('.stick', view);
+  reel.style.height = ''; stick.style.position = 'relative'; stick.style.top = 'auto';
+  const dist = () => Math.max(0, tr.scrollWidth - innerWidth + 64);
+  const tw = G.to(tr, {x: () => -dist(), ease: 'none', scrollTrigger: {trigger: stick, start: 'top 9%', end: () => '+=' + dist(), pin: true, scrub: .9, invalidateOnRefresh: true, anticipatePin: 1}});
+  $$('.dish', tr).forEach(d => {
+    G.fromTo($('img', d), {xPercent: -9, scale: 1.18}, {xPercent: 9, scale: 1.18, ease: 'none', scrollTrigger: {trigger: d, containerAnimation: tw, start: 'left right', end: 'right left', scrub: true}});
+    G.fromTo(d, {rotate: 2.5, y: 30}, {rotate: 0, y: 0, ease: 'none', scrollTrigger: {trigger: d, containerAnimation: tw, start: 'left 105%', end: 'left 60%', scrub: true}});
+  });
+  return () => { stick.style.position = ''; stick.style.top = ''; G.set(tr, {clearProps: 'transform'}); };
+}
+/* Magnetic primary buttons (desktop pointer only) */
+if (MOTION && matchMedia('(hover:hover) and (pointer:fine)').matches) {
+  let mag = null;
+  document.addEventListener('pointermove', e => {
+    const b = e.target.closest('.btn-bloom, .btn-sign');
+    if (mag && b !== mag) mag.style.translate = '';
+    mag = b; if (!b) return;
+    const r = b.getBoundingClientRect();
+    b.style.translate = `${((e.clientX - r.left) / r.width - .5) * 14}px ${((e.clientY - r.top) / r.height - .5) * 10}px`;
+  }, {passive: true});
+}
+
+/* ---------- Logo: replays the shutter opening and returns home ---------- */
+$('.logo').addEventListener('click', e => {
+  e.preventDefault(); closeSheet(); closeDrawer();
+  if (current !== 'home') { go('home'); return; }
+  if (reduce) { toTop(); return; }
+  shade(() => { toTop(); if (MOTION) setupView('home', $('[data-view="home"]')); else riseIn($('[data-view="home"]')); });
+});
+
+/* ---------- Router + page wipe ---------- */
+const VIEWS = ['home', 'market', 'catering', 'about', 'contact', 'quotes'];
+const BASE = document.documentElement.dataset.base || '';   // set on the live site: each section has its own address
+const viewFromUrl = () => { const h = location.hash.slice(1); if (VIEWS.includes(h)) return h; if (BASE && location.pathname.startsWith(BASE)) { const p = location.pathname.slice(BASE.length).split('/')[0]; if (VIEWS.includes(p)) return p; } return 'home'; };
+function go(name) {
+  if (!BASE || name === 'quotes') { if (location.hash === '#' + name) show(name, true); else location.hash = name; return; }
+  const url = BASE + (name === 'home' ? '' : name + '/');
+  if (location.pathname !== url || location.hash) history.pushState(null, '', url);
+  show(name, true);
+}
+if (BASE) {
+  addEventListener('popstate', () => show(viewFromUrl(), true));
+  document.addEventListener('click', e => {
+    if (e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    const a = e.target.closest('a[href]'); if (!a || a.target === '_blank' || a.hasAttribute('data-goto')) return;
+    const href = a.getAttribute('href'); let n = null;
+    if (href.startsWith('#')) n = href.slice(1); else if (href.startsWith(BASE)) n = href.slice(BASE.length).split('/')[0] || 'home';
+    if (!VIEWS.includes(n) || n === 'quotes') return;
+    e.preventDefault(); go(n);
+  });
+}
+const TITLES = {home: "Julie's Market & Café | Kosher Café, Market & Catering on Kings Highway, Brooklyn", market: "The Market & Café: Menu & Prices | Julie's, Kings Highway", catering: "Kosher Catering Menu & Online Quote | Julie's Market & Café", about: "About Julie | Julie's Market & Café", contact: "Contact, Hours & Directions | Julie's Market & Café", quotes: "Quote requests · Julie's"};
+const DESCS = {home: "Kosher market & café at 514 Kings Highway, Brooklyn, under the Vaad of Flatbush. Salads, coffee and grab & go, plus glatt meat and dairy catering quotes online.", market: "The full café and market menu with prices: coffee and matcha, smoothies, grab & go salads and bowls, prepared food and pantry goods. Kosher dairy, Chalav Yisrael.", catering: "193 kosher catering dishes in glatt meat or Chalav Yisrael dairy, never mixed: appetizers, platters, salads, mains, Shabbat and more. Build your order and get a quote.", about: "Meet Julie, the cook behind Julie's Market & Café and Julie's Kitchen catering on Kings Highway, Brooklyn.", contact: "Call (718) 573-9453, text Julie at 917-880-8999 or visit 514 Kings Highway, Brooklyn. Open Sun–Thu 8 AM–5 PM, Fri 8 AM–2 PM.", quotes: ''};
+let current = null;
+function show(name, animate) {
+  if (!VIEWS.includes(name)) name = 'home';
+  if (name === current) return;
+  const swap = () => {
+    $$('[data-view]').forEach(v => v.hidden = v.dataset.view !== name);
+    $$('[data-nav]').forEach(a => { if (a.dataset.nav === name) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+    toTop(); current = name;
+    const view = $(`[data-view="${name}"]`);
+    if (name === 'catering') renderGrid();
+    if (name === 'home') { sizeReel(); moveReel(); }
+    if (name === 'quotes') openDash();
+    const intro = !(firstView && LATE); firstView = false;
+    renderTray(); if (MOTION) requestAnimationFrame(() => setupView(name, view, intro)); else { if (intro) riseIn(view); requestAnimationFrame(() => armReveal(view)); }
+    document.title = TITLES[name]; const md = $('meta[name="description"]'); if (md && DESCS[name]) md.content = DESCS[name];
+  };
+  if (!animate || reduce) { swap(); return; }
+  shade(swap);
+}
+/* The green shade drops over the page, the change happens behind it, then it rolls back up */
+function shade(mid) {
+  const w = $('.wipe');
+  w.animate([{clipPath: 'inset(0 0 100% 0)'}, {clipPath: 'inset(0 0 0 0)'}], {duration: 420, easing: 'cubic-bezier(.77,0,.175,1)', fill: 'forwards'}).onfinish = () => { mid(); w.animate([{clipPath: 'inset(0 0 0 0)'}, {clipPath: 'inset(0 0 100% 0)'}], {duration: 520, delay: 80, easing: 'cubic-bezier(.77,0,.175,1)', fill: 'forwards'}); };
+}
+addEventListener('hashchange', () => show(viewFromUrl(), true));
+document.addEventListener('click', e => { const g = e.target.closest('[data-goto]'); if (!g) return; e.preventDefault(); state.cat = 'All'; state.q = ''; $('#search').value = ''; $$('.chip').forEach(c => c.setAttribute('aria-pressed', c.dataset.cat === 'All')); const id = g.dataset.goto; if (current === 'catering') { renderGrid(); } else go('catering'); setTimeout(() => { const el = $('#dish-' + id); if (el) { if (lenis) lenis.scrollTo(el, {offset: -innerHeight / 3}); else el.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'center'}); el.animate([{boxShadow: 'inset 0 0 0 3px var(--bloom)'}, {boxShadow: 'inset 0 0 0 1px var(--line)'}], {duration: 1800, easing: 'ease-out'}); } }, 950); });
+show(viewFromUrl(), false);
+renderTray();
+};
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', __jmc); else __jmc();
+</script>
+
+</body>
+</html>
