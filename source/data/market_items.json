@@ -140,111 +140,6 @@
 "Smoothies"
 ],
 [
-"Regular Oats",
-"Café",
-"",
-"$10",
-"Breakfast"
-],
-[
-"Bagel & Cream Cheese",
-"Café",
-"",
-"$6",
-"Breakfast"
-],
-[
-"Bagel, Cream Cheese, Smoked Salmon & Cucumber",
-"Café",
-"",
-"$8",
-"Breakfast"
-],
-[
-"Egg White Wrap",
-"Café",
-"",
-"$20",
-"Breakfast"
-],
-[
-"Breakfast Burrito",
-"Café",
-"",
-"$20",
-"Breakfast"
-],
-[
-"Avocado Toast",
-"Café",
-"",
-"$16",
-"Toasts & Hot Sandwiches"
-],
-[
-"Smoked Salmon Toast",
-"Café",
-"",
-"$16",
-"Toasts & Hot Sandwiches"
-],
-[
-"Fig Ricotta Toast",
-"Café",
-"",
-"$16",
-"Toasts & Hot Sandwiches"
-],
-[
-"Classic Grilled Cheese",
-"Café",
-"",
-"$16",
-"Toasts & Hot Sandwiches"
-],
-[
-"Truffle Grilled Cheese",
-"Café",
-"",
-"$22",
-"Toasts & Hot Sandwiches"
-],
-[
-"Caprese Panini",
-"Café",
-"",
-"$18",
-"Toasts & Hot Sandwiches"
-],
-[
-"Eddie’s Tuna Melt",
-"Café",
-"d207167c60b7d1dec058e9b414cd9a7a",
-"$22",
-"Toasts & Hot Sandwiches"
-],
-[
-"Grilled Veggie Sandwich",
-"Café",
-"",
-"$22",
-"Toasts & Hot Sandwiches"
-],
-[
-"Egg White Delight Sandwich",
-"Café",
-"",
-"$20",
-"Toasts & Hot Sandwiches"
-],
-[
-"Melanzane Sandwich",
-"Café",
-"",
-"$22",
-"Toasts & Hot Sandwiches"
-],
-[
 "GF Coffee Cake",
 "Café",
 "1309c6c81293c969213126b8f3dd8ec9",
@@ -364,6 +259,13 @@
 "Grain Bowls"
 ],
 [
+"Egg White Wrap",
+"Grab & Go",
+"",
+"$20",
+"Sandwiches & Wraps"
+],
+[
 "Italian Tuna Sourdough",
 "Grab & Go",
 "ea55cddd4c6f4a719aa3c4f37165c488",
@@ -382,13 +284,6 @@
 "Grab & Go",
 "",
 "$18",
-"Sandwiches & Wraps"
-],
-[
-"BBQ Tempeh on Sourdough",
-"Grab & Go",
-"",
-"$20",
 "Sandwiches & Wraps"
 ],
 [
@@ -448,6 +343,48 @@
 "Rice Paper Rolls"
 ],
 [
+"Lentil Salad",
+"Grab & Go",
+"a2cc17be93013cb4924ca41911d77d2f",
+"$10",
+"Sides"
+],
+[
+"Seitan Chimichurri",
+"Grab & Go",
+"ec5e0f278c0dfe790d2018193a8ed36c",
+"$20",
+"Sides"
+],
+[
+"Macaroni Salad",
+"Grab & Go",
+"97686b6b84865533d62f04658fa2c096",
+"$8",
+"Sides"
+],
+[
+"Lentil Barley Soup",
+"Grab & Go",
+"",
+"$12",
+"Soups"
+],
+[
+"Winter Squash Pumpkin Soup",
+"Grab & Go",
+"",
+"$12",
+"Soups"
+],
+[
+"Regular Oats",
+"Grab & Go",
+"",
+"$10",
+"Breakfast Cups"
+],
+[
 "Plain Greek Yogurt and Granola",
 "Grab & Go",
 "7d2e49716dbf720fdd12523bf15a40ac",
@@ -476,39 +413,109 @@
 "Breakfast Cups"
 ],
 [
-"Lentil Salad",
-"Prepared Food",
-"a2cc17be93013cb4924ca41911d77d2f",
+"Fruit Salad",
+"Grab & Go",
+"",
 "$10",
-"Sides"
+"Breakfast Cups"
 ],
 [
-"Seitan Chimichurri",
+"Bagel & Cream Cheese",
 "Prepared Food",
-"ec5e0f278c0dfe790d2018193a8ed36c",
-"$20",
-"Sides"
+"",
+"$6",
+"Breakfast"
 ],
 [
-"Macaroni Salad",
+"Bagel, Cream Cheese, Smoked Salmon & Cucumber",
 "Prepared Food",
-"97686b6b84865533d62f04658fa2c096",
+"",
 "$8",
-"Sides"
+"Breakfast"
 ],
 [
-"Lentil Barley Soup",
+"Breakfast Burrito",
 "Prepared Food",
 "",
-"$12",
-"Soups"
+"$20",
+"Breakfast"
 ],
 [
-"Winter Squash Pumpkin Soup",
+"Avocado Toast",
 "Prepared Food",
 "",
-"$12",
-"Soups"
+"$16",
+"Toasts & Hot Sandwiches"
+],
+[
+"Smoked Salmon Toast",
+"Prepared Food",
+"",
+"$16",
+"Toasts & Hot Sandwiches"
+],
+[
+"Fig Ricotta Toast",
+"Prepared Food",
+"",
+"$16",
+"Toasts & Hot Sandwiches"
+],
+[
+"Classic Grilled Cheese",
+"Prepared Food",
+"",
+"$16",
+"Toasts & Hot Sandwiches"
+],
+[
+"Truffle Grilled Cheese",
+"Prepared Food",
+"",
+"$22",
+"Toasts & Hot Sandwiches"
+],
+[
+"Caprese Panini",
+"Prepared Food",
+"",
+"$18",
+"Toasts & Hot Sandwiches"
+],
+[
+"Eddie’s Tuna Melt",
+"Prepared Food",
+"d207167c60b7d1dec058e9b414cd9a7a",
+"$22",
+"Toasts & Hot Sandwiches"
+],
+[
+"Grilled Veggie Sandwich",
+"Prepared Food",
+"",
+"$22",
+"Toasts & Hot Sandwiches"
+],
+[
+"Egg White Delight Sandwich",
+"Prepared Food",
+"",
+"$20",
+"Toasts & Hot Sandwiches"
+],
+[
+"Melanzane Sandwich",
+"Prepared Food",
+"",
+"$22",
+"Toasts & Hot Sandwiches"
+],
+[
+"BBQ Tempeh on Sourdough",
+"Prepared Food",
+"",
+"$20",
+"Toasts & Hot Sandwiches"
 ],
 [
 "Fresh Breads & Sourdough",

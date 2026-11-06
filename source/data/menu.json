@@ -927,7 +927,7 @@
   "id": 33,
   "name": "Schnitzel and Fries",
   "cats": [
-   "Main Course"
+   "Hors d'oeuvres / Appetizers"
   ],
   "desc": "Price Per Dozen Bowls",
   "sizes": [
@@ -4137,7 +4137,7 @@
   "id": 130,
   "name": "Pretzel Crusted Chicken Fingers",
   "cats": [
-   "Main Course"
+   "Hors d'oeuvres / Appetizers"
   ],
   "desc": "Price per pound.",
   "sizes": [
@@ -4649,8 +4649,7 @@
   "name": "Sambusak",
   "cats": [
    "Hors d'oeuvres / Appetizers",
-   "Bris / Bar Mitzvah / Brunch",
-   "Mazza / Meats"
+   "Bris / Bar Mitzvah / Brunch"
   ],
   "desc": "Per Dozen",
   "sizes": [
@@ -4678,8 +4677,7 @@
   "name": "Phyllo Triangles",
   "cats": [
    "Hors d'oeuvres / Appetizers",
-   "Bris / Bar Mitzvah / Brunch",
-   "Mazza / Meats"
+   "Bris / Bar Mitzvah / Brunch"
   ],
   "desc": "Per Dozen",
   "sizes": [
