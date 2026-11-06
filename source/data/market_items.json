@@ -44,14 +44,14 @@
 [
 "Brown Sugar Shaken Espresso",
 "Café",
-"183ff912701349bf7b7378b7b1ade2a2",
+"f49dd1034ca1fabc1c79a55f96caf798",
 "$9",
 "Coffee & Matcha"
 ],
 [
 "Black Sesame Latte",
 "Café",
-"",
+"105ec1194dab606f003b3fb7b468163b",
 "$10",
 "Coffee & Matcha"
 ],
@@ -93,14 +93,14 @@
 [
 "Mango Matcha",
 "Café",
-"",
+"ca622547a49f9e0457781923ba952cef",
 "$12",
 "Coffee & Matcha"
 ],
 [
 "Strawberry Matcha",
 "Café",
-"",
+"0f73bd2cd20bbce35a4a5300df0062fd",
 "$12",
 "Coffee & Matcha"
 ],
@@ -261,7 +261,7 @@
 [
 "Egg White Wrap",
 "Grab & Go",
-"",
+"eefaaaa140bb178d6c6bf08e793992a1",
 "$20",
 "Sandwiches & Wraps"
 ],
@@ -443,7 +443,7 @@
 [
 "Avocado Toast",
 "Prepared Food",
-"",
+"f5e3501fdcf643afcbb3e3eca7d327a7",
 "$16",
 "Toasts & Hot Sandwiches"
 ],
@@ -471,7 +471,7 @@
 [
 "Truffle Grilled Cheese",
 "Prepared Food",
-"",
+"644de365e6043e5bab9021246aa8fd32",
 "$22",
 "Toasts & Hot Sandwiches"
 ],
@@ -516,6 +516,167 @@
 "",
 "$20",
 "Toasts & Hot Sandwiches"
+],
+[
+"American Cheddar",
+"Cheese Counter",
+"",
+"",
+"Cheddars"
+],
+[
+"Raw 6-Month Cheddar",
+"Cheese Counter",
+"",
+"",
+"Cheddars"
+],
+[
+"Raw 12-Month Cheddar from Minnesota",
+"Cheese Counter",
+"",
+"",
+"Cheddars"
+],
+[
+"Marble Cheddar",
+"Cheese Counter",
+"",
+"",
+"Cheddars"
+],
+[
+"Pepper Jack Cheddar",
+"Cheese Counter",
+"",
+"",
+"Cheddars"
+],
+[
+"Cranberry Cheddar",
+"Cheese Counter",
+"",
+"",
+"Cheddars"
+],
+[
+"Habanero Cheddar",
+"Cheese Counter",
+"",
+"",
+"Cheddars"
+],
+[
+"Manchego",
+"Cheese Counter",
+"",
+"",
+"Hard & Aged"
+],
+[
+"Emmental Swiss",
+"Cheese Counter",
+"",
+"",
+"Hard & Aged"
+],
+[
+"Parmesan",
+"Cheese Counter",
+"",
+"",
+"Hard & Aged"
+],
+[
+"DOP Parmesan from Italy",
+"Cheese Counter",
+"",
+"",
+"Hard & Aged"
+],
+[
+"Pecorino Romano",
+"Cheese Counter",
+"",
+"",
+"Hard & Aged"
+],
+[
+"Tilsit",
+"Cheese Counter",
+"",
+"",
+"Hard & Aged"
+],
+[
+"Gouda",
+"Cheese Counter",
+"",
+"",
+"Hard & Aged"
+],
+[
+"Lazio Blue Cheese",
+"Cheese Counter",
+"",
+"",
+"Hard & Aged"
+],
+[
+"Fresh Feta Block",
+"Cheese Counter",
+"",
+"",
+"Fresh & Soft"
+],
+[
+"Fresh Mozzarella Ball",
+"Cheese Counter",
+"",
+"",
+"Fresh & Soft"
+],
+[
+"Cranberry Goat Cheese",
+"Cheese Counter",
+"",
+"",
+"Fresh & Soft"
+],
+[
+"Herbed Goat Cheese",
+"Cheese Counter",
+"",
+"",
+"Fresh & Soft"
+],
+[
+"Zaatar Basket Cheese",
+"Cheese Counter",
+"",
+"",
+"Basket Cheese"
+],
+[
+"Plain Basket Cheese",
+"Cheese Counter",
+"",
+"",
+"Basket Cheese"
+],
+[
+"Olive Basket Cheese",
+"Cheese Counter",
+"",
+"",
+"Basket Cheese"
+],
+[
+"Spicy Basket Cheese",
+"Cheese Counter",
+"",
+"",
+"Basket Cheese"
 ],
 [
 "Fresh Breads & Sourdough",

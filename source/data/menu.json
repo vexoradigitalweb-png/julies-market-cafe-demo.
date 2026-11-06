@@ -728,32 +728,6 @@
   ]
  },
  {
-  "id": 26,
-  "name": "Crudite",
-  "cats": [
-   "Platters / Boards"
-  ],
-  "desc": "Price per dozen",
-  "sizes": [
-   {
-    "label": "",
-    "price": 120.0,
-    "k": null
-   }
-  ],
-  "k": "P",
-  "guess": false,
-  "img": [
-   "img/26-1.webp"
-  ],
-  "src": [
-   "https://images.squarespace-cdn.com/content/v1/65ad501f1776560c568f1d4c/1721324703074-7YOO12H3E54EVAEX5SWX/IMG_9309.jpeg"
-  ],
-  "cats_old": [
-   "Pick Ups"
-  ]
- },
- {
   "id": 27,
   "name": "Fried Fish",
   "cats": [
@@ -1195,78 +1169,6 @@
   "cats_old": [
    "Pick Ups",
    "Brunch"
-  ]
- },
- {
-  "id": 42,
-  "name": "Zaatar Chicken and Potatoes",
-  "cats": [
-   "Main Course"
-  ],
-  "desc": "",
-  "sizes": [
-   {
-    "label": "1 chicken",
-    "price": 150.0,
-    "k": null
-   },
-   {
-    "label": "2 chickens",
-    "price": 200.0,
-    "k": null
-   },
-   {
-    "label": "3 chickens",
-    "price": 250.0,
-    "k": null
-   }
-  ],
-  "k": "M",
-  "guess": false,
-  "img": [
-   "img/42-1.webp"
-  ],
-  "src": [
-   "https://images.squarespace-cdn.com/content/v1/65ad501f1776560c568f1d4c/1707360795641-D8UXJD2VGHFEZQNY1QMW/IMG_8544.JPG"
-  ],
-  "cats_old": [
-   "Chicken"
-  ]
- },
- {
-  "id": 43,
-  "name": "Chicken with Hasselback Potatoes",
-  "cats": [
-   "Main Course"
-  ],
-  "desc": "",
-  "sizes": [
-   {
-    "label": "1 chicken",
-    "price": 150.0,
-    "k": null
-   },
-   {
-    "label": "2 chickens",
-    "price": 200.0,
-    "k": null
-   },
-   {
-    "label": "3 chickens",
-    "price": 250.0,
-    "k": null
-   }
-  ],
-  "k": "M",
-  "guess": false,
-  "img": [
-   "img/43-1.webp"
-  ],
-  "src": [
-   "https://images.squarespace-cdn.com/content/v1/65ad501f1776560c568f1d4c/1709004463274-SBL0RGIGWC4RGD5CDWP5/tempImagepFHz63.gif"
-  ],
-  "cats_old": [
-   "Chicken"
   ]
  },
  {
@@ -2242,6 +2144,7 @@
   "id": 71,
   "name": "Zaatar Chicken and Potatoes",
   "cats": [
+   "Main Course",
    "Shabbat"
   ],
   "desc": "",
@@ -2259,52 +2162,45 @@
    {
     "label": "3 Chickens",
     "price": 225.0,
-    "k": null
-   },
-   {
-    "label": "4 Chickens",
-    "price": 275.0,
     "k": null
    }
   ],
   "k": "M",
   "guess": false,
   "img": [
-   "img/71-1.webp"
+   "img/71-1.webp",
+   "img/42-1.webp"
   ],
   "src": [
    "https://images.squarespace-cdn.com/content/v1/65ad501f1776560c568f1d4c/1707360795641-D8UXJD2VGHFEZQNY1QMW/IMG_8544.JPG"
   ],
   "cats_old": [
    "Shabbat & Holiday"
-  ]
+  ],
+  "merged_from": 42
  },
  {
   "id": 72,
   "name": "Hasselback Chicken and Potatoes",
   "cats": [
+   "Main Course",
    "Shabbat"
   ],
   "desc": "",
   "sizes": [
    {
     "label": "1 Chicken",
-    "price": 125.0,
+    "price": 150.0,
     "k": null
    },
    {
     "label": "2 Chickens",
-    "price": 175.0,
+    "price": 200.0,
     "k": null
    },
    {
     "label": "3 Chickens",
-    "price": 225.0,
-    "k": null
-   },
-   {
-    "label": "4 Chickens",
-    "price": 275.0,
+    "price": 250.0,
     "k": null
    }
   ],
@@ -2312,7 +2208,8 @@
   "guess": false,
   "img": [
    "img/72-1.webp",
-   "img/72-2.webp"
+   "img/72-2.webp",
+   "img/43-1.webp"
   ],
   "src": [
    "https://images.squarespace-cdn.com/content/v1/65ad501f1776560c568f1d4c/1709004463274-SBL0RGIGWC4RGD5CDWP5/tempImagepFHz63.gif",
@@ -2320,7 +2217,8 @@
   ],
   "cats_old": [
    "Shabbat & Holiday"
-  ]
+  ],
+  "merged_from": 43
  },
  {
   "id": 73,
@@ -5993,11 +5891,6 @@
     "label": "Large",
     "price": 150.0,
     "k": null
-   },
-   {
-    "label": "Extra Large",
-    "price": 175.0,
-    "k": null
    }
   ],
   "k": "P",
@@ -6009,7 +5902,8 @@
    "img/182-4.webp",
    "img/182-5.webp",
    "img/182-6.webp",
-   "img/182-7.webp"
+   "img/182-7.webp",
+   "img/26-1.webp"
   ],
   "src": [
    "https://images.squarespace-cdn.com/content/v1/65ad501f1776560c568f1d4c/1709002962707-PJDY9RJXF3LIRW39XB72/Untitled-33-04.png",
@@ -6024,7 +5918,8 @@
    "Appetizers",
    "Sides",
    "Weekly Menu"
-  ]
+  ],
+  "merged_from": 26
  },
  {
   "id": 183,

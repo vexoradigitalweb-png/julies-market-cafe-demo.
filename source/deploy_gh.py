@@ -22,7 +22,7 @@ TITLES = {'home': "Julie's Market & Café | Kosher Café, Market & Catering on K
   'about': "About Julie | Julie's Market & Café",
   'contact': "Contact, Hours & Directions | Julie's Market & Café"}
 DESCS = {'home': "Kosher market &amp; café at 514 Kings Highway, Brooklyn, under the Vaad of Flatbush. Salads, coffee and grab &amp; go, plus glatt meat and dairy catering quotes online.",
-  'market': "The full café and market menu with prices: coffee and matcha, smoothies, grab &amp; go salads and bowls, prepared food and pantry goods. Kosher dairy, Chalav Yisrael.",
+  'market': "The full café and market menu with prices: coffee and matcha, smoothies, grab &amp; go salads and bowls, prepared food, a cheese counter and pantry goods. Kosher dairy, Chalav Yisrael.",
   'catering': "193 kosher catering dishes in glatt meat or Chalav Yisrael dairy, never mixed: appetizers, platters, salads, mains, Shabbat and more. Build your order and get a quote.",
   'about': "Meet Julie, the cook behind Julie's Market &amp; Café and Julie's Kitchen catering on Kings Highway, Brooklyn.",
   'contact': "Call (718) 573-9453, text Julie at 917-880-8999 or visit 514 Kings Highway, Brooklyn. Open Sun–Thu 8 AM–5 PM, Fri 8 AM–2 PM."}
