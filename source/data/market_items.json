@@ -632,6 +632,21 @@
 }
 ],
 [
+"Cranberry Goat Cheese",
+"Cheese Counter",
+"",
+"",
+"Fresh & Soft",
+"",
+{
+"milk": "Goat",
+"origin": "",
+"notes": "",
+"use": "",
+"details": "Chalav Yisrael"
+}
+],
+[
 "Syrian Basket Cheese: Za’atar, Olive or Spicy",
 "Cheese Counter",
 "",
@@ -658,6 +673,21 @@
 "origin": "Brooklyn, NY",
 "notes": "Smooth, salty, aromatic",
 "use": "A semi-soft, springy white cheese from Syria, traditionally braided and studded with aromatic seeds. Pull apart at breakfast with pita and Israeli salad.",
+"details": "Chalav Yisrael"
+}
+],
+[
+"Plain Basket Cheese",
+"Cheese Counter",
+"",
+"",
+"Syrian Cheeses",
+"",
+{
+"milk": "",
+"origin": "",
+"notes": "",
+"use": "",
 "details": "Chalav Yisrael"
 }
 ],
@@ -718,6 +748,21 @@
 "origin": "New York",
 "notes": "Tangy, mild, dry",
 "use": "Simple and nostalgic, this bright yellow cheddar is exactly what you’d expect from a cheddar. Try it as a healthy snack with apple slices.",
+"details": "Chalav Yisrael"
+}
+],
+[
+"American Cheddar",
+"Cheese Counter",
+"",
+"",
+"Cheddars & Jacks",
+"",
+{
+"milk": "Cow",
+"origin": "",
+"notes": "",
+"use": "",
 "details": "Chalav Yisrael"
 }
 ],
@@ -793,6 +838,21 @@
 "origin": "Eden Lake Township, Minnesota",
 "notes": "Creamy",
 "use": "Features calcium lactate crystals.",
+"details": "Chalav Yisrael"
+}
+],
+[
+"Raw 6-Month Cheddar",
+"Cheese Counter",
+"",
+"",
+"Raw Milk Cheddars",
+"",
+{
+"milk": "Raw cow",
+"origin": "",
+"notes": "",
+"use": "",
 "details": "Chalav Yisrael"
 }
 ],

@@ -887,7 +887,7 @@ function renderMarket() {
     if (info) {
       const cy = /Chalav Yisrael/.test(info.details || ''), more = info.details && info.details !== 'Chalav Yisrael';
       return head + `<article class="mcard cheese" data-h="${esc(n)}">${lbl(sub)}<div class="ch-top"><h3>${esc(n)}</h3>${pr}</div>
-        <p class="ch-meta">${esc(info.milk)} · ${esc(info.origin)}</p>
+        ${[info.milk, info.origin].filter(Boolean).length ? `<p class="ch-meta">${[info.milk, info.origin].filter(Boolean).map(esc).join(' · ')}</p>` : ''}
         ${info.notes ? `<p class="ch-notes">${esc(info.notes)}</p>` : ''}
         ${info.use ? `<p class="ch-use">${esc(info.use)}</p>` : ''}
         <div class="ch-foot">${cy ? '<span class="ch-tag">Chalav Yisrael</span>' : ''}${more ? `<details class="ch-det"><summary>Ingredients &amp; details</summary><p>${esc(info.details)}</p></details>` : ''}</div></article>`;
