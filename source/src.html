@@ -268,6 +268,18 @@ a[href^="tel:"],a[data-email]{user-select:auto;-webkit-user-select:auto}
 .mcard{display:flex;flex-direction:column;gap:10px}
 .mcard .ph{position:relative;aspect-ratio:5/4;border-radius:14px;overflow:hidden;background:var(--facade-2)}
 .mcard img{width:100%;height:100%;object-fit:cover;transition:transform 700ms var(--ease-out)}
+.cgrid{grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:16px}
+.mcard.cheese{padding:20px 22px 18px;border:1px solid var(--line);border-radius:14px;background:var(--card);gap:8px}
+.ch-top{display:flex;justify-content:space-between;align-items:baseline;gap:14px}
+.ch-top .mprice{margin:0;white-space:nowrap}
+.ch-meta{font:500 12px/1.35 var(--f-mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.ch-notes{font-style:italic;color:var(--sign);font-size:15px}
+.ch-use{font-size:15px;line-height:1.55}
+.ch-foot{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:auto;padding-top:6px}
+.ch-tag{font:600 11px/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--sign);border:1px solid currentColor;border-radius:99px;padding:6px 10px}
+.ch-det{flex:1 1 100%}
+.ch-det summary{cursor:pointer;font:500 13px/1.4 var(--f-mono);color:var(--muted);padding-block:6px}
+.ch-det p{font-size:13px;line-height:1.55;color:var(--muted);margin-top:4px}
 .mcard .ph.fit::before{content:"";position:absolute;inset:-24px;background:var(--bg) center/cover;filter:blur(22px) saturate(1.15);opacity:.9}
 .mcard .ph.fit img{position:relative;object-fit:contain}
 @media (hover:hover) and (pointer:fine){ .mcard:hover img{transform:scale(1.05)} }
@@ -635,7 +647,7 @@ html.lenis,html.lenis body{height:auto}
       <button class="dept rv" data-ms="Café"><h3>Café</h3><p>Coffee, matcha, smoothies and pastries from the counter.</p><span class="dept-n"></span></button>
       <button class="dept rv" data-ms="Grab &amp; Go"><h3>Grab &amp; Go</h3><p>Salads, grain bowls, sandwiches, wraps, sides, soups and breakfast cups, packed and ready in the fridge.</p><span class="dept-n"></span></button>
       <button class="dept rv" data-ms="Prepared Food"><h3>Prepared Food</h3><p>Bagels, breakfast burritos, toasts, grilled cheese and hot sandwiches, prepared fresh.</p><span class="dept-n"></span></button>
-      <button class="dept rv" data-ms="Cheese Counter"><h3>Cheese Counter</h3><p>Aged and raw-milk cheddars, Parmesan, Manchego, fresh mozzarella, goat cheese and basket cheese. All Chalav Yisrael.</p><span class="dept-n"></span></button>
+      <button class="dept rv" data-ms="Cheese Counter"><h3>Cheese Counter</h3><p>Brie and goat chevré, Manchego, Parmesan and Lazio Blue, raw-milk cheddars from Vermont and Minnesota, and Syrian basket and string cheese. All Chalav Yisrael.</p><span class="dept-n"></span></button>
       <button class="dept rv" data-ms="Gourmet Goods / Pantry"><h3>Gourmet Goods / Pantry</h3><p>Fresh breads, loose tea, spices and a gluten free shelf for your own kitchen.</p><span class="dept-n"></span></button>
     </div>
   </div></section>
@@ -869,13 +881,21 @@ function renderMarket() {
   const shown = MARKET.filter(m => mSec === 'All' || m[1] === mSec).map((m, i) => [m, i]).sort(([a, i], [b, j]) => (SO.indexOf(a[1]) - SO.indexOf(b[1])) || (subs.indexOf(a[4]) - subs.indexOf(b[4])) || (!!b[2] - !!a[2]) || i - j).map(([m]) => m);
   const lbl = sub => mSec === 'All' ? `<span class="sec-l">${esc(sub)}</span>` : '';
   let last = '';
-  g.innerHTML = shown.map(([n, s, h, price, sub, fit]) => {
+  g.innerHTML = shown.map(([n, s, h, price, sub, fit, info]) => {
     const head = (mSec === 'All' ? s : sub) !== last ? `<h3 class="msub">${esc(last = (mSec === 'All' ? s : sub))}</h3>` : '';
     const pr = price ? `<p class="mprice">${esc(price)}</p>` : `<p class="mprice ask">Price in store</p>`;
+    if (info) {
+      const cy = /Chalav Yisrael/.test(info.details || ''), more = info.details && info.details !== 'Chalav Yisrael';
+      return head + `<article class="mcard cheese" data-h="${esc(n)}">${lbl(sub)}<div class="ch-top"><h3>${esc(n)}</h3>${pr}</div>
+        <p class="ch-meta">${esc(info.milk)} · ${esc(info.origin)}</p>
+        ${info.notes ? `<p class="ch-notes">${esc(info.notes)}</p>` : ''}
+        ${info.use ? `<p class="ch-use">${esc(info.use)}</p>` : ''}
+        <div class="ch-foot">${cy ? '<span class="ch-tag">Chalav Yisrael</span>' : ''}${more ? `<details class="ch-det"><summary>Ingredients &amp; details</summary><p>${esc(info.details)}</p></details>` : ''}</div></article>`;
+    }
     return head + (h
       ? `<article class="mcard" data-h="${h}" data-photo><div class="ph${fit ? ' fit' : ''}"${fit ? ` style="--bg:url(img/t/m-${h}.webp)"` : ''}><img src="img/t/m-${h}.webp" data-full="img/m-${h}.webp" alt="${esc(n)}" loading="lazy" decoding="async"></div>${lbl(sub)}<h3>${esc(n)}</h3>${pr}</article>`
       : `<article class="mcard" data-h="${esc(n)}"><div class="ph"><div class="tag-ph"><span>Photo coming</span></div></div>${lbl(sub)}<h3>${esc(n)}</h3>${pr}</article>`);
-  }).join('');
+  }).join('').replace(/(?:<article class="mcard cheese"[\s\S]*?<\/article>\s*)+/g, m => `<div class="cgrid">${m}</div>`);
   if (!reduce) $$('.mcard', g).forEach((el, i) => { const p = prev.get(el.dataset.h), r = el.getBoundingClientRect(); if (p) { const dx = p.left - r.left, dy = p.top - r.top; if (dx || dy) el.animate([{transform: `translate(${dx}px,${dy}px)`}, {transform: 'none'}], {duration: 520, easing: 'cubic-bezier(.77,0,.175,1)'}); } else if (prev.size) el.animate([{opacity: 0, transform: 'translateY(14px) scale(.98)'}, {opacity: 1, transform: 'none'}], {duration: 420, delay: Math.min(i, 12) * 22, easing: 'cubic-bezier(.23,1,.32,1)'}); });
 }
 function pickMarket(sec) {

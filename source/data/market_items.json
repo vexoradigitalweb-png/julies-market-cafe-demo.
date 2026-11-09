@@ -527,165 +527,439 @@
 "Toasts & Hot Sandwiches"
 ],
 [
-"American Cheddar",
+"Brie",
 "Cheese Counter",
 "",
+"$7.99 ea",
+"Fresh & Soft",
 "",
-"Cheddars"
+{
+"milk": "Cow",
+"origin": "USA",
+"notes": "Rich, buttery, mushroomy",
+"use": "Cheese board star. Bake with honey or preserves and nuts.",
+"details": "Chalav Yisrael"
+}
 ],
 [
-"Raw 6-Month Cheddar",
+"Goat Chevré Classic",
 "Cheese Counter",
 "",
+"$12.99",
+"Fresh & Soft",
 "",
-"Cheddars"
+{
+"milk": "Goat",
+"origin": "USA",
+"notes": "Crumbly, tangy, fresh",
+"use": "A delightful blend of tanginess and lemony notes. Crumble on a salad or bake into a pastry.",
+"details": "All natural, vegetarian, added-hormone free, antibiotic free, gluten free. Product of USA. OU-D Chalav Yisrael, kosher for Passover and year round. Ingredients: whole pasteurized goat milk, salt, cheese cultures, vegetarian rennet."
+}
 ],
 [
-"Raw 12-Month Cheddar from Minnesota",
+"Goat Chevré Honey",
 "Cheese Counter",
 "",
+"$12.99",
+"Fresh & Soft",
 "",
-"Cheddars"
+{
+"milk": "Goat",
+"origin": "USA",
+"notes": "Crumbly, sweet, smooth",
+"use": "Try on sweet biscuits with a berry preserve and herbal tea.",
+"details": "All natural, vegetarian (no animal enzymes), free of added hormones, antibiotic free. Product of USA. OU-D Chalav Yisrael, kosher for Passover and year round."
+}
 ],
 [
-"Marble Cheddar",
+"Goat Chevré Herb",
 "Cheese Counter",
 "",
+"$12.99",
+"Fresh & Soft",
 "",
-"Cheddars"
-],
-[
-"Pepper Jack Cheddar",
-"Cheese Counter",
-"",
-"",
-"Cheddars"
-],
-[
-"Cranberry Cheddar",
-"Cheese Counter",
-"",
-"",
-"Cheddars"
-],
-[
-"Habanero Cheddar",
-"Cheese Counter",
-"",
-"",
-"Cheddars"
-],
-[
-"Manchego",
-"Cheese Counter",
-"",
-"",
-"Hard & Aged"
-],
-[
-"Emmental Swiss",
-"Cheese Counter",
-"",
-"",
-"Hard & Aged"
-],
-[
-"Parmesan",
-"Cheese Counter",
-"",
-"",
-"Hard & Aged"
-],
-[
-"DOP Parmesan from Italy",
-"Cheese Counter",
-"",
-"",
-"Hard & Aged"
-],
-[
-"Pecorino Romano",
-"Cheese Counter",
-"",
-"",
-"Hard & Aged"
-],
-[
-"Tilsit",
-"Cheese Counter",
-"",
-"",
-"Hard & Aged"
-],
-[
-"Gouda",
-"Cheese Counter",
-"",
-"",
-"Hard & Aged"
-],
-[
-"Lazio Blue Cheese",
-"Cheese Counter",
-"",
-"",
-"Hard & Aged"
-],
-[
-"Fresh Feta Block",
-"Cheese Counter",
-"",
-"",
-"Fresh & Soft"
+{
+"milk": "Goat",
+"origin": "USA",
+"notes": "Crumbly, savory, tangy",
+"use": "Shmear on a bagel or toast instead of cream cheese, with your favorite savory toppings.",
+"details": "All natural, vegetarian (no animal enzymes), free of added hormones, antibiotic free. Product of USA. OU-D Chalav Yisrael, kosher for Passover and year round."
+}
 ],
 [
 "Fresh Mozzarella Ball",
 "Cheese Counter",
 "",
+"$16.99 ea",
+"Fresh & Soft",
 "",
-"Fresh & Soft"
+{
+"milk": "Cow",
+"origin": "NYC local",
+"notes": "Milky, addictive, adaptable",
+"use": "Cook with it, melt it, or eat it as is with fresh basil and tomatoes, a drizzle of olive oil, balsamic reduction and flaky salt.",
+"details": "Chalav Yisrael"
+}
 ],
 [
-"Cranberry Goat Cheese",
+"Fresh Mozzarella Log",
+"Cheese Counter",
+"",
+"$53.99 ea",
+"Fresh & Soft",
+"",
+{
+"milk": "Cow",
+"origin": "NYC local",
+"notes": "Milky, addictive, adaptable",
+"use": "",
+"details": "Chalav Yisrael"
+}
+],
+[
+"Fresh Feta",
+"Cheese Counter",
+"",
+"$24.99/lb",
+"Fresh & Soft",
+"",
+{
+"milk": "Cow",
+"origin": "Israel",
+"notes": "Salty, briny, crumbly",
+"use": "Originally an exclusively Greek style of cheesemaking, feta is a familiar favorite for Greek salad or savory pastries like spanakopita.",
+"details": "Chalav Yisrael"
+}
+],
+[
+"Syrian Basket Cheese: Za’atar, Olive or Spicy",
+"Cheese Counter",
+"",
+"$15.99",
+"Syrian Cheeses",
+"",
+{
+"milk": "Cow",
+"origin": "Brooklyn, NY",
+"notes": "Za’atar, olive, spicy",
+"use": "A fresh, semi-soft Levantine cheese shaped in a small reed or plastic basket that leaves a distinctive woven pattern on its surface. Mild, fresh and subtly salty.",
+"details": "Chalav Yisrael"
+}
+],
+[
+"String Cheese with Nigella Seeds",
+"Cheese Counter",
+"",
+"$15.99",
+"Syrian Cheeses",
+"",
+{
+"milk": "Cow",
+"origin": "Brooklyn, NY",
+"notes": "Smooth, salty, aromatic",
+"use": "A semi-soft, springy white cheese from Syria, traditionally braided and studded with aromatic seeds. Pull apart at breakfast with pita and Israeli salad.",
+"details": "Chalav Yisrael"
+}
+],
+[
+"Pepperjack",
+"Cheese Counter",
+"",
+"$16.99/lb",
+"Cheddars & Jacks",
+"",
+{
+"milk": "Cow",
+"origin": "USA",
+"notes": "Creamy, bold kick",
+"use": "A crowd pleaser for hosting. Slice into a sandwich or shred into a recipe.",
+"details": "All natural, vegetarian, added-hormone free, antibiotic free, gluten free. Product of USA. OU-D Chalav Yisrael. Ingredients: pasteurized milk, cheese cultures, jalapeño peppers, salt, vegetarian enzymes."
+}
+],
+[
+"Habanero Jack",
+"Cheese Counter",
+"",
+"$9.99 ea",
+"Cheddars & Jacks",
+"",
+{
+"milk": "Cow",
+"origin": "USA",
+"notes": "Fiery, smooth, creamy",
+"use": "Not for the faint of heart. Shred into a quesadilla with sautéed green peppers, or try with red Burgundy and sliced stone fruit.",
+"details": "All natural, vegetarian, added-hormone free, antibiotic free, gluten free. CRC / OU Chalav Yisrael. Product of USA. Ingredients: pasteurized milk, salt, vegetarian enzymes, cultures. Allergen: contains milk."
+}
+],
+[
+"Marbled Cheddar",
+"Cheese Counter",
+"",
+"$16.99/lb",
+"Cheddars & Jacks",
+"",
+{
+"milk": "Cow",
+"origin": "USA",
+"notes": "",
+"use": "Yellow Colby cheddar marbled with smooth Monterey Jack: a mild flavor and a semi-soft texture that adds a touch of elegance to every bite.",
+"details": "Chalav Yisrael"
+}
+],
+[
+"New York Cheddar",
+"Cheese Counter",
+"",
+"$21.99/lb",
+"Cheddars & Jacks",
+"",
+{
+"milk": "Cow",
+"origin": "New York",
+"notes": "Tangy, mild, dry",
+"use": "Simple and nostalgic, this bright yellow cheddar is exactly what you’d expect from a cheddar. Try it as a healthy snack with apple slices.",
+"details": "Chalav Yisrael"
+}
+],
+[
+"Cranberry Cheddar",
+"Cheese Counter",
+"",
+"$9.99 ea",
+"Raw Milk Cheddars",
+"",
+{
+"milk": "Raw cow",
+"origin": "Vermont",
+"notes": "Savory, sweet, crumbly",
+"use": "Cube for a cheese board, slice thinly onto a salad, or pair with a Sauvignon Blanc or Beaujolais.",
+"details": "All natural, vegetarian, added-hormone free, antibiotic free, pasture-raised cows. OU-D Chalav Yisrael, kosher for Passover and year round. Ingredients: raw whole milk, salt, whole cranberries, enzymes, cheese cultures. Allergen: contains raw milk."
+}
+],
+[
+"Raw Vermont Cheddar",
+"Cheese Counter",
+"",
+"$26.99/lb",
+"Raw Milk Cheddars",
+"",
+{
+"milk": "Raw cow",
+"origin": "Vermont",
+"notes": "Sharp, fruity, complex",
+"use": "Raw cow’s milk cheese gives a full taste of place, with an explosion of diverse flavors and nutrients. Snack, shred or melt; you can’t go wrong.",
+"details": "All natural, vegetarian, added-hormone free, antibiotic free, sustainable dairy farming. Product of USA. OU-D Chalav Yisrael, kosher for Passover and year round. Ingredients: raw milk, cheese cultures, salt, enzymes."
+}
+],
+[
+"Edenshire",
+"Cheese Counter",
+"",
+"$15.99 ea",
+"Raw Milk Cheddars",
+"",
+{
+"milk": "Raw cow",
+"origin": "Eden Lake Township, Minnesota",
+"notes": "Rich, tangy, salty",
+"use": "A farmstead, English-style cheese from the lush grasslands of Minnesota. This block is aged for one year: a nutritious snack that melts well too.",
+"details": "Chalav Yisrael. Ingredients: cultured milk, sea salt, rennet."
+}
+],
+[
+"2 Year Summer Cheese",
+"Cheese Counter",
+"",
+"$29.99/lb",
+"Raw Milk Cheddars",
+"",
+{
+"milk": "Raw cow, aged 2 years",
+"origin": "Eden Lake Township, Minnesota",
+"notes": "Mild, creamy, acidic",
+"use": "From cows fed a diet of fresh grass, this two-year farmstead raw milk cheddar is cultured with kefir and exploding with flavor. Melt, snack and cook.",
+"details": "Chalav Yisrael"
+}
+],
+[
+"2 Year Edenshire Winter",
+"Cheese Counter",
+"",
+"$29.99/lb",
+"Raw Milk Cheddars",
+"",
+{
+"milk": "Raw cow, aged 2 years",
+"origin": "Eden Lake Township, Minnesota",
+"notes": "Creamy",
+"use": "Features calcium lactate crystals.",
+"details": "Chalav Yisrael"
+}
+],
+[
+"DOP Parmigiano Reggiano",
 "Cheese Counter",
 "",
 "",
-"Fresh & Soft"
+"Hard & Aged",
+"",
+{
+"milk": "Raw cow",
+"origin": "Emilia-Romagna, Italy",
+"notes": "Sweet, umami, crunchy",
+"use": "The king of cheeses. Grate it over spaghetti or shave it thinly over Caesar salad. A special cheese to be cherished.",
+"details": ""
+}
 ],
 [
-"Herbed Goat Cheese",
+"1 Year Aged Parmesan Wedge",
 "Cheese Counter",
 "",
+"$14.99 ea",
+"Hard & Aged",
 "",
-"Fresh & Soft"
+{
+"milk": "Cow",
+"origin": "USA",
+"notes": "Nutty, sweet, snackable, grateable",
+"use": "The best choice for grating into your Italian-inspired dishes.",
+"details": "All natural, vegetarian (no animal enzymes), free of added hormones, antibiotic free. Product of USA. OU-D Chalav Yisrael, kosher for Passover and year round. Ingredients: pasteurized cow’s milk, cheese culture, salt, enzymes."
+}
 ],
 [
-"Zaatar Basket Cheese",
+"Parmesan",
 "Cheese Counter",
 "",
+"$19.99/lb",
+"Hard & Aged",
 "",
-"Basket Cheese"
+{
+"milk": "Cow",
+"origin": "USA",
+"notes": "Rich, savory, complex",
+"use": "A kitchen staple for any serious chef.",
+"details": "Chalav Yisrael"
+}
 ],
 [
-"Plain Basket Cheese",
+"Pecorino Romano",
 "Cheese Counter",
 "",
+"$24.99/lb",
+"Hard & Aged",
 "",
-"Basket Cheese"
+{
+"milk": "Sheep",
+"origin": "USA",
+"notes": "Salty, dry, peppery",
+"use": "The renowned Italian grating cheese, named for its milk: pecora means sheep.",
+"details": "Chalav Yisrael"
+}
 ],
 [
-"Olive Basket Cheese",
+"Manchego DOP",
 "Cheese Counter",
 "",
+"$46.99/lb",
+"Hard & Aged",
 "",
-"Basket Cheese"
+{
+"milk": "Sheep",
+"origin": "La Mancha, Spain",
+"notes": "Bright, dry, nutty",
+"use": "Julie’s favorite cheese! A sophisticated snacking cheese, classically paired with quince jam, but any bright preserve will do. Don’t eat the rind on this one; it’s lightly waxed.",
+"details": "All natural, vegetarian, added-hormone free, antibiotic free, gluten free. OU-D Chalav Yisrael, kosher for Passover and year round. Ingredients: pasteurized Manchega sheep’s milk, salt, enzymes, cheese cultures."
+}
 ],
 [
-"Spicy Basket Cheese",
+"Gouda",
 "Cheese Counter",
 "",
+"$21.99/lb",
+"Hard & Aged",
 "",
-"Basket Cheese"
+{
+"milk": "Cow",
+"origin": "USA",
+"notes": "Mild, sweet, chewy",
+"use": "The sweet, caramelized flavors of a familiar favorite. Layer into a classic Dutch-style sandwich over a thin layer of butter, with fresh fruit on the side.",
+"details": ""
+}
+],
+[
+"Tilsit Bar",
+"Cheese Counter",
+"",
+"$12.99 / bar",
+"Hard & Aged",
+"",
+{
+"milk": "Cow",
+"origin": "Vermont",
+"notes": "Umami, semi-firm, sharp",
+"use": "A traditional Prussian and Danish cheese: imagine creamy Havarti texture meets Gruyère and Swiss nuttiness. Melt it into fondue, or pair with raspberry jam and walnuts or crisp apples and pears.",
+"details": "Chalav Yisrael"
+}
+],
+[
+"Tilsit (trim)",
+"Cheese Counter",
+"",
+"$26.99/lb",
+"Hard & Aged",
+"",
+{
+"milk": "Cow",
+"origin": "Vermont",
+"notes": "Umami, semi-firm, sharp",
+"use": "Trim pieces of the Tilsit bar, sold by the pound.",
+"details": "Chalav Yisrael"
+}
+],
+[
+"French Emmental",
+"Cheese Counter",
+"",
+"$43.99/lb",
+"Hard & Aged",
+"",
+{
+"milk": "Cow",
+"origin": "France",
+"notes": "Hazelnut, elastic, mild sweetness",
+"use": "Famous for its large holes, known as “eyes.” Great melted in fondue, grilled cheese, quiche and soufflé.",
+"details": "Vegetarian enzymes. OU-D Chalav Yisrael, kosher for Passover and year round. Ingredients: pasteurized cow’s milk, cultures, salt, enzymes."
+}
+],
+[
+"Lazio Blue",
+"Cheese Counter",
+"",
+"$49.99/lb",
+"Blue & Washed Rind",
+"",
+{
+"milk": "Cow",
+"origin": "Lazio, Italy",
+"notes": "Sweet, complex, creamy, adventurous",
+"use": "A small-batch, artisan Gorgonzola-style blue from the Lazio region of central Italy. Pungent, savory and tangy. Crumble over salads, pasta or risotto, or pair with a sweet Moscato d’Asti.",
+"details": "All natural, vegetarian, added-hormone free, antibiotic free. Product of Italy. OU-D Chalav Yisrael. Kosher year round, not kosher for Passover."
+}
+],
+[
+"Stagionato",
+"Cheese Counter",
+"",
+"$49.99/lb",
+"Blue & Washed Rind",
+"",
+{
+"milk": "Cow",
+"origin": "Italy",
+"notes": "Complex, sharp, fruity",
+"use": "A limited release of Taleggio Duro, an Italian washed-rind cow’s milk cheese, with complex flavors like Gorgonzola and pineapple and a familiar Parmesan-like texture.",
+"details": "Chalav Yisrael"
+}
 ],
 [
 "Fresh Breads & Sourdough",
