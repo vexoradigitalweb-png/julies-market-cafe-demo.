@@ -569,7 +569,7 @@ html.lenis,html.lenis body{height:auto}
           <img src="img/t/183-1.webp" alt="" loading="lazy">
           <div class="tags"><span class="k M"><i></i>Meat</span><span class="k D"><i></i>Dairy</span><span class="k P"><i></i>Parve</span></div>
                     <h2>Catering</h2>
-          <p>193 dishes, from boards and platters to Shabbat mains. Glatt meat or Chalav Yisrael dairy, never mixed. Pat Yisrael and Bishul Yisrael.</p>
+          <p><span data-dish-count>190</span> dishes, from boards and platters to Shabbat mains. Glatt meat or Chalav Yisrael dairy, never mixed. Pat Yisrael and Bishul Yisrael.</p>
           <span class="go">Build a quote →</span>
         </a>
       </div>
@@ -694,7 +694,7 @@ html.lenis,html.lenis body{height:auto}
   </div></div>
   <div class="tools wrap"><div class="inner">
     <div class="chips" id="chips" data-lenis-prevent role="group" aria-label="Filter by category"></div>
-    <input class="search" id="search" type="search" placeholder="Search 193 dishes" aria-label="Search dishes">
+    <input class="search" id="search" type="search" placeholder="Search dishes" aria-label="Search dishes">
   </div></div>
   <div class="wrap"><div class="inner">
     <p class="count-line" id="countLine"></p>
@@ -927,6 +927,7 @@ function blockedReason(m) {
   if (m.k === 'P' || m.k === 'PM') return '';
   return m.k !== state.kitchen ? `${KNAME[m.k]} dish · not part of a ${KNAME[state.kitchen].toLowerCase()} order` : '';
 }
+$$('[data-dish-count]').forEach(el => el.textContent = MENU.length); $('#search').placeholder = `Search ${MENU.length} dishes`;
 $('#chips').innerHTML = CATS.map(c => { const n = c === 'All' ? MENU.length : MENU.filter(m => m.cats.includes(c)).length; return `<button class="chip" data-cat="${esc(c)}" aria-pressed="${c === state.cat}">${esc(c)}<small>${n}</small></button>`; }).join('');
 function card(m) {
   const reason = blockedReason(m), off = !!reason;
@@ -1297,7 +1298,7 @@ if (BASE) {
   });
 }
 const TITLES = {home: "Julie's Market & Café | Kosher Café, Market & Catering on Kings Highway, Brooklyn", market: "The Market & Café: Menu & Prices | Julie's, Kings Highway", catering: "Kosher Catering Menu & Online Quote | Julie's Market & Café", about: "About Julie | Julie's Market & Café", contact: "Contact, Hours & Directions | Julie's Market & Café", quotes: "Quote requests · Julie's"};
-const DESCS = {home: "Kosher market & café at 514 Kings Highway, Brooklyn, under the Vaad of Flatbush. Salads, coffee and grab & go, plus glatt meat and dairy catering quotes online.", market: "The full café and market menu with prices: coffee and matcha, smoothies, grab & go salads and bowls, prepared food, a cheese counter and pantry goods. Kosher dairy, Chalav Yisrael.", catering: "193 kosher catering dishes in glatt meat or Chalav Yisrael dairy, never mixed: appetizers, platters, salads, mains, Shabbat and more. Build your order and get a quote.", about: "Meet Julie, the cook behind Julie's Market & Café and Julie's Kitchen catering on Kings Highway, Brooklyn.", contact: "Call (718) 573-9453, text Julie at 917-880-8999 or visit 514 Kings Highway, Brooklyn. Open Sun–Thu 8 AM–5 PM, Fri 8 AM–2 PM.", quotes: ''};
+const DESCS = {home: "Kosher market & café at 514 Kings Highway, Brooklyn, under the Vaad of Flatbush. Salads, coffee and grab & go, plus glatt meat and dairy catering quotes online.", market: "The full café and market menu with prices: coffee and matcha, smoothies, grab & go salads and bowls, prepared food, a cheese counter and pantry goods. Kosher dairy, Chalav Yisrael.", catering: "190 kosher catering dishes in glatt meat or Chalav Yisrael dairy, never mixed: appetizers, platters, salads, mains, Shabbat and more. Build your order and get a quote.", about: "Meet Julie, the cook behind Julie's Market & Café and Julie's Kitchen catering on Kings Highway, Brooklyn.", contact: "Call (718) 573-9453, text Julie at 917-880-8999 or visit 514 Kings Highway, Brooklyn. Open Sun–Thu 8 AM–5 PM, Fri 8 AM–2 PM.", quotes: ''};
 let current = null;
 function show(name, animate) {
   if (!VIEWS.includes(name)) name = 'home';
