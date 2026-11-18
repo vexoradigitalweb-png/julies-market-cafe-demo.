@@ -393,6 +393,8 @@ form.q.tried input:invalid{box-shadow:inset 0 0 0 1.5px var(--meat)}
 .about .inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(28px,5vw,72px);align-items:start}
 .portrait{aspect-ratio:4/5;border-radius:18px;border:1.5px dashed var(--line);display:grid;place-items:center;text-align:center;color:var(--muted);padding:24px;background:var(--facade-2)}
 .portrait b{display:block;font:400 64px/1 var(--f-script);color:var(--sign)}
+.portrait.has-photo{padding:0;border:0;overflow:hidden;margin:0;background:var(--facade-2)}
+.portrait.has-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;display:block}
 .prose p{font-size:18px;max-width:60ch;margin-top:16px}
 .prose .draft{font:500 13px/1.4 var(--f-mono);color:var(--muted);border-left:3px solid var(--bloom);padding-left:12px;margin-top:20px}
 .offers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:28px}
@@ -707,12 +709,12 @@ html.lenis,html.lenis body{height:auto}
     <h1 class="split">The person behind the food.</h1>
   </div></div>
   <section class="about sec wrap" style="padding-top:0"><div class="inner">
-    <div class="portrait rv"><div><b>Julie</b><span class="mono" style="font-size:12px">Portrait coming for the demo</span></div></div>
+    <figure class="portrait has-photo rv"><img src="img/julie-portrait.webp" srcset="img/t/julie-portrait.webp 600w, img/julie-portrait.webp 900w" sizes="(max-width: 860px) 92vw, 40vw" width="900" height="1125" alt="Julie, owner of Julie's Market &amp; Café" loading="lazy" decoding="async"></figure>
     <div class="prose">
       <p class="rv" style="font:400 clamp(26px,2.8vw,36px)/1.2 var(--f-display);margin-top:0">Julie's Kitchen started with platters and boards for friends and family, and grew into boutique catering across the tri-state area.</p>
       <p class="rv">Today it is two things under one roof: a kosher dairy market and café at 514 Kings Highway, and a catering kitchen cooking for Shabbat, holidays, brunches and celebrations of every size. Julie also teaches private and group cooking lessons for adults and children.</p>
       <p class="rv">Her recipe book, <i>Julie's Holiday Table</i>, collects more than 30 tried and true holiday recipes.</p>
-      <p class="draft rv">Julie's own story and photo replace this text before launch.</p>
+      <p class="draft rv">Julie's own story replaces this text before launch.</p>
       <div class="offers rv">
         <div><b>Catering</b><span>Meat and dairy menus for events</span></div>
         <div><b>Platters &amp; boards</b><span>Designed for any occasion</span></div>
@@ -762,7 +764,7 @@ html.lenis,html.lenis body{height:auto}
     <div><h4>Catering</h4><a href="#catering">Build a quote</a><a href="#about">About Julie</a><a href="#quotes" id="inboxLink" hidden>Julie's quote inbox</a></div>
     <div><h4>Talk to us</h4><a class="tab" href="tel:+17185739453">Store (718) 573-9453</a><a class="tab" href="tel:+19178808999">Julie 917-880-8999</a><a href="mailto:julie@jebani.com" data-email="julie@jebani.com">julie@jebani.com</a><a href="https://www.instagram.com/julieebani/" target="_blank" rel="noopener">@julieebani</a></div>
     <div class="footbig" aria-hidden="true"><span>Julie's</span></div>
-    <p class="fine">Sun–Thu 8 AM–5 PM · Fri 8 AM–2 PM · Sat closed. Catering estimates are not final until Julie confirms them.</p>
+    <p class="fine">Sun–Thu 8 AM–6 PM · Fri 8 AM–3 PM · Sat closed. Catering estimates are not final until Julie confirms them.</p>
   </div>
 </footer>
 
@@ -818,7 +820,7 @@ let toastT; const toast = msg => { const t = $('#toast'); t.textContent = msg; t
 const store = { get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} } };
 
 /* ---------- Hours (America/New_York) ---------- */
-const HOURS = [['Sunday',8,17],['Monday',8,17],['Tuesday',8,17],['Wednesday',8,17],['Thursday',8,17],['Friday',8,14],['Saturday',null,null]];
+const HOURS = [['Sunday',8,18],['Monday',8,18],['Tuesday',8,18],['Wednesday',8,18],['Thursday',8,18],['Friday',8,15],['Saturday',null,null]];
 const fmtH = h => (h > 12 ? h - 12 : h) + (h >= 12 ? ' PM' : ' AM');
 function nyNow() { const p = new Intl.DateTimeFormat('en-US', {timeZone: 'America/New_York', weekday: 'long', hour: 'numeric', minute: 'numeric', hour12: false}).formatToParts(new Date()); const g = t => p.find(x => x.type === t)?.value; return {day: g('weekday'), h: +g('hour') % 24, m: +g('minute')}; }
 function renderHours() {
@@ -831,7 +833,7 @@ function renderHours() {
   const order = [3,4,5,6,0,1,2]; // Wednesday first, as the store lists it
   const rows = order.map(i => { const r = HOURS[i]; return `<tr class="${i === di ? 'now' : ''}"><td>${r[0]}</td><td>${r[1] === null ? 'Closed' : fmtH(r[1]) + ' – ' + fmtH(r[2])}</td></tr>`; }).join('');
   $$('#hoursTable, [data-hours]').forEach(tb => tb.innerHTML = rows);
-  $('#todayLine').innerHTML = `<b>${txt}</b><span>Sun–Thu 8 AM–5 PM</span><span>Fri 8 AM–2 PM</span><span>Sat closed for Shabbat</span>`;
+  $('#todayLine').innerHTML = `<b>${txt}</b><span>Sun–Thu 8 AM–6 PM</span><span>Fri 8 AM–3 PM</span><span>Sat closed for Shabbat</span>`;
 }
 renderHours(); setInterval(renderHours, 60000);
 
@@ -1297,7 +1299,7 @@ if (BASE) {
   });
 }
 const TITLES = {home: "Julie's Market & Café | Kosher Café, Market & Catering on Kings Highway, Brooklyn", market: "The Market & Café: Menu & Prices | Julie's, Kings Highway", catering: "Kosher Catering Menu & Online Quote | Julie's Market & Café", about: "About Julie | Julie's Market & Café", contact: "Contact, Hours & Directions | Julie's Market & Café", quotes: "Quote requests · Julie's"};
-const DESCS = {home: "Kosher market & café at 514 Kings Highway, Brooklyn, under the Vaad of Flatbush. Salads, coffee and grab & go, plus glatt meat and dairy catering quotes online.", market: "The full café and market menu with prices: coffee and matcha, smoothies, grab & go salads and bowls, prepared food, and a cheese counter. Kosher dairy, Chalav Yisrael.", catering: "190 kosher catering dishes in glatt meat or Chalav Yisrael dairy, never mixed: appetizers, platters, salads, mains, Shabbat and more. Build your order and get a quote.", about: "Meet Julie, the cook behind Julie's Market & Café and Julie's Kitchen catering on Kings Highway, Brooklyn.", contact: "Call (718) 573-9453, text Julie at 917-880-8999 or visit 514 Kings Highway, Brooklyn. Open Sun–Thu 8 AM–5 PM, Fri 8 AM–2 PM.", quotes: ''};
+const DESCS = {home: "Kosher market & café at 514 Kings Highway, Brooklyn, under the Vaad of Flatbush. Salads, coffee and grab & go, plus glatt meat and dairy catering quotes online.", market: "The full café and market menu with prices: coffee and matcha, smoothies, grab & go salads and bowls, prepared food, and a cheese counter. Kosher dairy, Chalav Yisrael.", catering: "190 kosher catering dishes in glatt meat or Chalav Yisrael dairy, never mixed: appetizers, platters, salads, mains, Shabbat and more. Build your order and get a quote.", about: "Meet Julie, the cook behind Julie's Market & Café and Julie's Kitchen catering on Kings Highway, Brooklyn.", contact: "Call (718) 573-9453, text Julie at 917-880-8999 or visit 514 Kings Highway, Brooklyn. Open Sun–Thu 8 AM–6 PM, Fri 8 AM–3 PM.", quotes: ''};
 let current = null;
 function show(name, animate) {
   if (!VIEWS.includes(name)) name = 'home';

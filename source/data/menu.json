@@ -46,28 +46,6 @@
   ]
  },
  {
-  "id": 3,
-  "name": "Zucchini and Eggplant Rollups",
-  "cats": [
-   "Dairy / Parve Lunch"
-  ],
-  "desc": "Price per Dozen",
-  "sizes": [
-   {
-    "label": "",
-    "price": 36.0,
-    "k": null
-   }
-  ],
-  "k": "D",
-  "guess": true,
-  "img": [],
-  "src": [],
-  "cats_old": [
-   "Sukkot"
-  ]
- },
- {
   "id": 4,
   "name": "Pistachio Crusted Salmon",
   "cats": [
@@ -254,7 +232,9 @@
   ],
   "k": "P",
   "guess": false,
-  "img": [],
+  "img": [
+   "img/10-1.webp"
+  ],
   "src": [],
   "cats_old": [
    "Sukkot"
@@ -328,38 +308,6 @@
   "src": [
    "https://images.squarespace-cdn.com/content/v1/65ad501f1776560c568f1d4c/535e7345-f06d-4f3f-9a2c-5fae286f0627/75CEF89A-51F7-468E-B8C9-8A1B53830CB4.JPG"
   ],
-  "cats_old": [
-   "Sukkot"
-  ]
- },
- {
-  "id": 13,
-  "name": "Fattoush Chicken Salad",
-  "cats": [
-   "Salads"
-  ],
-  "desc": "",
-  "sizes": [
-   {
-    "label": "Small",
-    "price": 100.0,
-    "k": null
-   },
-   {
-    "label": "Medium",
-    "price": 125.0,
-    "k": null
-   },
-   {
-    "label": "Large",
-    "price": 150.0,
-    "k": null
-   }
-  ],
-  "k": "M",
-  "guess": false,
-  "img": [],
-  "src": [],
   "cats_old": [
    "Sukkot"
   ]
@@ -1085,33 +1033,12 @@
   ],
   "k": "M",
   "guess": false,
-  "img": [],
+  "img": [
+   "img/38-1.webp"
+  ],
   "src": [],
   "cats_old": [
    "Shabbat & Holiday"
-  ]
- },
- {
-  "id": 39,
-  "name": "Steak Sandwiches",
-  "cats": [
-   "Mazza / Meats"
-  ],
-  "desc": "Price per sub size steak sandwich.",
-  "sizes": [
-   {
-    "label": "",
-    "price": 30.0,
-    "k": null
-   }
-  ],
-  "k": "M",
-  "guess": false,
-  "img": [],
-  "src": [],
-  "cats_old": [
-   "Pick Ups",
-   "Meats"
   ]
  },
  {
@@ -6268,43 +6195,6 @@
   "src": [
    "https://images.squarespace-cdn.com/content/v1/65ad501f1776560c568f1d4c/1705862330503-YNYKZR973I4ZTQO0B0D9/E871772E-CEE9-4592-BC45-BA849F65EF48.JPG"
   ],
-  "cats_old": [
-   "Platters & Boards"
-  ]
- },
- {
-  "id": 191,
-  "name": "Italian Antipasti Platter",
-  "cats": [
-   "Platters / Boards"
-  ],
-  "desc": "perfect for your themed Italian dinner parties- mix of Italian pickles, marinated vegetables, dipping oils, sourdough, breadsticks, crackers, parm, olives",
-  "sizes": [
-   {
-    "label": "Small",
-    "price": 150.0,
-    "k": null
-   },
-   {
-    "label": "Medium",
-    "price": 175.0,
-    "k": null
-   },
-   {
-    "label": "Large",
-    "price": 225.0,
-    "k": null
-   },
-   {
-    "label": "XLarge",
-    "price": 250.0,
-    "k": null
-   }
-  ],
-  "k": "D",
-  "guess": false,
-  "img": [],
-  "src": [],
   "cats_old": [
    "Platters & Boards"
   ]

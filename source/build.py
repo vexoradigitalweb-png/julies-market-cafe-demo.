@@ -15,8 +15,8 @@ LD = {"@context": "https://schema.org", "@type": "CafeOrCoffeeShop", "@id": SITE
   "telephone": "+1-718-573-9453", "email": "julie@jebani.com",
   "address": {"@type": "PostalAddress", "streetAddress": "514 Kings Hwy", "addressLocality": "Brooklyn", "addressRegion": "NY", "postalCode": "11223", "addressCountry": "US"},
   "openingHoursSpecification": [
-    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "08:00", "closes": "17:00"},
-    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:00", "closes": "14:00"}],
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "08:00", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:00", "closes": "15:00"}],
   "servesCuisine": ["Kosher", "Café", "Salads"], "hasMenu": SITE + "market/",
   "sameAs": ["https://www.instagram.com/julieebani/", "https://www.ubereats.com/store/julies-market-cafe/qobyJZ7BVXCvS2kCOyTnuw"],
   "makesOffer": {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Kosher catering", "url": SITE + "catering/",
