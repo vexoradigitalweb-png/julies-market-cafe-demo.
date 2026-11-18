@@ -38,7 +38,8 @@
   "k": "P",
   "guess": true,
   "img": [
-   "img/2-1.webp"
+   "img/2-1.webp",
+   "img/2-2.webp"
   ],
   "src": [],
   "cats_old": [
@@ -303,6 +304,8 @@
   "k": "P",
   "guess": false,
   "img": [
+   "img/lentil-1.webp",
+   "img/lentil-2.webp",
    "img/12-1.webp"
   ],
   "src": [
@@ -4822,6 +4825,8 @@
   "k": "P",
   "guess": false,
   "img": [
+   "img/lentil-1.webp",
+   "img/lentil-2.webp",
    "img/155-1.webp",
    "img/155-2.webp"
   ],
