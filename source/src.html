@@ -811,7 +811,7 @@ if (MOTION) document.documentElement.classList.add('motion');
 let lenis = null;
 if (MOTION && window.Lenis) { try { lenis = new Lenis({lerp: .09, smoothWheel: true}); lenis.on('scroll', ST.update); G.ticker.add(t => lenis.raf(t * 1000)); G.ticker.lagSmoothing(0); } catch (e) { lenis = null; } }
 const toTop = () => lenis ? lenis.scrollTo(0, {immediate: true, force: true}) : scrollTo(0, 0);
-const money = n => '$' + (Math.round(n * 100) / 100).toLocaleString('en-US', {minimumFractionDigits: n % 1 ? 2 : 0, maximumFractionDigits: 2});
+const money = n => n == null ? 'Ask for price' : '$' + (Math.round(n * 100) / 100).toLocaleString('en-US', {minimumFractionDigits: n % 1 ? 2 : 0, maximumFractionDigits: 2});
 const KNAME = {M: 'Meat', D: 'Dairy', P: 'Parve'};
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let toastT; const toast = msg => { const t = $('#toast'); t.textContent = msg; t.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('on'), 2200); };
@@ -911,7 +911,7 @@ $$('.dept[data-ms]').forEach(d => d.addEventListener('click', () => {
 renderMarket();
 
 /* ---------- Catering menu ---------- */
-const CATS = ['All',"Hors d'oeuvres / Appetizers",'Platters / Boards','Salads','Main Course','Sides','Bris / Bar Mitzvah / Brunch','Dairy / Parve Lunch','Plated Dinners','Mazza / Meats','Shabbat'];
+const CATS = ['All',"Hors d'oeuvres / Appetizers",'Platters / Boards','Salads','Main Course','Sides','Bris / Bar Mitzvah / Brunch','Dairy / Parve Lunch','Mazza / Meats','Shabbat'];
 let state = { cat: 'All', q: '', kitchen: store.get('jmc.kitchen', ''), cart: store.get('jmc.cart', []) };
 const kOf = (m, size) => (m.k === 'MIX' ? (m.sizes.find(s => s.label === size)?.k || 'P') : m.k);
 function allowed(m, size) {
@@ -1023,7 +1023,7 @@ function drawDrawer() {
   if (!state.cart.length) { body.innerHTML = `<p style="color:var(--muted)">Your quote is empty. Add dishes from the catering menu.</p><a class="btn btn-sign" href="#catering" id="goMenu">Browse the menu</a>`; $('#goMenu').onclick = closeDrawer; return; }
   const k = state.kitchen || 'P';
   body.innerHTML = `<div class="kmode">${state.kitchen ? kTag(state.kitchen) + `<span>${KNAME[state.kitchen]} order · glatt meat and Chalav Yisrael dairy are never mixed · Pat Yisrael · Bishul Yisrael</span>` : '<span class="k P"><i></i>Parve</span><span>Parve order. Add a meat or dairy dish and the order takes that side.</span>'}</div>
-  <div class="lines">${state.cart.map((l, i) => { const m = BY[l.id]; return `<div class="line">${m.img.length ? `<img src="${thumb(m.img[0])}" alt="" loading="lazy">` : '<div class="noimg"></div>'}<div><div class="nm">${esc(m.name)}</div><div class="sub">${esc(l.size || 'One size')} · ${money(l.price)} × ${l.qty}</div><button class="rm" data-rm="${i}">Remove</button></div><div class="rt tab">${money(l.price * l.qty)}</div></div>`; }).join('')}</div>
+  <div class="lines">${state.cart.map((l, i) => { const m = BY[l.id]; return `<div class="line">${m.img.length ? `<img src="${thumb(m.img[0])}" alt="" loading="lazy">` : '<div class="noimg"></div>'}<div><div class="nm">${esc(m.name)}</div><div class="sub">${esc(l.size || 'One size')} · ${l.price == null ? 'Price to confirm' : money(l.price)} × ${l.qty}</div><button class="rm" data-rm="${i}">Remove</button></div><div class="rt tab">${(l.price == null ? '—' : money(l.price * l.qty))}</div></div>`; }).join('')}</div>
   <div class="est"><div><span class="eyebrow">Estimate</span><small>Before delivery, staffing or changes. Julie confirms the final price.</small></div><b class="tab">${money(total())}</b></div>
   <form class="q" id="qform" novalidate>
     <label>Name<input id="f-name" name="name" required autocomplete="name" placeholder="Your name"></label>
@@ -1071,7 +1071,7 @@ async function submitQuote(e) {
     const [db, user] = await Promise.all([getDb(), getUser()]);
     if (db && user) { const uid = await user.id(); const ref2 = db.doc('quotes/' + uid); const snap = await ref2.get(); const list = (snap.exists ? snap.data().list : null) || []; list.push(req); await ref2.set({list, updated: req.at}); saved = true; }
   } catch (x) { console.warn(x); }
-  const summary = state.cart.map(l => `${l.qty} × ${BY[l.id].name}${l.size ? ' (' + l.size + ')' : ''}`).join('\n');
+  const summary = state.cart.map(l => `${l.qty} × ${BY[l.id].name}${l.size ? ' (' + l.size + ')' : ''}${l.price == null ? ' (price to confirm)' : ''}`).join('\n');
   const text = [`Catering quote request ${ref}`, `Name: ${req.name}`, `Phone: ${req.phone}`, (req.email ? `Email: ${req.email}` : null), `Event date: ${req.date}`, req.guests && `Guests: ${req.guests}`, `${req.mode}${req.address ? ': ' + req.address : ''}`, `Occasion: ${req.occasion}`, `Order: ${KNAME[req.kitchen]}`, '', summary, `Estimate: ${money(req.estimate)}`, (req.notes ? `\nNotes: ${req.notes}` : null)].filter(v => v || v === '').join('\n');
   const smsHref = `sms:+19178808999${/iPhone|iPad|Macintosh/.test(navigator.userAgent) ? '&' : '?'}body=${encodeURIComponent(text)}`;
   const mailHref = `mailto:julie@jebani.com?subject=${encodeURIComponent('Catering quote request · ' + req.name + ' · ' + req.date)}&body=${encodeURIComponent(text)}`;

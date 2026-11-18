@@ -72,7 +72,7 @@
  [
   "Pumpkin Spice Latte",
   "Café",
-  "",
+  "0e890ced9a0719c5115c9c02b6dabbdc",
   "$9",
   "Coffee & Matcha"
  ],
@@ -140,6 +140,13 @@
   "Smoothies"
  ],
  [
+  "Darrel's Shake",
+  "Café",
+  "1d4e75f3b80b40679ab02b353e4b6359",
+  "$16",
+  "Smoothies"
+ ],
+ [
   "GF Coffee Cake",
   "Café",
   "1309c6c81293c969213126b8f3dd8ec9",
@@ -165,6 +172,20 @@
   "Café",
   "",
   "$6",
+  "Pastries"
+ ],
+ [
+  "GF Blueberry Muffin",
+  "Café",
+  "f4bc6e2f4cd18f78ccc080a49c8582a4",
+  "",
+  "Pastries"
+ ],
+ [
+  "GF Blueberry Tahini Muffin",
+  "Café",
+  "0b2eba97503066cfd328d440d64e5311",
+  "",
   "Pastries"
  ],
  [
@@ -443,7 +464,7 @@
  [
   "Breakfast Burrito",
   "Prepared Food",
-  "",
+  "3539dda207387fbcdbc27383d0a9b7b3",
   "$20",
   "Breakfast"
  ],
@@ -487,9 +508,10 @@
  [
   "Caprese Panini",
   "Prepared Food",
-  "",
+  "c695b053e8155526e7c89982a1a7d671",
   "$18",
-  "Toasts & Hot Sandwiches"
+  "Toasts & Hot Sandwiches",
+  "fit"
  ],
  [
   "Eddie’s Tuna Melt",
@@ -501,7 +523,7 @@
  [
   "Grilled Veggie Sandwich",
   "Prepared Food",
-  "",
+  "8fdc3d4031574d1131a36902d916ec10",
   "$22",
   "Toasts & Hot Sandwiches"
  ],

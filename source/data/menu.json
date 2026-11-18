@@ -37,7 +37,9 @@
   ],
   "k": "P",
   "guess": true,
-  "img": [],
+  "img": [
+   "img/2-1.webp"
+  ],
   "src": [],
   "cats_old": [
    "Sukkot"
@@ -69,8 +71,7 @@
   "id": 4,
   "name": "Pistachio Crusted Salmon",
   "cats": [
-   "Main Course",
-   "Plated Dinners"
+   "Main Course"
   ],
   "desc": "Price per Pound",
   "sizes": [
@@ -93,7 +94,6 @@
   "name": "Shell Roast with Dijon Onion Sauce",
   "cats": [
    "Main Course",
-   "Plated Dinners",
    "Mazza / Meats"
   ],
   "desc": "Price per Pound",
@@ -116,8 +116,7 @@
   "id": 6,
   "name": "Chicken/Veal Piccata",
   "cats": [
-   "Main Course",
-   "Plated Dinners"
+   "Main Course"
   ],
   "desc": "Price per Pound",
   "sizes": [
@@ -156,6 +155,7 @@
   "k": "D",
   "guess": true,
   "img": [
+   "img/7-2.webp",
    "img/7-1.webp"
   ],
   "src": [
@@ -182,6 +182,7 @@
   "k": "P",
   "guess": false,
   "img": [
+   "img/8-2.webp",
    "img/8-1.webp"
   ],
   "src": [
@@ -367,8 +368,7 @@
   "id": 14,
   "name": "Miso Glazed Sea Bass",
   "cats": [
-   "Main Course",
-   "Plated Dinners"
+   "Main Course"
   ],
   "desc": "Price Per Pound",
   "sizes": [
@@ -1446,8 +1446,7 @@
   "id": 52,
   "name": "Spicy BBQ Salmon",
   "cats": [
-   "Main Course",
-   "Plated Dinners"
+   "Main Course"
   ],
   "desc": "Price Per Pound",
   "sizes": [
@@ -1473,7 +1472,7 @@
   "id": 53,
   "name": "Veal Chops with Artichokes",
   "cats": [
-   "Plated Dinners",
+   "Main Course",
    "Mazza / Meats",
    "Shabbat"
   ],
@@ -3524,8 +3523,7 @@
   "id": 112,
   "name": "Pan seared Salmon/Crispy Leeks/Dijon Sauce",
   "cats": [
-   "Main Course",
-   "Plated Dinners"
+   "Main Course"
   ],
   "desc": "Price is per pound",
   "sizes": [
@@ -3554,8 +3552,7 @@
   "id": 113,
   "name": "Roasted Salmon/ Saffron Butter Sauce",
   "cats": [
-   "Main Course",
-   "Plated Dinners"
+   "Main Course"
   ],
   "desc": "Per pound",
   "sizes": [
@@ -3582,8 +3579,7 @@
   "id": 114,
   "name": "Pan Seared Herb Branzino/Kalamata Herb Vinagrette",
   "cats": [
-   "Main Course",
-   "Plated Dinners"
+   "Main Course"
   ],
   "desc": "Price is per pound",
   "sizes": [
@@ -3610,8 +3606,7 @@
   "id": 115,
   "name": "Roasted Cod /Spinach/Wine Reduction",
   "cats": [
-   "Main Course",
-   "Plated Dinners"
+   "Main Course"
   ],
   "desc": "Prices are Per Pound",
   "sizes": [
@@ -3638,8 +3633,7 @@
   "id": 116,
   "name": "Sole Almondine",
   "cats": [
-   "Main Course",
-   "Plated Dinners"
+   "Main Course"
   ],
   "desc": "Prices are per pound.",
   "sizes": [
@@ -3667,8 +3661,7 @@
   "id": 117,
   "name": "Miso Glazed Sea Bass/Salmon",
   "cats": [
-   "Main Course",
-   "Plated Dinners"
+   "Main Course"
   ],
   "desc": "Prices are per pound",
   "sizes": [
@@ -3696,8 +3689,7 @@
   "id": 118,
   "name": "Tuna Milanese/Lemon caper sauce",
   "cats": [
-   "Main Course",
-   "Plated Dinners"
+   "Main Course"
   ],
   "desc": "Price is per pound",
   "sizes": [
@@ -3725,7 +3717,6 @@
   "name": "Veal Chops with Lemon Roasted Potatoes",
   "cats": [
    "Main Course",
-   "Plated Dinners",
    "Mazza / Meats"
   ],
   "desc": "Price per chop",
@@ -3817,7 +3808,6 @@
   "name": "Wagyu Strip Steak with Pearl Onions",
   "cats": [
    "Main Course",
-   "Plated Dinners",
    "Mazza / Meats"
   ],
   "desc": "Price per piece",
@@ -3909,7 +3899,6 @@
   "name": "Mushroom Stuffed Rib Steaks",
   "cats": [
    "Main Course",
-   "Plated Dinners",
    "Mazza / Meats"
   ],
   "desc": "Price per steak",
@@ -4016,8 +4005,7 @@
   "id": 129,
   "name": "Chicken Steaks with Wild Mushroom Gravy",
   "cats": [
-   "Main Course",
-   "Plated Dinners"
+   "Main Course"
   ],
   "desc": "2 Steaks",
   "sizes": [
@@ -4220,7 +4208,9 @@
   ],
   "k": "M",
   "guess": false,
-  "img": [],
+  "img": [
+   "img/135-1.webp"
+  ],
   "src": [],
   "cats_old": [
    "Chicken",
@@ -6412,5 +6402,72 @@
   "cats_old": [
    "Platters & Boards"
   ]
+ },
+ {
+  "id": 194,
+  "name": "Beef Wellington",
+  "cats": [
+   "Main Course",
+   "Mazza / Meats"
+  ],
+  "desc": "Beef tenderloin wrapped in golden puff pastry, sliced to serve",
+  "sizes": [
+   {
+    "label": "",
+    "price": null,
+    "k": null
+   }
+  ],
+  "k": "M",
+  "guess": false,
+  "img": [
+   "img/194-1.webp"
+  ],
+  "src": [],
+  "cats_old": []
+ },
+ {
+  "id": 195,
+  "name": "Lemony Ades Soup",
+  "cats": [
+   "Hors d'oeuvres / Appetizers"
+  ],
+  "desc": "Red lentil soup finished with lemon and fresh parsley",
+  "sizes": [
+   {
+    "label": "",
+    "price": null,
+    "k": null
+   }
+  ],
+  "k": "P",
+  "guess": true,
+  "img": [
+   "img/195-1.webp"
+  ],
+  "src": [],
+  "cats_old": []
+ },
+ {
+  "id": 196,
+  "name": "Vegetable Soup",
+  "cats": [
+   "Hors d'oeuvres / Appetizers"
+  ],
+  "desc": "Hearty soup with zucchini, carrots, green beans, potatoes and cauliflower",
+  "sizes": [
+   {
+    "label": "",
+    "price": null,
+    "k": null
+   }
+  ],
+  "k": "P",
+  "guess": true,
+  "img": [
+   "img/196-1.webp"
+  ],
+  "src": [],
+  "cats_old": []
  }
 ]
