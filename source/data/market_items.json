@@ -3,42 +3,42 @@
 "Drip Coffee",
 "Café",
 "",
-"Reg $5 · Lg $6",
+"Small $5 · Large $6",
 "Coffee & Matcha"
 ],
 [
 "Americano",
 "Café",
 "",
-"Reg $5.25 · Lg $6.25",
+"Small $5.25 · Large $6.25",
 "Coffee & Matcha"
 ],
 [
 "Cappuccino",
 "Café",
 "d57fcae9e349265400e1671d758dae8a",
-"Reg $6 · Lg $7",
+"Small $6 · Large $7",
 "Coffee & Matcha"
 ],
 [
 "Latte",
 "Café",
 "88666637c41fba7fe3e180abcab48777",
-"Reg $6 · Lg $7",
+"Small $6 · Large $7",
 "Coffee & Matcha"
 ],
 [
 "Cold Brew",
 "Café",
 "",
-"Reg $7 · Lg $8",
+"Small $7 · Large $8",
 "Coffee & Matcha"
 ],
 [
 "Iced Coffee",
 "Café",
 "593d214fb5581fe8667d07fa8cb92bd6",
-"",
+"Small $6 · Large $8",
 "Coffee & Matcha"
 ],
 [
@@ -73,7 +73,7 @@
 "Pumpkin Spice Latte",
 "Café",
 "",
-"",
+"$9",
 "Coffee & Matcha"
 ],
 [
@@ -164,21 +164,21 @@
 "Chocolate Crumb Muffin",
 "Café",
 "",
-"",
+"$6",
 "Pastries"
 ],
 [
 "Mini Croissant",
 "Café",
 "",
-"",
+"$4",
 "Pastries"
 ],
 [
 "Mini Chocolate Croissant",
 "Café",
 "",
-"",
+"$4",
 "Pastries"
 ],
 [
